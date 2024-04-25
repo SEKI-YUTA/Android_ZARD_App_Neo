@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # setup
-      - name: Checkout sources
+      - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v4
@@ -41,7 +41,7 @@ jobs:
             -type f \
             -exec sh -c "cat {} | reviewdog -f=sarif -reporter=github-pr-review" \;
         env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   ktlint:
     runs-on: ubuntu-latest
@@ -52,5 +52,5 @@ jobs:
       - name: ktlint
         uses: ScaCap/action-ktlint@master
         with:
-          github_token: ${{ secrets.MY_ACCESS_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
