@@ -29,7 +29,7 @@ class RoborazziTest {
             .setContent {
                 Box(
                     modifier = Modifier
-                        .size(300.dp)
+                        .size(310.dp)
                         .background(Color.Red),
                     contentAlignment = Alignment.Center,
                 ) {
