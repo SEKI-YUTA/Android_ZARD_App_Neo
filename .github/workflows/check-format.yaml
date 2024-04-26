@@ -9,6 +9,10 @@ env:
 permissions:
   pull-requests: write
 
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   android-lint:
     runs-on: ubuntu-latest

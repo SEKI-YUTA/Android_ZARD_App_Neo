@@ -8,6 +8,10 @@ on:
 env:
   JAVA_VERSION: 18
 
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
