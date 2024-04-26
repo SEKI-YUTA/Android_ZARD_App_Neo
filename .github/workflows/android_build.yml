@@ -66,12 +66,6 @@ jobs:
       - name: Capture and Compare with Roborazzi
         run: ./gradlew compareRoborazziDebug
 
-      - name: Upload Roborazzi images
-        uses: actions/upload-artifact@v4
-        with:
-          name: captured images and compared results
-          path: build/outputs/roborazzi/
-
       - name: Upload screenshot
         uses: actions/upload-artifact@v4
         with:
