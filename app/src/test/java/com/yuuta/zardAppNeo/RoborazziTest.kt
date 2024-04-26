@@ -20,22 +20,22 @@ import org.robolectric.annotation.GraphicsMode
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @RunWith(RobolectricTestRunner::class)
 class RoborazziTest {
-
     @get:Rule
     val composeRule = createComposeRule()
 
     @Test
     fun captureTest() {
-        composeRule.setContent {
-            Box(
-                modifier = Modifier
-                    .size(300.dp)
-                    .background(Color.Red),
-                contentAlignment = Alignment.Center
-            ) {
-                Text("Hello Roborazzi")
+        composeRule
+            .setContent {
+                Box(
+                    modifier = Modifier
+                        .size(300.dp)
+                        .background(Color.Red),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    Text("Hello Roborazzi")
+                }
             }
-        }
 
         composeRule.onRoot().captureRoboImage()
     }
