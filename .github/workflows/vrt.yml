@@ -34,7 +34,7 @@ jobs:
       - name: Capture with Roborazzi in dev branch
         run: ./gradlew recordRoborazziDebug
       - name: Copy expected image to .reg/expected
-        run: mkdir -p .reg/expected; find app/build/outputs/roborazzi -type f ! -name '*.actual' ! -name '*.compare' -exec cp {} .reg/expected;
+        run: mkdir -p .reg/expected; find app/build/outputs/roborazzi -type f ! -name '*.actual' ! -name '*.compare' -exec cp {} .reg/expected \;
       - name: show files in .reg/expected
         run: ls .reg/expected
 
@@ -45,7 +45,7 @@ jobs:
       - name: Capture with Roborazzi in this branch
         run: ./gradlew recordRoborazziDebug
       - name: Copy actual image to directory_contains_actual_images directory
-        run: mkdir -p directory_contains_actual_images; find app/build/outputs/roborazzi -type f ! -name '*.actual' ! -name '*.compare' -exec cp {} directory_contains_actual_images;
+        run: mkdir -p directory_contains_actual_images; find app/build/outputs/roborazzi -type f ! -name '*.actual' ! -name '*.compare' -exec cp {} directory_contains_actual_images \;
       - name: show files in directory_contains_actual_images
         run: ls directory_contains_actual_images
 
