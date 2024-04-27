@@ -64,9 +64,9 @@ jobs:
         run: echo ${GITHUB_REF#refs/heads/}
       - name: echo current branch
         run: echo ${GITHUB_HEAD_REF}
-#      - name: workaround for detached HEAD
-#        run: |
-#          git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull
+      - name: workaround for detached HEAD
+        run: |
+          git checkout ${GITHUB_HEAD_REF} || git checkout -b ${GITHUB_HEAD_REF} && git pull
       - name: run reg-suit
         run: |
           npx reg-suit run
