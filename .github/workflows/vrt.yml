@@ -60,6 +60,8 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm i
+      - name: echo current branch
+        run: echo ${GITHUB_REF#refs/heads/}
       - name: workaround for detached HEAD
         run: |
           git checkout ${GITHUB_REF#refs/heads/} || git checkout -b ${GITHUB_REF#refs/heads/} && git pull
