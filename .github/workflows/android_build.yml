@@ -1,9 +1,9 @@
 name: Android CI
 
-on:
-  push:
-    branches: [ "main", "dev" ]
-  pull_request:
+#on:
+#  push:
+#    branches: [ "main", "dev" ]
+#  pull_request:
 
 env:
   JAVA_VERSION: 18
