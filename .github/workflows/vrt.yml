@@ -9,7 +9,7 @@ env:
   JAVA_VERSION: 18
 
 concurrency:
-  group: build-${{ github.ref }}
+  group: vrt-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
