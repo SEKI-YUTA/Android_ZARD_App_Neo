@@ -61,7 +61,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "20.11.1"
-      - name: npm install, build, and test
+      - name: npm install
         run: |
           npm i
       - name: echo current branch
