@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   vrt:
-    if: ${{ github.event.label.name == 'VRT' }}
+#    if: ${{ github.event.label.name == 'VRT' }}
     runs-on: ubuntu-latest
 
     steps:
