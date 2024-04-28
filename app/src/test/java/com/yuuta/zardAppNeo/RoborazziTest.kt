@@ -30,7 +30,7 @@ class RoborazziTest {
                 Box(
                     modifier = Modifier
                         .size(310.dp)
-                        .background(Color.Red),
+                        .background(Color.Blue),
                     contentAlignment = Alignment.Center,
                 ) {
                     Text("Hello Roborazzi")
