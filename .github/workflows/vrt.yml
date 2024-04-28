@@ -55,8 +55,6 @@ jobs:
         run: mkdir -p ~/.aws; echo "${{secrets.AWS_CONFIG}}" > ~/.aws/config
       - name: Create AWS Config File
         run: mkdir -p ~/.aws; echo "${{secrets.AWS_CREDENTIALS}}" > ~/.aws/credentials
-      - name: check region
-        run: echo $AWS_REGION
       - name: Use Node.js v20.11.1
         uses: actions/setup-node@v1
         with:
@@ -64,14 +62,8 @@ jobs:
       - name: npm install
         run: |
           npm i
-      - name: echo current branch
-        run: echo ${GITHUB_REF#refs/heads/}
-      - name: echo current branch
-        run: echo ${GITHUB_HEAD_REF}
       - name: checkout test branch
         run: git checkout -b ${GITHUB_HEAD_REF#refs/heads/}
-      - name: echo current branch
-        run: git branch
       - name: run reg-suit
         run: |
           npx reg-suit run
