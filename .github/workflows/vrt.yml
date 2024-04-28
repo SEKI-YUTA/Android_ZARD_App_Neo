@@ -3,7 +3,6 @@ name: Visual Regression Testing
 on:
   pull_request:
   label:
-    types: [ created ]
 
 env:
   JAVA_VERSION: 18
