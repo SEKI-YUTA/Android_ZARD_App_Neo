@@ -1,6 +1,7 @@
 name: Visual Regression Testing
 
 on:
+  pull_request:
   label:
     types: [ created ]
 
