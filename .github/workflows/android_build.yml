@@ -82,14 +82,14 @@ jobs:
           fi
 
       - name: Comment PR about UI differences
-        if: ${{ steps.check_ui_diff.outputs.ui-diff-found == 'true' }}
+        if: ${{ github.event_name == 'pull_request' && steps.check_ui_diff.outputs.ui-diff-found == 'true' }}
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
             UI の差分あったよ！ :eyes:
 
       - name: Comment PR about no UI differences
-        if: ${{ steps.check_ui_diff.outputs.ui-diff-found == 'false' }}
+        if: ${{ github.event_name == 'pull_request' && steps.check_ui_diff.outputs.ui-diff-found == 'false' }}
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
