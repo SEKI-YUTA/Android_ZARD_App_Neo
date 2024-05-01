@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.roborazzi)
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt.android)
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 android {
@@ -79,6 +80,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.dagger.hilt)
+    implementation(libs.kotlinx.serialization.json)
     kapt(libs.hilt.compiler)
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
