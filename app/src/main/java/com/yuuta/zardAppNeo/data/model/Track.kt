@@ -8,7 +8,7 @@ data class Track(
     val lyrics: String,
     val composition: String,
     val arrangement: String,
-    val year: String
+    val year: String,
 ) {
     override fun toString(): String {
         return "trackName: $trackName, lyrics: $lyrics, composition: $composition, arrangement: $arrangement"
