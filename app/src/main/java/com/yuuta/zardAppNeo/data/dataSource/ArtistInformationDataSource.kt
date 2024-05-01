@@ -7,8 +7,10 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.InputStreamReader
 import javax.inject.Inject
 
-class ArtistInformationDataSource @Inject constructor(
-    @ApplicationContext private val context: Context
+class ArtistInformationDataSource
+@Inject constructor(
+    @ApplicationContext
+    private val context: Context,
 ) : ArtistInformationDataSourceContract {
     override fun getArtistInformation(): Lce<String> {
         val builder = StringBuilder()
@@ -22,7 +24,7 @@ class ArtistInformationDataSource @Inject constructor(
                 if (text == null) break
                 builder.append("$text\n")
             }
-        } catch (e : Exception) {
+        } catch(e: Exception) {
             return Lce.Error(e)
         }
         return Lce.Content(builder.toString())
