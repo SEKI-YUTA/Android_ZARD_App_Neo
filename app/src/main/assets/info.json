@@ -1,0 +1,4233 @@
+{
+  "releasedDiscs": [
+    {
+      "id": 1,
+      "name": "Good-bye My Loneliness",
+      "releaseYear": "1991",
+      "releaseMonth": "02",
+      "releaseDate": "10",
+      "indexStr": "1st Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1991_02_10_1stsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "愛は暗闇の中で",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "ZARD・寺尾広",
+          "year": "1991"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Good-bye My Loneliness",
+      "releaseYear": "1991",
+      "releaseMonth": "03",
+      "releaseDate": "27",
+      "indexStr": "1st Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1991_03_27_1stalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "愛は暗闇の中で",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "ZARD・寺尾広",
+          "year": "1991"
+        },
+        {
+          "trackName": "恋女の憂鬱",
+          "lyrics": "川島だりあ",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "Oh! Sugar Baby",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1991"
+        },
+        {
+          "trackName": "女でいたい",
+          "lyrics": "川島だりあ",
+          "composition": "川島だりあ",
+          "arrangement": "葉山たけし",
+          "year": "1991"
+        },
+        {
+          "trackName": "It’s a Boy",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "不思議ね…",
+      "releaseYear": "1991",
+      "releaseMonth": "06",
+      "releaseDate": "25",
+      "indexStr": "2nd Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1991_06_25_2ndsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "不思議ね…",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "素直に言えなくて",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "もう探さない",
+      "releaseYear": "1991",
+      "releaseMonth": "11",
+      "releaseDate": "06",
+      "indexStr": "3rd Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1991_11_06_3rdsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "もう探さない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "こんなに愛しても",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "もう探さない (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "こんなに愛しても (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "もう探さない",
+      "releaseYear": "1991",
+      "releaseMonth": "12",
+      "releaseDate": "25",
+      "indexStr": "2nd Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1991_12_25_2ndalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "不思議ね…",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "もう探さない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "素直に言えなくて",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "ひとりが好き",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "Forever",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "Lonely Soldier Boy",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "いつかは…",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "眠れない夜を抱いて",
+      "releaseYear": "1992",
+      "releaseMonth": "08",
+      "releaseDate": "05",
+      "indexStr": "4th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1992_08_05_4thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "Dangerous Tonight",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "眠れない夜を抱いて (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "Dangerous Tonight (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "HOLD ME",
+      "releaseYear": "1992",
+      "releaseMonth": "09",
+      "releaseDate": "02",
+      "indexStr": "3rd Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1992_09_02_3rdalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "誰かが待ってる",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "サヨナラ言えなくて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "あの微笑みを忘れないで",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "好きなように踊りたいの",
+          "lyrics": "坂井泉水",
+          "composition": "和泉一弥",
+          "arrangement": "葉山たけし",
+          "year": "1992"
+        },
+        {
+          "trackName": "Dangerous Tonight",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "こんなに愛しても",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "Why Don’t You Leave Me Alone",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "葉山たけし",
+          "year": "1992"
+        },
+        {
+          "trackName": "愛は眠ってる",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "",
+          "year": "1992"
+        },
+        {
+          "trackName": "遠い日のNostalgia",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "So Together",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "IN MY ARMS TONIGHT",
+      "releaseYear": "1992",
+      "releaseMonth": "09",
+      "releaseDate": "09",
+      "indexStr": "5th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1992_09_09_5thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "汗の中でCRY",
+          "lyrics": "坂井泉水",
+          "composition": "松川敏也",
+          "arrangement": "池田大介・小澤正澄",
+          "year": "1992"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "汗の中でCRY (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "松川敏也",
+          "arrangement": "池田大介・小澤正澄",
+          "year": "1992"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "負けないで",
+      "releaseYear": "1993",
+      "releaseMonth": "01",
+      "releaseDate": "27",
+      "indexStr": "6th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1993_01_27_6thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "Stray Love",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "負けないで(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "Stray Love(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "君がいない",
+      "releaseYear": "1993",
+      "releaseMonth": "04",
+      "releaseDate": "21",
+      "indexStr": "7th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1993_04_21_7thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "私だけ見つめて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "私だけ見つめて(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "揺れる想い",
+      "releaseYear": "1993",
+      "releaseMonth": "05",
+      "releaseDate": "19",
+      "indexStr": "8th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1993_05_19_8thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "Just for you",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1993"
+        },
+        {
+          "trackName": "揺れる想い(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "Just for you(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "揺れる想い",
+      "releaseYear": "1993",
+      "releaseMonth": "07",
+      "releaseDate": "10",
+      "indexStr": "4th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1993_07_10_4thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "Season",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない(B-version)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "In my arms tonight",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "あなたを好きだけど",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "Listen to me",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "You and me(and…)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "I want you",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "二人の夏",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "もう少し あと少し…",
+      "releaseYear": "1993",
+      "releaseMonth": "09",
+      "releaseDate": "04",
+      "indexStr": "9th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1993_09_04_9thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "カナリヤ",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう少し あと少し…(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "カナリヤ(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "きっと忘れない",
+      "releaseYear": "1993",
+      "releaseMonth": "11",
+      "releaseDate": "03",
+      "indexStr": "10th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1993_11_03_10thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "黄昏にMy Lonely Heart",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "きっと忘れない(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "黄昏にMy Lonely Heart(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "この愛に泳ぎ疲れても・Boy",
+      "releaseYear": "1994",
+      "releaseMonth": "02",
+      "releaseDate": "02",
+      "indexStr": "11th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1994_02_02_11thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Boy",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Boy(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "OH MY LOVE",
+      "releaseYear": "1994",
+      "releaseMonth": "06",
+      "releaseDate": "04",
+      "indexStr": "5th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1994_06_04_5thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Top Secret",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "雨に濡れて",
+          "lyrics": "坂井泉水・上杉昇",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "I still remember",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "If you gimme smile",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "来年の夏も",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたに帰りたい",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "こんなにそばに居るのに",
+      "releaseYear": "1994",
+      "releaseMonth": "08",
+      "releaseDate": "08",
+      "indexStr": "12th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1994_08_08_12thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたのせいじゃない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "こんなにそばに居るのに(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "あなたを感じていたい",
+      "releaseYear": "1994",
+      "releaseMonth": "12",
+      "releaseDate": "24",
+      "indexStr": "13th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1994_12_24_13thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "Take me to your dream",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたを感じていたい(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Just believe in love",
+      "releaseYear": "1995",
+      "releaseMonth": "02",
+      "releaseDate": "01",
+      "indexStr": "14th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1995_02_01_14thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "Just believe in love",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "Ready, Go!",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "Just believe in love(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "forever you",
+      "releaseYear": "1995",
+      "releaseMonth": "03",
+      "releaseDate": "10",
+      "indexStr": "6th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1995_03_10_6thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "今すぐ会いに来て",
+          "lyrics": "坂井泉水",
+          "composition": "",
+          "arrangement": "",
+          "year": "1995"
+        },
+        {
+          "trackName": "ハイヒール脱ぎ捨てて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        },
+        {
+          "trackName": "Forever you",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        },
+        {
+          "trackName": "もう逃げたりしないわ 想い出から",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "気楽に行こう",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1995"
+        },
+        {
+          "trackName": "I’m in love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1995"
+        },
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Just believe in love",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "瞳そらさないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "愛が見えない",
+      "releaseYear": "1995",
+      "releaseMonth": "06",
+      "releaseDate": "05",
+      "indexStr": "15th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1995_06_05_15thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "Teenage dream",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        },
+        {
+          "trackName": "愛が見えない(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "Teenage dream(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "サヨナラは今もこの胸に居ます",
+      "releaseYear": "1995",
+      "releaseMonth": "08",
+      "releaseDate": "28",
+      "indexStr": "16th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1995_08_28_16thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "眠り",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "池田大介",
+          "year": "1995"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "眠り(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "池田大介",
+          "year": "1995"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "マイ フレンド",
+      "releaseYear": "1996",
+      "releaseMonth": "01",
+      "releaseDate": "08",
+      "indexStr": "17th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1996_01_08_17thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "目覚めた朝は…",
+          "lyrics": "坂井泉水",
+          "composition": "米澤光由",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "マイ フレンド(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "目覚めた朝は…(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "米澤光由",
+          "arrangement": "池田大介",
+          "year": "1996"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "心を開いて",
+      "releaseYear": "1996",
+      "releaseMonth": "05",
+      "releaseDate": "06",
+      "indexStr": "18th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1996_05_06_18thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Change my mind",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "心を開いて(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Change my mind(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "TODAY IS ANOTHER DAY",
+      "releaseYear": "1996",
+      "releaseMonth": "07",
+      "releaseDate": "08",
+      "indexStr": "7th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1996_07_08_7thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "君がいたから",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "LOVE～眠れずに君の横顔ずっと見ていた～",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1996"
+        },
+        {
+          "trackName": "DAN DAN 心魅かれてく",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "",
+          "year": "1996"
+        },
+        {
+          "trackName": "眠り",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "池田大介",
+          "year": "1995"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "突然",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "今日も",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "Today is another day",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "見つめていたいね",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1996"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Don’t you see!",
+      "releaseYear": "1997",
+      "releaseMonth": "01",
+      "releaseDate": "06",
+      "indexStr": "19th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1997_01_06_19thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "帰らぬ時間（とき）の中で",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "Don’t you see!(Original Karaoke)追加",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "帰らぬ時間の中で(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "君に逢いたくなったら…",
+      "releaseYear": "1997",
+      "releaseMonth": "02",
+      "releaseDate": "26",
+      "indexStr": "20th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1997_02_26_20thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "君に逢いたくなったら…",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "愛を信じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "君に逢いたくなったら…(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "愛を信じていたい(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "ZARD BLEND～SUN & STONE～",
+      "releaseYear": "1997",
+      "releaseMonth": "04",
+      "releaseDate": "23",
+      "indexStr": "Selection Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1997_04_23_selectionalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "君に逢いたくなったら…",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "あの微笑みを忘れないで",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "来年の夏も",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "ハイヒール脱ぎ捨てて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        },
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "こんなに愛しても～Hold Me～",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "風が通り抜ける街へ",
+      "releaseYear": "1997",
+      "releaseMonth": "07",
+      "releaseDate": "02",
+      "indexStr": "21st Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1997_07_02_21stsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "風が通り抜ける街へ",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "遠い星を数えて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "風が通り抜ける街へ(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "遠い星を数えて(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "永遠",
+      "releaseYear": "1997",
+      "releaseMonth": "08",
+      "releaseDate": "20",
+      "indexStr": "22nd Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1997_08_20_22ndsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "永遠",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "I can’t let go",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "古井弘人",
+          "year": "1997"
+        },
+        {
+          "trackName": "永遠 (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "I can’t let go(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "古井弘人",
+          "year": "1997"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "My Baby Grand ～ぬくもりが欲しくて～",
+      "releaseYear": "1997",
+      "releaseMonth": "12",
+      "releaseDate": "03",
+      "indexStr": "23rd Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1997_12_03_23rdsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "My Baby Grand～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "Love is Gone",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "My Baby Grand～ぬくもりが欲しくて(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "Love is Gone(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "池田大介",
+          "year": "1997"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "息もできない",
+      "releaseYear": "1998",
+      "releaseMonth": "03",
+      "releaseDate": "04",
+      "indexStr": "24th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1998_03_04_24thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "息もできない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1998"
+        },
+        {
+          "trackName": "Vintage",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1998"
+        },
+        {
+          "trackName": "息もできない(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1998"
+        },
+        {
+          "trackName": "Vintage(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1998"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "運命のルーレット廻して",
+      "releaseYear": "1998",
+      "releaseMonth": "09",
+      "releaseDate": "17",
+      "indexStr": "25th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1998_09_17_25thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "運命のルーレット廻して",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "少女の頃に戻ったみたいに",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "運命のルーレット廻して(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "新しいドア～冬のひまわり～",
+      "releaseYear": "1998",
+      "releaseMonth": "12",
+      "releaseDate": "02",
+      "indexStr": "26th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1998_12_02_26thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "新しいドア～冬のひまわり～",
+          "lyrics": "坂井泉水",
+          "composition": "北野正人",
+          "arrangement": "古井弘人",
+          "year": "1998"
+        },
+        {
+          "trackName": "新しいドア～冬のひまわり～(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "北野正人",
+          "arrangement": "古井弘人",
+          "year": "1998"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "GOOD DAY",
+      "releaseYear": "1998",
+      "releaseMonth": "12",
+      "releaseDate": "02",
+      "indexStr": "27th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1998_12_02_27thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "GOOD DAY",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "GOOD DAY(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "池田大介",
+          "year": "1998"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "永遠",
+      "releaseYear": "1999",
+      "releaseMonth": "02",
+      "releaseDate": "17",
+      "indexStr": "8th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1999_02_17_8thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "永遠",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "My Baby Grand～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "WAKE UP MAKE THE MORNING LAST～忘れがたき人へ～",
+          "lyrics": "福山廣也",
+          "composition": "古井弥人",
+          "arrangement": "",
+          "year": "1999"
+        },
+        {
+          "trackName": "Brand New Love",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "徳永暁人",
+          "year": "1999"
+        },
+        {
+          "trackName": "運命のルーレット廻して",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "遠い星を数えて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "新しいドア～冬のひまわり～",
+          "lyrics": "坂井泉水",
+          "composition": "北野正人",
+          "arrangement": "古井弘人",
+          "year": "1998"
+        },
+        {
+          "trackName": "GOOD DAY",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "I feel fine,yeah",
+          "lyrics": "坂井泉水",
+          "composition": "三好誠",
+          "arrangement": "古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "少女の頃に戻ったみたいに",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "息もできない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1998"
+        },
+        {
+          "trackName": "風が通り抜ける街へ",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "フォトグラフ",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "MIND GAMES",
+      "releaseYear": "1999",
+      "releaseMonth": "04",
+      "releaseDate": "07",
+      "indexStr": "28th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1999_04_07_28thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "MIND GAMES",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "綿貫正顕・古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "Hypnosis",
+          "lyrics": "坂井泉水",
+          "composition": "岡本仁",
+          "arrangement": "岡本仁・古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "MIND GAMES(Redway Secret Mix)",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "綿貫正顕・古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "MIND GAMES(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "綿貫正顕・古井弘人",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "ZARD BEST The Single Collection～軌跡～",
+      "releaseYear": "1999",
+      "releaseMonth": "05",
+      "releaseDate": "28",
+      "indexStr": "Best Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1999_05_28_bestalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "果てしない夢を（ZYYG,REV,ZARD,WANDS featuring 長嶋茂雄）",
+          "lyrics": "坂井泉水・上杉昇",
+          "composition": "出口雅之",
+          "arrangement": "",
+          "year": "1999"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Just believe in love",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "永遠 (Intro Piano Version)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "運命のルーレット廻して(Re-mix Version)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "世界はきっと未来の中",
+      "releaseYear": "1999",
+      "releaseMonth": "06",
+      "releaseDate": "16",
+      "indexStr": "29th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_1999_06_16_29thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "世界はきっと未来の中",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "徳永暁人・古井弘人・シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "世界はきっと未来の中(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "徳永暁人・古井弘人・シオジリケンジ",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "ZARD BEST ～Request Memorial～",
+      "releaseYear": "1999",
+      "releaseMonth": "09",
+      "releaseDate": "15",
+      "indexStr": "Best Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_1999_09_15_bestalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "息もできない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1998"
+        },
+        {
+          "trackName": "君に逢いたくなったら…",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "あの微笑みを忘れないで",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "My Baby Grand～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "Forever you",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1995"
+        },
+        {
+          "trackName": "突然",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "遠い日のNostalgia",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "雨に濡れて(ZYYG,REV,ZARD&WANDS)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "I still remember",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "MIND GAMES",
+          "lyrics": "坂井泉水",
+          "composition": "綿貫正顕",
+          "arrangement": "綿貫正顕・古井弘人",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "痛いくらい君があふれているよ",
+      "releaseYear": "1999",
+      "releaseMonth": "10",
+      "releaseDate": "14",
+      "indexStr": "30th Single",
+      "discType": "single",
+      "is8cm": true,
+      "image": "_1999_10_14_30thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "痛いくらい君があふれているよ",
+          "lyrics": "坂井泉水",
+          "composition": "シオジリケンジ",
+          "arrangement": "シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "痛いくらい君があふれているよ(Re-Mix) Re-Mixed by FAST ALVY and ME-YA",
+          "lyrics": "坂井泉水",
+          "composition": "シオジリケンジ",
+          "arrangement": "シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "痛いくらい君があふれているよ(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "シオジリケンジ",
+          "arrangement": "シオジリケンジ",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "この涙 星になれ",
+      "releaseYear": "1999",
+      "releaseMonth": "12",
+      "releaseDate": "01",
+      "indexStr": "31st Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_1999_12_01_31stsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "この涙 星になれ",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "お・も・ひ・で",
+          "lyrics": "坂井泉水",
+          "composition": "寺尾広",
+          "arrangement": "古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "この涙 星になれ(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "お・も・ひ・で(Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "寺尾広",
+          "arrangement": "古井弘人",
+          "year": "1999"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "ZARD Cruising & Live ～限定盤ライヴCD～",
+      "releaseYear": "2000",
+      "releaseMonth": "01",
+      "releaseDate": "26",
+      "indexStr": "Live Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2000_01_26_livealbum.jpg",
+      "trackList": [
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "世界はきっと未来の中",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "徳永暁人・古井弘人・シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "フォトグラフ",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1999"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "My Baby Grand～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "あの微笑みを忘れないで",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "遠い星を数えて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Get U’re Dream",
+      "releaseYear": "2000",
+      "releaseMonth": "09",
+      "releaseDate": "06",
+      "indexStr": "32nd Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2000_09_06_32ndsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "Get U’re Dream",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "Get U’re Dream(Version Two)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "Get U’re Dream (Version Three)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "Get U’re Dream (Original Karaoke)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "promised you",
+      "releaseYear": "2000",
+      "releaseMonth": "11",
+      "releaseDate": "15",
+      "indexStr": "33rd Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2000_11_15_33rdsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "promised you",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "Cybersound",
+          "year": "2000"
+        },
+        {
+          "trackName": "The only truth I know is you作詞：坂井泉水 作曲・編曲：徳永暁人",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2000"
+        },
+        {
+          "trackName": "promised you(instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "Cybersound",
+          "year": "2000"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "時間（とき）の翼",
+      "releaseYear": "2001",
+      "releaseMonth": "02",
+      "releaseDate": "15",
+      "indexStr": "9th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2001_02_15_9thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Get U’re Dream",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "この涙 星になれ",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "古井弘人",
+          "year": "1999"
+        },
+        {
+          "trackName": "promised you～with P-edition～",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "Cybersound",
+          "year": "2000"
+        },
+        {
+          "trackName": "痛いくらい君があふれているよ",
+          "lyrics": "坂井泉水",
+          "composition": "シオジリケンジ",
+          "arrangement": "シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "窓の外はモノクローム",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "大賀好修",
+          "year": "2001"
+        },
+        {
+          "trackName": "お・も・ひ・で",
+          "lyrics": "坂井泉水",
+          "composition": "寺尾広",
+          "arrangement": "古井弘人",
+          "year": "2001"
+        },
+        {
+          "trackName": "明日もし君が壊れても",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2001"
+        },
+        {
+          "trackName": "世界はきっと未来の中～another style 21～",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "徳永暁人・古井弘人・シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "hero",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "鶴澤夢人",
+          "year": "2001"
+        },
+        {
+          "trackName": "揺れる想い Gomi’s New York Remix",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "負けないで Gomi’s 10th Anniversary Special Mix",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "時間（とき）の翼",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "鶴澤夢人",
+          "year": "2001"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "ZARD BLEND ll～LEAF & SNOW～",
+      "releaseYear": "2001",
+      "releaseMonth": "11",
+      "releaseDate": "21",
+      "indexStr": "Selection Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2001_11_21_selectionalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "私だけ見つめて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "My Baby Grand～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "黄昏にMy Lonely Heart",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "Boy",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Stray Love",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "Take me to your dream",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "You and me(and…)",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "あなたに帰りたい",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Just for you",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1993"
+        },
+        {
+          "trackName": "Ready, Go!",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "Change my mind",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "カナリヤ",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "クリスマス タイム(ZARD Version)",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "梅野貴典、Robbie Kondor",
+          "year": "2001"
+        },
+        {
+          "trackName": "永遠～君と僕との間に～",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "さわやかな君の気持ち",
+      "releaseYear": "2002",
+      "releaseMonth": "05",
+      "releaseDate": "22",
+      "indexStr": "34th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2002_05_22_34thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "さわやかな君の気持ち",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2002"
+        },
+        {
+          "trackName": "抱きしめていて",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2002"
+        },
+        {
+          "trackName": "Seven Rainbow",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2002"
+        },
+        {
+          "trackName": "さわやかな君の気持ち(Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2002"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "明日を夢見て",
+      "releaseYear": "2003",
+      "releaseMonth": "04",
+      "releaseDate": "09",
+      "indexStr": "35th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2003_04_09_35thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "明日を夢見て",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2003"
+        },
+        {
+          "trackName": "探しに行こうよ",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2003"
+        },
+        {
+          "trackName": "明日を夢見て (instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2003"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "瞳閉じて",
+      "releaseYear": "2003",
+      "releaseMonth": "07",
+      "releaseDate": "09",
+      "indexStr": "36th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2003_07_09_36thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "瞳閉じて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2003"
+        },
+        {
+          "trackName": "愛しい人よ ～名もなき旅人よ～",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "大賀好修",
+          "year": "2003"
+        },
+        {
+          "trackName": "瞳閉じて(instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2003"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "もっと近くで君の横顔見ていたい",
+      "releaseYear": "2003",
+      "releaseMonth": "11",
+      "releaseDate": "12",
+      "indexStr": "37th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2003_11_12_37thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "もっと近くで君の横顔見ていたい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        },
+        {
+          "trackName": "リセット",
+          "lyrics": "坂井泉水",
+          "composition": "三好誠",
+          "arrangement": "小林哲",
+          "year": "2003"
+        },
+        {
+          "trackName": "もっと近くで君の横顔見ていたい (Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "止まっていた時計が今動き出した",
+      "releaseYear": "2004",
+      "releaseMonth": "01",
+      "releaseDate": "28",
+      "indexStr": "10th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2004_01_28_10thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "明日を夢見て",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2003"
+        },
+        {
+          "trackName": "時間（とき）の翼",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "鶴澤夢人",
+          "year": "2001"
+        },
+        {
+          "trackName": "もっと近くで君の横顔見ていたい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        },
+        {
+          "trackName": "pray",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "小林哲",
+          "year": "2004"
+        },
+        {
+          "trackName": "出逢いそして別れ",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "春畑道哉・池田大介",
+          "year": "2004"
+        },
+        {
+          "trackName": "止まっていた時計が今動き出した",
+          "lyrics": "坂井泉水",
+          "composition": "中村由利",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "瞳閉じて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2003"
+        },
+        {
+          "trackName": "さわやかな君の気持ち(Album Ver.)",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2002"
+        },
+        {
+          "trackName": "愛であなたを救いましょう",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "2004"
+        },
+        {
+          "trackName": "天使のような笑顔で",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "悲しいほど 今日は雨でも",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2004"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "かけがえのないもの",
+      "releaseYear": "2004",
+      "releaseMonth": "06",
+      "releaseDate": "23",
+      "indexStr": "38th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2004_06_23_38thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "かけがえのないもの",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2004"
+        },
+        {
+          "trackName": "無我夢中",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "night clubbers",
+          "year": "2004"
+        },
+        {
+          "trackName": "永遠（What a beautiful moment Tour Opening Ver.)作曲：徳永暁人 編曲：池田大介",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "かけがえのないもの (Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2004"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "今日はゆっくり話そう",
+      "releaseYear": "2004",
+      "releaseMonth": "11",
+      "releaseDate": "24",
+      "indexStr": "39th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2004_11_24_39thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "今日はゆっくり話そう",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "淡い雪がとけて",
+          "lyrics": "坂井泉水",
+          "composition": "寺尾広",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "雨が降り出す前に",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "葉山たけし",
+          "year": "2004"
+        },
+        {
+          "trackName": "今日はゆっくり話そう (Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "星のかがやきよ／夏を待つセイル(帆)のように",
+      "releaseYear": "2005",
+      "releaseMonth": "04",
+      "releaseDate": "20",
+      "indexStr": "40th Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2005_04_20_40thsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "星のかがやきよ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "夏を待つセイル(帆)のように",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "星のかがやきよ (Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "夏を待つセイル(帆)のように (Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "君とのDistance",
+      "releaseYear": "2005",
+      "releaseMonth": "09",
+      "releaseDate": "07",
+      "indexStr": "11th Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2005_09_07_11thalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "夏を待つセイル(帆)のように",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "サヨナラまでのディスタンス",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "かけがえのないもの",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2004"
+        },
+        {
+          "trackName": "今日はゆっくり話そう",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "君とのふれあい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "セパレート･ウェイズ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "古井弘人",
+          "year": "2005"
+        },
+        {
+          "trackName": "Last Good-bye (FIELD OF VIEW セルフカバー）",
+          "lyrics": "坂井泉水",
+          "composition": "多々納好夫",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "星のかがやきよ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "月に願いを",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2005"
+        },
+        {
+          "trackName": "あなたと共に生きてゆく (テレサ・テン セルフカバー）",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "小林哲",
+          "year": "2005"
+        },
+        {
+          "trackName": "I can’t tell",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "good-night sweetheart",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "君と今日の事を一生忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2005"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "悲しいほど貴方が好き／カラッといこう！",
+      "releaseYear": "2006",
+      "releaseMonth": "03",
+      "releaseDate": "08",
+      "indexStr": "41st Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2006_03_08_41stsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "悲しいほど貴方が好き",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "カラッといこう！作詞：坂井泉水 作曲：大野愛果 編曲：葉山たけし",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "悲しいほど貴方が好き(Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "カラッといこう！(Instrumental)",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "ハートに火をつけて［初回限定盤］",
+      "releaseYear": "2006",
+      "releaseMonth": "05",
+      "releaseDate": "10",
+      "indexStr": "42nd Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2006_05_10_42ndsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "ハートに火をつけて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "君へのブルース",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "ハートに火をつけて ～ピアノ・インストゥルメンタル・バージョン～",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "ハートに火をつけて（Instrumental）",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "ハートに火をつけて ［通常盤］",
+      "releaseYear": "2006",
+      "releaseMonth": "05",
+      "releaseDate": "10",
+      "indexStr": "42nd Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2006_05_10_42ndsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "ハートに火をつけて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "君へのブルース",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "ハートに火をつけて（Instrumental）",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Golden Best ～15th Anniversary～ 【初回限定盤】 『AQUA ～Summer～』",
+      "releaseYear": "2006",
+      "releaseMonth": "10",
+      "releaseDate": "25",
+      "indexStr": "Best Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2006_10_25_bestalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Today is another day",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "永遠",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "My Baby Grand ～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "運命のルーレット廻して",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "Get U’re Dream",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "もっと近くで君の横顔見ていたい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        },
+        {
+          "trackName": "今日はゆっくり話そう",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "星のかがやきよ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "夏を待つセイル（帆）のように",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "ハートに火をつけて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Golden Best ～15th Anniversary～ 【初回限定盤】 『CRYSTAL ～Autumn to Winter～』﻿",
+      "releaseYear": "2006",
+      "releaseMonth": "10",
+      "releaseDate": "25",
+      "indexStr": "Best Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2006_10_25_bestalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Today is another day",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "永遠",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "My Baby Grand ～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "運命のルーレット廻して",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "Get U’re Dream",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "もっと近くで君の横顔見ていたい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        },
+        {
+          "trackName": "今日はゆっくり話そう",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "星のかがやきよ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "夏を待つセイル（帆）のように",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "ハートに火をつけて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Golden Best ～15th Anniversary～ 【初回限定盤】 『DREAM ～Spring～』",
+      "releaseYear": "2006",
+      "releaseMonth": "10",
+      "releaseDate": "25",
+      "indexStr": "Best Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2006_10_25_bestalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Today is another day",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "永遠",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "My Baby Grand ～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "運命のルーレット廻して",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "Get U’re Dream",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "もっと近くで君の横顔見ていたい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        },
+        {
+          "trackName": "今日はゆっくり話そう",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "星のかがやきよ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "夏を待つセイル（帆）のように",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "ハートに火をつけて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Golden Best ～15th Anniversary～ 【通常盤】",
+      "releaseYear": "2006",
+      "releaseMonth": "10",
+      "releaseDate": "25",
+      "indexStr": "Best Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2006_10_25_bestalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "Good-bye My Loneliness",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "眠れない夜を抱いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫・池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "IN MY ARMS TONIGHT",
+          "lyrics": "坂井泉水",
+          "composition": "春畑道哉",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "負けないで",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1993"
+        },
+        {
+          "trackName": "君がいない",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "揺れる想い",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう少し あと少し…",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "きっと忘れない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "この愛に泳ぎ疲れても",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "Oh my love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "こんなにそばに居るのに",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "あなたを感じていたい",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "織田哲郎",
+          "year": "1994"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "マイ フレンド",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "心を開いて",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Today is another day",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1996"
+        },
+        {
+          "trackName": "Don’t you see!",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1997"
+        },
+        {
+          "trackName": "永遠",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "My Baby Grand ～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "運命のルーレット廻して",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "Get U’re Dream",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2000"
+        },
+        {
+          "trackName": "もっと近くで君の横顔見ていたい",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "2003"
+        },
+        {
+          "trackName": "今日はゆっくり話そう",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "星のかがやきよ",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "夏を待つセイル（帆）のように",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2005"
+        },
+        {
+          "trackName": "ハートに火をつけて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Soffio di vento ～ Best of IZUMI SAKAI Selection ～",
+      "releaseYear": "2007",
+      "releaseMonth": "08",
+      "releaseDate": "15",
+      "indexStr": "Selection Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2007_08_15_selectionalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "あの微笑みを忘れないで",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "黄昏にMy Lonely Heart",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "愛が見えない",
+          "lyrics": "坂井泉水",
+          "composition": "小澤正澄",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "サヨナラは今もこの胸に居ます",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "葉山たけし",
+          "year": "1995"
+        },
+        {
+          "trackName": "ひとりが好き",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "あなたに帰りたい",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "So Together",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "明石昌夫",
+          "year": "1992"
+        },
+        {
+          "trackName": "遠い星を数えて",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "遠い日のNostalgia",
+          "lyrics": "坂井泉水",
+          "composition": "川島だりあ",
+          "arrangement": "池田大介",
+          "year": "1992"
+        },
+        {
+          "trackName": "来年の夏も",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "かけがえのないもの",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2004"
+        },
+        {
+          "trackName": "Boy",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1994"
+        },
+        {
+          "trackName": "見つめていたいね",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1996"
+        },
+        {
+          "trackName": "My Baby Grand ～ぬくもりが欲しくて～",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1997"
+        },
+        {
+          "trackName": "カナリヤ",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Brezza di mare ～ dedicated to IZUMI SAKAI ～",
+      "releaseYear": "2007",
+      "releaseMonth": "08",
+      "releaseDate": "15",
+      "indexStr": "Selection Album",
+      "discType": "album",
+      "is8cm": false,
+      "image": "_2007_08_15_selectionalbum.jpg",
+      "trackList": [
+        {
+          "trackName": "瞳閉じて",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "徳永暁人",
+          "year": "2003"
+        },
+        {
+          "trackName": "明日を夢見て",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "小林哲",
+          "year": "2003"
+        },
+        {
+          "trackName": "風が通り抜ける街へ",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "I’m in love",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "池田大介",
+          "year": "1995"
+        },
+        {
+          "trackName": "君がいない （B-version）",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "もう探さない",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "promised you",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "Cybersound",
+          "year": "2000"
+        },
+        {
+          "trackName": "悲しいほど貴方が好き",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2006"
+        },
+        {
+          "trackName": "君がいたから（di mare version）",
+          "lyrics": "坂井泉水",
+          "composition": "織田哲郎",
+          "arrangement": "葉山たけし",
+          "year": "1996"
+        },
+        {
+          "trackName": "止まっていた時計が今動き出した",
+          "lyrics": "坂井泉水",
+          "composition": "中村由利",
+          "arrangement": "徳永暁人",
+          "year": "2004"
+        },
+        {
+          "trackName": "さわやかな君の気持ち",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "2002"
+        },
+        {
+          "trackName": "少女の頃に戻ったみたいに",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "池田大介",
+          "year": "1998"
+        },
+        {
+          "trackName": "世界はきっと未来の中（di mare version）",
+          "lyrics": "坂井泉水",
+          "composition": "岩井勇一郎",
+          "arrangement": "徳永暁人・古井弘人・シオジリケンジ",
+          "year": "1999"
+        },
+        {
+          "trackName": "いつかは…",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "明石昌夫",
+          "year": "1991"
+        },
+        {
+          "trackName": "もう少し あと少し…（9th Sg）",
+          "lyrics": "坂井泉水",
+          "composition": "栗林誠一郎",
+          "arrangement": "明石昌夫",
+          "year": "1993"
+        },
+        {
+          "trackName": "眠り（Sg「サヨナラは今もこの胸に居ます」c/w）",
+          "lyrics": "坂井泉水",
+          "composition": "坂井泉水",
+          "arrangement": "池田大介",
+          "year": "1995"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "グロリアス マインド",
+      "releaseYear": "2007",
+      "releaseMonth": "12",
+      "releaseDate": "12",
+      "indexStr": "43rd Single",
+      "discType": "single",
+      "is8cm": false,
+      "image": "_2007_12_12_43rdsingle.jpg",
+      "trackList": [
+        {
+          "trackName": "グロリアス マインド",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2007"
+        },
+        {
+          "trackName": "探しに行こうよ（2007 version）",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "葉山たけし",
+          "year": "2003"
+        },
+        {
+          "trackName": "愛を信じていたい（2007 version）",
+          "lyrics": "坂井泉水",
+          "composition": "徳永暁人",
+          "arrangement": "徳永暁人",
+          "year": "1997"
+        },
+        {
+          "trackName": "グロリアス マインド（Instrumental）",
+          "lyrics": "坂井泉水",
+          "composition": "大野愛果",
+          "arrangement": "葉山たけし",
+          "year": "2007"
+        }
+      ]
+    }
+  ],
+  "artistName": "ZARD",
+  "debutYear": "1991",
+  "debutMonth": "2",
+  "debutDate": "10"
+}
