@@ -28,9 +28,10 @@ class RoborazziTest {
         composeRule
             .setContent {
                 Box(
-                    modifier = Modifier
-                        .size(310.dp)
-                        .background(Color.Blue),
+                    modifier =
+                        Modifier
+                            .size(310.dp)
+                            .background(Color.Blue),
                     contentAlignment = Alignment.Center,
                 ) {
                     Text("Hello Roborazzi")
