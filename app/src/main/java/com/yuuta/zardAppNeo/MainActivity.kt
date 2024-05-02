@@ -10,17 +10,28 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.yuuta.zardAppNeo.data.dataSource.ArtistInformationDataSource
+import androidx.lifecycle.lifecycleScope
+import com.yuuta.zardAppNeo.data.contract.ArtistInformationRepositoryContract
+import com.yuuta.zardAppNeo.di.annotation.FakeArtistInformationRepositoryAnnotation
 import com.yuuta.zardAppNeo.ui.theme.ZARDAppNeoTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-    @Inject lateinit var artistInformationDataSource: ArtistInformationDataSource
+    @Inject
+    @FakeArtistInformationRepositoryAnnotation
+    lateinit var repository: ArtistInformationRepositoryContract
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        lifecycleScope.launch {
+            val artistInformation = repository.getArtistInformation()
+            println(artistInformation)
+        }
+
         setContent {
             ZARDAppNeoTheme {
                 // A surface container using the 'background' color from the theme
