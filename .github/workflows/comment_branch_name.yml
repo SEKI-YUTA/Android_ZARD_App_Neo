@@ -17,7 +17,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          BODY: >
+          BODY: |
             This issue's work branch is "ZARDApp-${{github.event.issue.number}}".\n
             branch name:\n
             ```\n
