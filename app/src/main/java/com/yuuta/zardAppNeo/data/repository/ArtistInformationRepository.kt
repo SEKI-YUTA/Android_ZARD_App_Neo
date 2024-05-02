@@ -5,10 +5,12 @@ import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
 import com.yuuta.zardAppNeo.data.json.ZARDJson
 import com.yuuta.zardAppNeo.data.model.ArtistInformation
 import com.yuuta.zardAppNeo.data.model.Lce
+import com.yuuta.zardAppNeo.di.annotation.ArtistInformationSourceAnnotation
 import javax.inject.Inject
 
-class ArtistInformationRepository
+open class ArtistInformationRepository
     @Inject constructor(
+        @ArtistInformationSourceAnnotation
         private val dataSource: ArtistInformationSourceContract
     ) : ArtistInformationRepositoryContract
 {
