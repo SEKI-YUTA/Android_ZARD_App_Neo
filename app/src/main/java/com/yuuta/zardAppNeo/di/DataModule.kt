@@ -44,5 +44,7 @@ abstract class DataModule {
 
     @FakeFailArtistInformationRepositoryAnnotation
     @Binds
-    abstract fun bindFakeFailArtistInformationRepository(repository: FakeFailArtistInformationRepository): ArtistInformationRepositoryContract
+    abstract fun bindFakeFailArtistInformationRepository(
+        repository: FakeFailArtistInformationRepository,
+    ): ArtistInformationRepositoryContract
 }

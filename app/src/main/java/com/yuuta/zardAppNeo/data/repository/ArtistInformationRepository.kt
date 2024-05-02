@@ -9,17 +9,16 @@ import com.yuuta.zardAppNeo.di.annotation.ArtistInformationSourceAnnotation
 import javax.inject.Inject
 
 open class ArtistInformationRepository
-    @Inject constructor(
+    @Inject
+    constructor(
         @ArtistInformationSourceAnnotation
-        private val dataSource: ArtistInformationSourceContract
-    ) : ArtistInformationRepositoryContract
-{
-    override fun getArtistInformation(): Lce<ArtistInformation> {
-       val fileData = dataSource.getArtistInformation()
-        if(fileData is Lce.Error) {
-            return Lce.Error(fileData.getError()!!)
+        private val dataSource: ArtistInformationSourceContract,
+    ) : ArtistInformationRepositoryContract {
+        override fun getArtistInformation(): Lce<ArtistInformation> {
+            val fileData = dataSource.getArtistInformation()
+            if (fileData is Lce.Error) {
+                return Lce.Error(fileData.getError()!!)
+            }
+            return Lce.Content(ZARDJson.decodeFromString<ArtistInformation>(fileData.getIfContent()!!))
         }
-        return Lce.Content(ZARDJson.decodeFromString<ArtistInformation>(fileData.getIfContent()!!))
     }
-
-}

@@ -5,10 +5,11 @@ import com.yuuta.zardAppNeo.di.annotation.FakeArtistInformationSourceAnnotation
 import javax.inject.Inject
 
 class FakeFailArtistInformationRepository
-    @Inject constructor(
+    @Inject
+    constructor(
         @FakeArtistInformationSourceAnnotation
-        private val dataSource: ArtistInformationSourceContract
-    )
-    : ArtistInformationRepository(
-        dataSource
-    )
+        private val dataSource: ArtistInformationSourceContract,
+    ) :
+    ArtistInformationRepository(
+            dataSource,
+        )
