@@ -19,3 +19,7 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
             This issue's work branch is "ZARDApp-${{github.event.issue.number}}".
+            branch name:
+            ```
+            ZARDApp-${{github.event.issue.number}}
+            ```
