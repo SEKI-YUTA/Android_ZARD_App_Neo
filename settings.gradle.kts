@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "ZARDAppNeo"
 include(":app")
+include(":feature:trackList")
+include(":feature:setting")
+include(":feature:discList")
+include(":feature:discDetail")
