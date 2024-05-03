@@ -23,3 +23,4 @@ rootProject.name = "ZARDAppNeo"
 include(":app")
 include(":trackList")
 include(":trackDetail")
+include(":setting")
