@@ -4,14 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
+import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import com.yuuta.zardAppNeo.R
@@ -40,8 +43,15 @@ class MainFragment : Fragment() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                    Column(modifier = Modifier.fillMaxSize()) {
                         Text("HomeFragment")
+                        Spacer(modifier = Modifier.size(16.dp))
+                        Button(onClick = {
+                            val direction = MainFragmentDirections.actionMainFragmentToWebviewFragment("https://www.google.com")
+                            navController.navigate(direction)
+                        }) {
+                            Text("Navigate to WebViewFragment")
+                        }
                     }
                 }
             }
