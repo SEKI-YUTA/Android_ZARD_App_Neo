@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.yuuta.zardAppNeo.fragments.MainFragment"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview" >
+        <action
+            android:id="@+id/action_mainFragment_to_webviewFragment"
+            app:destination="@id/webviewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webviewFragment"
+        android:name="com.yuuta.zardAppNeo.fragments.WebViewFragment"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview" >
+        <argument
+            android:name="webUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>
