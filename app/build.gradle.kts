@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlinx.serialization)
     alias(libs.plugins.ktlint)
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -49,6 +50,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -83,10 +85,16 @@ dependencies {
     implementation(libs.dagger.hilt)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.navigation.compose)
+    implementation(libs.androidx.navigation.fragment.ktx)
     implementation(project(":feature:discList"))
     implementation(project(":feature:trackList"))
     implementation(project(":feature:discDetail"))
     implementation(project(":feature:setting"))
+    implementation(libs.material)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     kapt(libs.hilt.compiler)
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
