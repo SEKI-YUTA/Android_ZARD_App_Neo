@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun DiscDetailScreen() {
+internal fun DiscDetailScreen() {
     Scaffold {
         Box(modifier = Modifier
             .padding(it)

@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun SettingScreen() {
+internal fun SettingScreen() {
     Scaffold {
         Box(modifier = Modifier
             .padding(it)
