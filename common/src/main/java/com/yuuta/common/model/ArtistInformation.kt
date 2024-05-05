@@ -1,4 +1,4 @@
-package com.yuuta.zardAppNeo.data.model
+package com.yuuta.common.model
 
 import kotlinx.serialization.Serializable
 

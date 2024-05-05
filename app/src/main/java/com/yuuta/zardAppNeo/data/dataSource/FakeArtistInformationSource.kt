@@ -1,15 +1,15 @@
 package com.yuuta.zardAppNeo.data.dataSource
 
+import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
-import com.yuuta.zardAppNeo.data.model.Lce
 import javax.inject.Inject
 
 class FakeArtistInformationSource
     @Inject
     constructor() :
     ArtistInformationSourceContract {
-        override fun getArtistInformation(): Lce<String> {
-            return Lce.Content(
+        override fun getArtistInformation(): com.yuuta.common.model.Lce<String> {
+            return com.yuuta.common.model.Lce.Content(
                 """
                 {
                   "releasedDiscs": [

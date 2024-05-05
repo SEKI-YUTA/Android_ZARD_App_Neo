@@ -1,7 +1,7 @@
 package com.yuuta.zardAppNeo.data.contract
 
-import com.yuuta.zardAppNeo.data.model.Lce
+import com.yuuta.common.model.Lce
 
 interface ArtistInformationSourceContract {
-    fun getArtistInformation(): Lce<String>
+    fun getArtistInformation(): com.yuuta.common.model.Lce<String>
 }
