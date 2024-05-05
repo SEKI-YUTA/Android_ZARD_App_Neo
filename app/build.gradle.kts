@@ -90,6 +90,7 @@ dependencies {
     implementation(project(":feature:trackList"))
     implementation(project(":feature:discDetail"))
     implementation(project(":feature:setting"))
+    implementation(project(":core:ui"))
     implementation(libs.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
