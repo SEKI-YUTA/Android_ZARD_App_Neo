@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.yuuta.ui"
+    namespace = "com.yuuta.navigation"
     compileSdk = 34
 
     defaultConfig {
@@ -23,20 +23,12 @@ android {
             )
         }
     }
-
-    buildFeatures {
-        compose = true
-    }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = "1.8"
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
     }
 }
 
@@ -45,21 +37,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.navigation.compose)
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.activity.compose)
-    implementation(libs.material.icon.extended)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(project(":resource"))
-    implementation(project(":common"))
-//    implementation(project(":feature:discList"))
-//    implementation(project(":feature:discDetail"))
-//    implementation(project(":feature:trackList"))
-//    implementation(project(":feature:setting"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    debugImplementation(libs.ui.tooling)
 }
