@@ -8,12 +8,12 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import com.yuuta.common.model.BottomAppBarItem
-import com.yuuta.disclist.DISC_LIST_ROUTE
-import com.yuuta.disclist.navigateToDiscList
-import com.yuuta.setting.SETTING_ROUTE
-import com.yuuta.setting.navigateToSetting
-import com.yuuta.tracklist.TRACK_LIST_ROUTE
-import com.yuuta.tracklist.navigateToTrackList
+import com.yuuta.navigation.DISC_LIST_ROUTE
+import com.yuuta.navigation.SETTING_ROUTE
+import com.yuuta.navigation.TRACK_LIST_ROUTE
+import com.yuuta.navigation.navigateToDiscList
+import com.yuuta.navigation.navigateToSetting
+import com.yuuta.navigation.navigateToTrackList
 
 @Composable
 fun BottomNavigationBar(

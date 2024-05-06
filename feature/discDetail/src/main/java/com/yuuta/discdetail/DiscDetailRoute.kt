@@ -1,16 +1,10 @@
 package com.yuuta.discdetail
 
-import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-
-val DISC_DETAIL_ROUTE = "ZARDAppNeo/discDetail"
-
-fun NavController.navigateToDiscDetail(discId: String) {
-    navigate("$DISC_DETAIL_ROUTE/$discId")
-}
+import com.yuuta.navigation.DISC_DETAIL_ROUTE
 
 fun NavGraphBuilder.discDetailScreen() {
     composable(

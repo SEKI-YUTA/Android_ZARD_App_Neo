@@ -92,6 +92,7 @@ dependencies {
     implementation(project(":feature:setting"))
     implementation(project(":core:ui"))
     implementation(project(":common"))
+    implementation(project(":navigation"))
     implementation(libs.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

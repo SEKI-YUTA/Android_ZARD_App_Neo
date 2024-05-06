@@ -53,6 +53,7 @@ dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(project(":common"))
     implementation(project(":core:ui"))
+    implementation(project(":navigation"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
