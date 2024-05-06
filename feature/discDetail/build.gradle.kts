@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(project(":common"))
+    implementation(project(":resource"))
     implementation(project(":core:ui"))
     implementation(project(":navigation"))
     testImplementation(libs.junit)
