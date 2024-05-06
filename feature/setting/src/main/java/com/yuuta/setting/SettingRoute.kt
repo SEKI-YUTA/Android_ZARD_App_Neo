@@ -1,12 +1,14 @@
 package com.yuuta.setting
 
+import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
+import com.yuuta.navigation.SETTING_ROUTE
 
-val SETTING_ROUTE = "ZARDAppNeo/setting"
-
-fun NavGraphBuilder.settingRoute() {
+fun NavGraphBuilder.settingRoute(
+    navController: NavController
+) {
     composable(SETTING_ROUTE) {
-        SettingScreen()
+        SettingScreen(navController = navController)
     }
 }

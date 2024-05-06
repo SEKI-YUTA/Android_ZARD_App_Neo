@@ -1,7 +1,7 @@
 package com.yuuta.zardAppNeo.data.dataSource
 
+import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
-import com.yuuta.zardAppNeo.data.model.Lce
 import javax.inject.Inject
 
 class FakeArtistInformationSource

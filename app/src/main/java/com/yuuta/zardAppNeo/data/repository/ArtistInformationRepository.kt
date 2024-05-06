@@ -1,10 +1,10 @@
 package com.yuuta.zardAppNeo.data.repository
 
+import com.yuuta.common.model.ArtistInformation
+import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationRepositoryContract
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
 import com.yuuta.zardAppNeo.data.json.ZARDJson
-import com.yuuta.zardAppNeo.data.model.ArtistInformation
-import com.yuuta.zardAppNeo.data.model.Lce
 import com.yuuta.zardAppNeo.di.annotation.ArtistInformationSourceAnnotation
 import javax.inject.Inject
 

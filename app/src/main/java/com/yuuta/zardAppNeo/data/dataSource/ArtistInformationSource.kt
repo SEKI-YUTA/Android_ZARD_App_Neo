@@ -1,8 +1,8 @@
 package com.yuuta.zardAppNeo.data.dataSource
 
 import android.content.Context
+import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
-import com.yuuta.zardAppNeo.data.model.Lce
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.InputStreamReader
 import javax.inject.Inject

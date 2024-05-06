@@ -1,0 +1,66 @@
+package com.yuuta.ui
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.yuuta.common.model.Track
+
+@Composable
+fun TrackCard(
+    track: Track,
+    trackNumber: Int?,
+    tapCallback: (Track) -> Unit
+) {
+    Row(horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(8.dp)
+            .clickable {
+            }
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            if (trackNumber != null) {
+                Text("$trackNumber.", modifier = Modifier.padding(8.dp))
+            }
+            Text(
+                text = track.trackName,
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(8.dp),
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
+            )
+            Text(
+                text = "${track.year}${stringResource(id = com.yuuta.resouce.R.string.year_unit)}",
+                modifier = Modifier.padding(end = 8.dp)
+            )
+        }
+    }
+}
+
+@Preview(showBackground = true, name = "トラック番号なし")
+@Composable
+fun TrackCardPreview() {
+    val track = Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993")
+    TrackCard(trackNumber = null, track = track, tapCallback = {})
+}
+
+@Preview(showBackground = true, name = "トラック番号あり")
+@Composable
+fun TrackCardPreview2() {
+    val track = Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993")
+    TrackCard(trackNumber = 1, track = track, tapCallback = {})
+}

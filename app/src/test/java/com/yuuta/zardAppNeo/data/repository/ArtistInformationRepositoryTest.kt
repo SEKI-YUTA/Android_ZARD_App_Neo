@@ -1,8 +1,8 @@
 package com.yuuta.zardAppNeo.data.repository
 
+import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.dataSource.FakeArtistInformationSource
 import com.yuuta.zardAppNeo.data.dataSource.FakeFailArtistInformationSource
-import com.yuuta.zardAppNeo.data.model.Lce
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertNotNull
 import org.junit.Test

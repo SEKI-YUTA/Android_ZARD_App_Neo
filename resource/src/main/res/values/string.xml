@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="track_unit">曲</string>
+    <string name="year_unit">年</string>
+    <string name="recorded_track">収録曲</string>
+    <string name="error_message">問題が発生しました。</string>
+</resources>
