@@ -16,7 +16,7 @@ import com.yuuta.tracklist.TRACK_LIST_ROUTE
 import com.yuuta.tracklist.navigateToTrackList
 
 @Composable
-fun BottomBar(
+fun BottomNavigationBar(
     modifier: Modifier,
     navController: NavController,
     bottomAppBarItems: List<BottomAppBarItem>,
