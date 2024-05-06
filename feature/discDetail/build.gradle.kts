@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(project(":common"))
     implementation(project(":core:ui"))
     implementation(project(":navigation"))
     testImplementation(libs.junit)
