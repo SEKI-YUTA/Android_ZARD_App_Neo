@@ -26,11 +26,11 @@ fun MainNavHost(
         discListScreen(
             navController = navController,
             navigateToDetail = navController::navigateToDiscDetail,
-            discList = viewState.artistInformation.getIfContent()?.releasedDiscs
+            discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
         )
         discDetailScreen(
             navController = navController,
-            discList = viewState.artistInformation.getIfContent()?.releasedDiscs
+            discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
         )
         trackListRoute(navController = navController)
         settingRoute(navController = navController)
