@@ -5,6 +5,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.yuuta.discdetail.discDetailScreen
+import com.yuuta.discdetail.navigateToDiscDetail
 import com.yuuta.disclist.DISC_LIST_ROUTE
 import com.yuuta.disclist.discListScreen
 import com.yuuta.setting.settingRoute
@@ -17,7 +18,7 @@ fun MainNavHost(
 ) {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = startDestination, modifier = modifier) {
-        discListScreen()
+        discListScreen(navigateToDetail = navController::navigateToDiscDetail)
         discDetailScreen()
         trackListRoute()
         settingRoute()
