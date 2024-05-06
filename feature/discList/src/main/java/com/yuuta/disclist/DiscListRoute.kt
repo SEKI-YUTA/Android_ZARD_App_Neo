@@ -1,16 +1,19 @@
 package com.yuuta.disclist
 
+import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.yuuta.common.model.Disc
 import com.yuuta.navigation.DISC_LIST_ROUTE
 
 fun NavGraphBuilder.discListScreen(
+    navController: NavController,
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
 ) {
     return composable(DISC_LIST_ROUTE) {
         DiscListScreen(
+            navController = navController,
             navigateToDetail = navigateToDetail,
             discList = discList,
         )
