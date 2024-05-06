@@ -97,7 +97,6 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    implementation(libs.material.icon.extended)
     kapt(libs.hilt.compiler)
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)
