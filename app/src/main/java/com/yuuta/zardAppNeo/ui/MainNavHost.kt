@@ -28,8 +28,8 @@ fun MainNavHost(
             navigateToDetail = navController::navigateToDiscDetail,
             discList = viewState.artistInformation.getIfContent()?.releasedDiscs
         )
-        discDetailScreen()
-        trackListRoute()
-        settingRoute()
+        discDetailScreen(navController = navController)
+        trackListRoute(navController = navController)
+        settingRoute(navController = navController)
     }
 }

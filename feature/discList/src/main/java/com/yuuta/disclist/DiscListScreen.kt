@@ -11,18 +11,29 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavController
 import com.yuuta.common.model.Disc
+import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.DiscCard
+import com.yuuta.ui.bottomAppBarData
 
 @Composable
 internal fun DiscListScreen(
+    modifier: Modifier = Modifier,
     navController: NavController,
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
 ) {
     val context = LocalContext.current
     val lazyListState = rememberLazyListState()
-    Scaffold {
-        if(discList == null) return@Scaffold
+    Scaffold(
+        modifier = modifier,
+        bottomBar = {
+            BottomNavigationBar(
+                navController = navController,
+                bottomAppBarItems = bottomAppBarData
+            )
+        }
+    ) {
+        if (discList == null) return@Scaffold
         LazyColumn(
             modifier = Modifier.padding(it),
             state = lazyListState,

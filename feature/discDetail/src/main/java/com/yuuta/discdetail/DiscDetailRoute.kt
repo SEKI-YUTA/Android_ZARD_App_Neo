@@ -1,12 +1,15 @@
 package com.yuuta.discdetail
 
+import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.yuuta.navigation.DISC_DETAIL_ROUTE
 
-fun NavGraphBuilder.discDetailScreen() {
+fun NavGraphBuilder.discDetailScreen(
+    navController: NavController
+) {
     composable(
         "$DISC_DETAIL_ROUTE/{discId}" ,
         arguments = listOf(
@@ -16,6 +19,8 @@ fun NavGraphBuilder.discDetailScreen() {
         )
     ) {
         val discId = it.arguments?.getString("discId")
-        DiscDetailScreen()
+        DiscDetailScreen(
+            navController = navController,
+        )
     }
 }
