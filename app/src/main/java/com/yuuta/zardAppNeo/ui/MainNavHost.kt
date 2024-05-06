@@ -24,6 +24,7 @@ fun MainNavHost(
 
     NavHost(navController = navController, startDestination = startDestination, modifier = modifier) {
         discListScreen(
+            navController = navController,
             navigateToDetail = navController::navigateToDiscDetail,
             discList = viewState.artistInformation.getIfContent()?.releasedDiscs
         )
