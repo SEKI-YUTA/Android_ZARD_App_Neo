@@ -3,6 +3,7 @@ package com.yuuta.disclist
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
+import com.yuuta.common.model.Disc
 
 val DISC_LIST_ROUTE = "ZARDAppNeo/discList"
 
@@ -11,9 +12,13 @@ fun NavController.navigateToDiscList() {
 }
 
 fun NavGraphBuilder.discListScreen(
-    navigateToDetail: (String) -> Unit
+    navigateToDetail: (String) -> Unit,
+    discList: List<Disc>?,
 ) {
     return composable(DISC_LIST_ROUTE) {
-        DiscListScreen(navigateToDetail = navigateToDetail)
+        DiscListScreen(
+            navigateToDetail = navigateToDetail,
+            discList = discList
+        )
     }
 }

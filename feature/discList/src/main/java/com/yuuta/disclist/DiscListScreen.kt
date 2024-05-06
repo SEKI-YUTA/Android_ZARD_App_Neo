@@ -14,18 +14,19 @@ import com.yuuta.ui.DiscCard
 
 @Composable
 internal fun DiscListScreen(
-    navigateToDetail: (String) -> Unit
+    navigateToDetail: (String) -> Unit,
+    discList: List<Disc>?,
 ) {
     val context = LocalContext.current
     val lazyListState = rememberLazyListState()
-    val allDiscList = emptyList<Disc>()
     Scaffold {
+        if(discList == null) return@Scaffold
         LazyColumn(
             modifier = Modifier.padding(it),
             state = lazyListState,
             verticalArrangement = Arrangement.Top
         ) {
-            items(allDiscList, key = { it.id }) { disc ->
+            items(discList, key = { it.id }) { disc ->
                 DiscCard(
                     context = context,
                     disc = disc
