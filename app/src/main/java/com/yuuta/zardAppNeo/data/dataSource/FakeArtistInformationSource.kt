@@ -8,8 +8,8 @@ class FakeArtistInformationSource
     @Inject
     constructor() :
     ArtistInformationSourceContract {
-        override fun getArtistInformation(): com.yuuta.common.model.Lce<String> {
-            return com.yuuta.common.model.Lce.Content(
+        override fun getArtistInformation(): Lce<String> {
+            return Lce.Content(
                 """
                 {
                   "releasedDiscs": [

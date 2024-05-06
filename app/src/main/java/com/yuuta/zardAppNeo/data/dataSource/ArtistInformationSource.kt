@@ -13,7 +13,7 @@ class ArtistInformationSource
         @ApplicationContext
         private val context: Context,
     ) : ArtistInformationSourceContract {
-        override fun getArtistInformation(): com.yuuta.common.model.Lce<String> {
+        override fun getArtistInformation(): Lce<String> {
             val builder = StringBuilder()
             try {
                 val fileInputStream = context.assets.open("info.json")
@@ -26,8 +26,8 @@ class ArtistInformationSource
                     builder.append("$text\n")
                 }
             } catch (e: Exception) {
-                return com.yuuta.common.model.Lce.Error(e)
+                return Lce.Error(e)
             }
-            return com.yuuta.common.model.Lce.Content(builder.toString())
+            return Lce.Content(builder.toString())
         }
     }

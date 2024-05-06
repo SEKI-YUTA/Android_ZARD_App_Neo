@@ -91,6 +91,7 @@ dependencies {
     implementation(project(":feature:discDetail"))
     implementation(project(":feature:setting"))
     implementation(project(":core:ui"))
+    implementation(project(":common"))
     implementation(libs.material)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

@@ -5,8 +5,10 @@ import androidx.navigation.compose.composable
 
 val DISC_LIST_ROUTE = "ZARDAppNeo/discList"
 
-fun NavGraphBuilder.discListScreen() {
+fun NavGraphBuilder.discListScreen(
+    navigateToDetail: (String) -> Unit
+) {
     return composable(DISC_LIST_ROUTE) {
-        DiscListScreen()
+        DiscListScreen(navigateToDetail = navigateToDetail)
     }
 }

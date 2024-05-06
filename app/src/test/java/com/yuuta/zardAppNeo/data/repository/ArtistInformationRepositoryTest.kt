@@ -13,7 +13,7 @@ class ArtistInformationRepositoryTest {
         val dataSource = FakeArtistInformationSource()
         val repository = ArtistInformationRepository(dataSource)
         val result = repository.getArtistInformation()
-        assertEquals(true, result is com.yuuta.common.model.Lce.Content)
+        assertEquals(true, result is Lce.Content)
         assertEquals("ZARD", result.getIfContent()?.artistName)
         assertNotNull(result.getIfContent()?.releasedDiscs)
         assertEquals(true, result.getIfContent()!!.releasedDiscs.isNotEmpty())
@@ -24,6 +24,6 @@ class ArtistInformationRepositoryTest {
         val dataSource = FakeFailArtistInformationSource()
         val repository = ArtistInformationRepository(dataSource)
         val result = repository.getArtistInformation()
-        assertEquals(true, result is com.yuuta.common.model.Lce.Error)
+        assertEquals(true, result is Lce.Error)
     }
 }

@@ -14,11 +14,11 @@ open class ArtistInformationRepository
         @ArtistInformationSourceAnnotation
         private val dataSource: ArtistInformationSourceContract,
     ) : ArtistInformationRepositoryContract {
-        override fun getArtistInformation(): com.yuuta.common.model.Lce<com.yuuta.common.model.ArtistInformation> {
+        override fun getArtistInformation(): Lce<ArtistInformation> {
             val fileData = dataSource.getArtistInformation()
-            if (fileData is com.yuuta.common.model.Lce.Error) {
-                return com.yuuta.common.model.Lce.Error(fileData.getError()!!)
+            if (fileData is Lce.Error) {
+                return Lce.Error(fileData.getError()!!)
             }
-            return com.yuuta.common.model.Lce.Content(ZARDJson.decodeFromString<com.yuuta.common.model.ArtistInformation>(fileData.getIfContent()!!))
+            return Lce.Content(ZARDJson.decodeFromString<ArtistInformation>(fileData.getIfContent()!!))
         }
     }
