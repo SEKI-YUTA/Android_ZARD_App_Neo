@@ -4,10 +4,12 @@ import androidx.lifecycle.ViewModel
 import com.yuuta.common.model.ArtistInformation
 import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.repository.ArtistInformationRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import javax.inject.Inject
 
+@HiltViewModel
 class ZARDAppViewModel @Inject constructor(
     artistInformationRepository: ArtistInformationRepository
 ) : ViewModel(){
