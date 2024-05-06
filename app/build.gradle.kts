@@ -86,6 +86,7 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.navigation.compose)
     implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.compose.animation)
     implementation(project(":feature:discList"))
     implementation(project(":feature:trackList"))
     implementation(project(":feature:discDetail"))

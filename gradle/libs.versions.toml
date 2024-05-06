@@ -22,6 +22,7 @@ navigationFragmentKtx = "2.7.7"
 navigationUiKtx = "2.7.7"
 navigationSafeArgs= "2.7.7"
 uiTooling = "1.6.7"
+composeAnimation = "1.7.0-alpha08"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -54,7 +55,7 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 navigation-safe-args = { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "navigationSafeArgs" }
 ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
 material-icon-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
-#androidx.compose.material:material-icons-extended
+compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "composeAnimation" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
