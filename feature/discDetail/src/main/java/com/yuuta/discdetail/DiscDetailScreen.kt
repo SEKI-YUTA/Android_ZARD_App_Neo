@@ -9,11 +9,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
+import com.yuuta.common.model.Disc
 
 @Composable
 internal fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
+    disc: Disc?,
 ) {
     Scaffold {
         Box(modifier = Modifier
