@@ -30,31 +30,29 @@ internal fun DiscListScreen(
 ) {
     val context = LocalContext.current
     val lazyListState = rememberLazyListState()
-    with(sharedTransitionScope) {
-        Scaffold(
-            modifier = modifier,
-            bottomBar = {
-                BottomNavigationBar(
-                    navController = navController,
-                    bottomAppBarItems = bottomAppBarData
-                )
-            }
+    Scaffold(
+        modifier = modifier,
+        bottomBar = {
+            BottomNavigationBar(
+                navController = navController,
+                bottomAppBarItems = bottomAppBarData
+            )
+        }
+    ) {
+        if (discList == null) return@Scaffold
+        LazyColumn(
+            modifier = Modifier.padding(it),
+            state = lazyListState,
+            verticalArrangement = Arrangement.Top
         ) {
-            if (discList == null) return@Scaffold
-            LazyColumn(
-                modifier = Modifier.padding(it),
-                state = lazyListState,
-                verticalArrangement = Arrangement.Top
-            ) {
-                items(discList, key = { it.id }) { disc ->
-                    DiscCard(
-                        context = context,
-                        disc = disc,
-                        animatedVisibilityScope = animatedVisibilityScope,
-                        sharedTransitionScope = sharedTransitionScope,
-                    ) {
-                        navigateToDetail(disc.id.toString())
-                    }
+            items(discList, key = { it.id }) { disc ->
+                DiscCard(
+                    context = context,
+                    disc = disc,
+                    animatedVisibilityScope = animatedVisibilityScope,
+                    sharedTransitionScope = sharedTransitionScope,
+                ) {
+                    navigateToDetail(disc.id.toString())
                 }
             }
         }
