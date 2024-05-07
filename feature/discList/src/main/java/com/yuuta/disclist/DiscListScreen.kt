@@ -1,5 +1,8 @@
 package com.yuuta.disclist
 
+import androidx.compose.animation.AnimatedVisibilityScope
+import androidx.compose.animation.ExperimentalSharedTransitionApi
+import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -15,12 +18,15 @@ import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.DiscCard
 import com.yuuta.ui.bottomAppBarData
 
+@OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 internal fun DiscListScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
+    animatedVisibilityScope: AnimatedVisibilityScope,
+    sharedTransitionScope: SharedTransitionScope,
 ) {
     val context = LocalContext.current
     val lazyListState = rememberLazyListState()
@@ -42,13 +48,13 @@ internal fun DiscListScreen(
             items(discList, key = { it.id }) { disc ->
                 DiscCard(
                     context = context,
-                    disc = disc
+                    disc = disc,
+                    animatedVisibilityScope = animatedVisibilityScope,
+                    sharedTransitionScope = sharedTransitionScope,
                 ) {
                     navigateToDetail(disc.id.toString())
                 }
             }
-
-
         }
     }
 }

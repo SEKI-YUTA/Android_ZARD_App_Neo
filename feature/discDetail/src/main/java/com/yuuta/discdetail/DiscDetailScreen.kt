@@ -1,5 +1,8 @@
 package com.yuuta.discdetail
 
+import androidx.compose.animation.AnimatedVisibilityScope
+import androidx.compose.animation.ExperimentalSharedTransitionApi
+import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,11 +32,14 @@ import com.yuuta.resouce.R
 import com.yuuta.ui.CenterMessage
 import com.yuuta.ui.TrackList
 
+@OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 internal fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
+    animatedVisibilityScope: AnimatedVisibilityScope,
+    sharedTransitionScope: SharedTransitionScope,
     isPreviewMode: Boolean = false,
 ) {
     Scaffold(
@@ -58,10 +64,13 @@ internal fun DiscDetailScreen(
                 .padding(16.dp)
         ) {
             DiscHeader(
+                discId = disc.id,
                 imageId = imageId,
                 name = disc.name,
                 releaseYear = disc.releaseYear,
-                trackCount = disc.trackList.size
+                trackCount = disc.trackList.size,
+                animatedVisibilityScope = animatedVisibilityScope,
+                sharedTransitionScope = sharedTransitionScope,
             )
             DiscContent(
                 disc = disc,
@@ -93,43 +102,64 @@ fun DiscContent(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalSharedTransitionApi::class)
 @Composable
-fun DiscHeader(imageId: Int, name: String, releaseYear: String, trackCount: Int) {
+fun DiscHeader(
+    discId: Int,
+    imageId: Int,
+    name: String,
+    releaseYear: String,
+    trackCount: Int,
+    animatedVisibilityScope: AnimatedVisibilityScope,
+    sharedTransitionScope: SharedTransitionScope,
+) {
     val context = LocalContext.current
-    Row(
-        modifier = Modifier
-            .padding(4.dp)
-            .padding(vertical = 16.dp)
-            .fillMaxWidth(),
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        Image(painter = painterResource(id = imageId),
-            contentDescription = "",
+    with(sharedTransitionScope) {
+        Row(
             modifier = Modifier
-                .width(140.dp)
-                .height(140.dp)
-        )
-        Column(
-            verticalArrangement = Arrangement.Center,
-            modifier = Modifier.padding(8.dp)
+                .padding(4.dp)
+                .padding(vertical = 16.dp)
+                .fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
         ) {
-            PlainTooltipBox(
-                tooltip = {
-                    Text(name)
-                }
+            Image(
+                painter = painterResource(id = imageId),
+                contentDescription = "",
+                modifier = Modifier
+                    .sharedElement(
+                        state = rememberSharedContentState(key = "disc_image/$imageId"),
+                        animatedVisibilityScope = animatedVisibilityScope,
+                    )
+                    .width(140.dp)
+                    .height(140.dp),
+            )
+            Column(
+                verticalArrangement = Arrangement.Center,
+                modifier = Modifier.padding(8.dp)
             ) {
-                Text(
-                    modifier = Modifier.tooltipAnchor(),
-                    text = name,
-                    fontSize = 30.sp,
-                    maxLines = 2,
-                    lineHeight = 36.sp,
-                    overflow = TextOverflow.Ellipsis
-                )
+                PlainTooltipBox(
+                    tooltip = {
+                        Text(name)
+                    }
+                ) {
+                    Text(
+                        modifier = Modifier
+                            .tooltipAnchor()
+                            .sharedElement(
+                                state = rememberSharedContentState(key = "disc_name/$discId"),
+                                animatedVisibilityScope = animatedVisibilityScope,
+
+                                ),
+                        text = name,
+                        fontSize = 30.sp,
+                        maxLines = 2,
+                        lineHeight = 36.sp,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+                Text("${releaseYear}${stringResource(id = R.string.year_unit)}")
+                Text("${trackCount}${stringResource(id = R.string.track_unit)}")
             }
-            Text("${releaseYear}${stringResource(id = R.string.year_unit)}")
-            Text("${trackCount}${stringResource(id = R.string.track_unit)}")
         }
     }
 }

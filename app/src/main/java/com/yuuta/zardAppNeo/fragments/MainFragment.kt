@@ -22,18 +22,16 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainFragment : Fragment() {
     lateinit var composeView: ComposeView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
         // Inflate the layout for this fragment
-        val view = requireActivity().layoutInflater.inflate(R.layout.fragment_main, container, false)
-        val navHostFragment = requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val view =
+            requireActivity().layoutInflater.inflate(R.layout.fragment_main, container, false)
+        val navHostFragment =
+            requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         composeView = view.findViewById(R.id.composeView)
 
