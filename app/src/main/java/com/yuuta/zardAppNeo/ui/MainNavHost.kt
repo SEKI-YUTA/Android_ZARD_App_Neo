@@ -26,7 +26,9 @@ fun MainNavHost(
     val navController = rememberNavController()
     SharedTransitionLayout {
         NavHost(
-            modifier = modifier, navController = navController, startDestination = startDestination
+            modifier = modifier,
+            navController = navController,
+            startDestination = startDestination,
         ) {
             discListScreen(
                 navController = navController,
@@ -43,5 +45,4 @@ fun MainNavHost(
             settingRoute(navController = navController)
         }
     }
-
 }
