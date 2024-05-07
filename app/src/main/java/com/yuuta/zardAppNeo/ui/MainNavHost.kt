@@ -1,5 +1,7 @@
 package com.yuuta.zardAppNeo.ui
 
+import androidx.compose.animation.ExperimentalSharedTransitionApi
+import androidx.compose.animation.SharedTransitionLayout
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
@@ -13,6 +15,7 @@ import com.yuuta.setting.settingRoute
 import com.yuuta.tracklist.trackListRoute
 import com.yuuta.zardAppNeo.ui.viewmodel.ZARDAppViewModel
 
+@OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 fun MainNavHost(
     modifier: Modifier = Modifier,
@@ -21,18 +24,24 @@ fun MainNavHost(
 ) {
     val viewState = zardAppViewModel.viewState.collectAsState().value
     val navController = rememberNavController()
-
-    NavHost(navController = navController, startDestination = startDestination, modifier = modifier) {
-        discListScreen(
-            navController = navController,
-            navigateToDetail = navController::navigateToDiscDetail,
-            discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
-        )
-        discDetailScreen(
-            navController = navController,
-            discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
-        )
-        trackListRoute(navController = navController)
-        settingRoute(navController = navController)
+    SharedTransitionLayout {
+        NavHost(
+            modifier = modifier, navController = navController, startDestination = startDestination
+        ) {
+            discListScreen(
+                navController = navController,
+                navigateToDetail = navController::navigateToDiscDetail,
+                discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
+                sharedTransitionScope = this@SharedTransitionLayout,
+            )
+            discDetailScreen(
+                navController = navController,
+                discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
+                sharedTransitionScope = this@SharedTransitionLayout,
+            )
+            trackListRoute(navController = navController)
+            settingRoute(navController = navController)
+        }
     }
+
 }
