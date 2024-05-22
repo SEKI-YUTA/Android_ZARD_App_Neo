@@ -41,7 +41,10 @@ fun MainNavHost(
                 discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
                 sharedTransitionScope = this@SharedTransitionLayout,
             )
-            trackListRoute(navController = navController)
+            trackListRoute(
+                navController = navController,
+                allTrackList = viewState.artistInformation.getIfContent()?.releasedDiscs?.map { it.trackList }?.flatten()?.toSet()?.toList(),
+            )
             settingRoute(navController = navController)
         }
     }
