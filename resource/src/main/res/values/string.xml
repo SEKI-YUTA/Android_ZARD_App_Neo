@@ -4,4 +4,5 @@
     <string name="year_unit">年</string>
     <string name="recorded_track">収録曲</string>
     <string name="error_message">問題が発生しました。</string>
+    <string name="track_empty_message">トラックが見つかりませんでした。</string>
 </resources>
