@@ -73,6 +73,17 @@ kapt {
     correctErrorTypes = true
 }
 
+configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+//    version.set("0.22.0")
+    debug.set(true)
+    verbose.set(true)
+    android.set(false)
+    outputToConsole.set(true)
+    outputColorName.set("RED")
+    ignoreFailures.set(true)
+    enableExperimentalRules.set(true)
+}
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

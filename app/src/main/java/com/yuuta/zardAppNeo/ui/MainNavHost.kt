@@ -43,7 +43,9 @@ fun MainNavHost(
             )
             trackListRoute(
                 navController = navController,
-                allTrackList = viewState.artistInformation.getIfContent()?.releasedDiscs?.map { it.trackList }?.flatten()?.toSet()?.toList(),
+                allTrackList =
+                    viewState.artistInformation.getIfContent()?.releasedDiscs
+                        ?.map { it.trackList }?.flatten()?.toSet()?.toList(),
             )
             settingRoute(navController = navController)
         }
