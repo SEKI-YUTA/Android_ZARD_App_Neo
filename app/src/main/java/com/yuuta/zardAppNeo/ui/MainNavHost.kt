@@ -47,7 +47,11 @@ fun MainNavHost(
                     viewState.artistInformation.getIfContent()?.releasedDiscs
                         ?.map { it.trackList }?.flatten()?.toSet()?.toList(),
             )
-            settingRoute(navController = navController)
+            settingRoute(
+                navController = navController,
+                appSetting = viewState.appSetting.getIfContent(),
+                updateAppSetting = zardAppViewModel::updateAppSetting,
+            )
         }
     }
 }
