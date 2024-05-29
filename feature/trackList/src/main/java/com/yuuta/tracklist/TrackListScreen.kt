@@ -13,6 +13,7 @@ import com.yuuta.common.model.Track
 import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.CenterMessage
 import com.yuuta.ui.TrackList
+import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
 
 @Composable
@@ -21,7 +22,7 @@ internal fun TrackListScreen(
     navController: NavController,
     allTrackList: List<Track>?,
 ) {
-    Scaffold(
+    ZARDAppScaffold(
         bottomBar = {
             BottomNavigationBar(
                 navController = navController,
