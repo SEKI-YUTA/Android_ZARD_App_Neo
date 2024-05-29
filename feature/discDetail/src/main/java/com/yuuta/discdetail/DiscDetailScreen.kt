@@ -51,7 +51,7 @@ internal fun DiscDetailScreen(
             return@Scaffold
         }
         val withOutExt = disc.imageName.split(".")[0]
-        val imageId = if (isPreviewMode) R.drawable._1991_02_10_1stsingle
+        val imageId = if (isPreviewMode) R.drawable.index1_1991_02_10_1stsingle
         else context.resources.getIdentifier(
             withOutExt,
             "drawable",
