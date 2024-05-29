@@ -16,6 +16,7 @@ import androidx.navigation.NavController
 import com.yuuta.common.model.Disc
 import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.DiscCard
+import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
 
 @OptIn(ExperimentalSharedTransitionApi::class)
@@ -30,7 +31,7 @@ internal fun DiscListScreen(
 ) {
     val context = LocalContext.current
     val lazyListState = rememberLazyListState()
-    Scaffold(
+    ZARDAppScaffold(
         modifier = modifier,
         bottomBar = {
             BottomNavigationBar(
@@ -39,7 +40,7 @@ internal fun DiscListScreen(
             )
         }
     ) {
-        if (discList == null) return@Scaffold
+        if (discList == null) return@ZARDAppScaffold
         LazyColumn(
             modifier = Modifier.padding(it),
             state = lazyListState,

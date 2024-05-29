@@ -13,6 +13,7 @@ import androidx.navigation.NavController
 import com.yuuta.common.model.AppSetting
 import com.yuuta.ui.AppIconSetting
 import com.yuuta.ui.BottomNavigationBar
+import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
 
 @Composable
@@ -23,7 +24,7 @@ internal fun SettingScreen(
     updateAppSetting: (context: Context, appSetting: AppSetting) -> Unit,
 ) {
     val context = LocalContext.current
-    Scaffold(
+    ZARDAppScaffold(
         bottomBar = {
              BottomNavigationBar(
                  navController = navController,
