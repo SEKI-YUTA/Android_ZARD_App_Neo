@@ -31,7 +31,7 @@ fun AppIconSetting(
         Text(
             modifier = Modifier.padding(bottom = 8.dp),
             text = stringResource(R.string.setting_app_icon),
-            style = MaterialTheme.typography.bodyLarge
+            style = MaterialTheme.typography.bodyLarge,
         )
         Row(
             modifier = modifier,
@@ -39,9 +39,10 @@ fun AppIconSetting(
         ) {
             Image(
                 modifier = Modifier.padding(8.dp).size(60.dp).shadow(8.dp),
-                painter = painterResource(
-                    if(isLightIcon) R.drawable.app_logo_light else R.drawable.app_logo_dark
-                ),
+                painter =
+                    painterResource(
+                        if (isLightIcon) R.drawable.app_logo_light else R.drawable.app_logo_dark,
+                    ),
                 contentDescription = "",
             )
             Row(
@@ -54,7 +55,7 @@ fun AppIconSetting(
                     text = if (isLightIcon) "Light" else "Dark",
                 )
                 Switch(checked = isLightIcon, onCheckedChange = {
-                    println("onCheckedChange: ${if(it) "Light" else "Dark"}")
+                    println("onCheckedChange: ${if (it) "Light" else "Dark"}")
                     onUpdateIcon(if (it) AppIconMode.LIGHT_ICON else AppIconMode.DARK_ICON)
                 })
             }

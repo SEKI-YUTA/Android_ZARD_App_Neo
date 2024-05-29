@@ -9,8 +9,9 @@ data class AppSetting(
     val appIconMode: AppIconMode,
 ) {
     companion object {
-        val DEFAULT = AppSetting(
-            appIconMode = AppIconMode.LIGHT_ICON,
-        )
+        val DEFAULT =
+            AppSetting(
+                appIconMode = AppIconMode.LIGHT_ICON,
+            )
     }
 }

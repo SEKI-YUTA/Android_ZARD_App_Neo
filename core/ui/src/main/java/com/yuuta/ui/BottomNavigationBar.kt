@@ -24,23 +24,22 @@ fun BottomNavigationBar(
 ) {
     val selectedRoute = navController.currentDestination?.hierarchy?.first()?.route
     BottomAppBar {
-
         bottomAppBarItems.forEach { item ->
             NavigationBarItem(
                 selected = item.route == selectedRoute,
                 onClick = {
-                      when(item.route) {
-                          DISC_LIST_ROUTE -> navController.navigateToDiscList()
-                          TRACK_LIST_ROUTE -> navController.navigateToTrackList()
-                          SETTING_ROUTE -> navController.navigateToSetting()
-                      }
+                    when (item.route) {
+                        DISC_LIST_ROUTE -> navController.navigateToDiscList()
+                        TRACK_LIST_ROUTE -> navController.navigateToTrackList()
+                        SETTING_ROUTE -> navController.navigateToSetting()
+                    }
                 },
                 icon = {
                     Icon(imageVector = item.icon, contentDescription = "")
                 },
                 label = {
                     Text(item.text)
-                }
+                },
             )
         }
     }

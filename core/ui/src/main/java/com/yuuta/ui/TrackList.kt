@@ -11,7 +11,7 @@ fun TrackList(
     trackList: List<Track>?,
     haveHeadingNumber: Boolean,
     itemTapAction: (Track) -> Unit,
-    headItem: @Composable () -> Unit = {}
+    headItem: @Composable () -> Unit = {},
 ) {
     if (trackList == null) return
     LazyColumn {
@@ -20,11 +20,12 @@ fun TrackList(
         }
         itemsIndexed(
             trackList,
-            key = { idx, track -> "${idx}:${track.trackName}" }) { index, track ->
+            key = { idx, track -> "$idx:${track.trackName}" },
+        ) { index, track ->
             TrackCard(
                 trackNumber = if (haveHeadingNumber) index + 1 else null,
                 track = track,
-                tapCallback = itemTapAction
+                tapCallback = itemTapAction,
             )
         }
     }
@@ -33,18 +34,19 @@ fun TrackList(
 @Preview(showBackground = true)
 @Composable
 fun TrackListPreview() {
-    val trackList = listOf(
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993")
-    )
+    val trackList =
+        listOf(
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+        )
     TrackList(
         trackList = trackList,
         haveHeadingNumber = true,
         itemTapAction = {},
-        headItem = {}
+        headItem = {},
     )
 }

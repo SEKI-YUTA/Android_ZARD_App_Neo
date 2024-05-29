@@ -11,19 +11,22 @@ import kotlinx.coroutines.flow.map
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
-class AppSettingRepository: AppSettingRepositoryContract {
+class AppSettingRepository : AppSettingRepositoryContract {
     override suspend fun readAppSetting(context: Context): Flow<AppSetting> {
         return context.datastore.data.map {
             val appSettingStr = it[PreferenceKeys.APP_SETTING]
-            if(appSettingStr != null) {
-               Json.decodeFromString<AppSetting>(appSettingStr)
+            if (appSettingStr != null) {
+                Json.decodeFromString<AppSetting>(appSettingStr)
             } else {
                 AppSetting.DEFAULT
             }
         }
     }
 
-    override suspend fun writeAppSetting(context: Context, appSetting: AppSetting) {
+    override suspend fun writeAppSetting(
+        context: Context,
+        appSetting: AppSetting,
+    ) {
         context.datastore.edit {
             it[PreferenceKeys.APP_SETTING] = Json.encodeToString(appSetting)
         }

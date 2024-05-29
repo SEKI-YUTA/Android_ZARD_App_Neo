@@ -19,33 +19,36 @@ import com.yuuta.common.model.Track
 fun TrackCard(
     track: Track,
     trackNumber: Int?,
-    tapCallback: (Track) -> Unit
+    tapCallback: (Track) -> Unit,
 ) {
-    Row(horizontalArrangement = Arrangement.SpaceBetween,
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(8.dp)
-            .clickable {
-            }
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier =
+            Modifier
+                .fillMaxWidth()
+                .padding(8.dp)
+                .clickable {
+                },
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
         ) {
             if (trackNumber != null) {
                 Text("$trackNumber.", modifier = Modifier.padding(8.dp))
             }
             Text(
                 text = track.trackName,
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(8.dp),
+                modifier =
+                    Modifier
+                        .weight(1f)
+                        .padding(8.dp),
                 maxLines = 1,
-                overflow = TextOverflow.Ellipsis
+                overflow = TextOverflow.Ellipsis,
             )
             Text(
                 text = "${track.year}${stringResource(id = com.yuuta.resouce.R.string.year_unit)}",
-                modifier = Modifier.padding(end = 8.dp)
+                modifier = Modifier.padding(end = 8.dp),
             )
         }
     }
