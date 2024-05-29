@@ -64,7 +64,7 @@ fun DiscCard(
                 content = {
                     val withOutExt = disc.imageName.split(".")[0]
                     val imageId =
-                        if (previewMode) R.drawable._1991_02_10_1stsingle
+                        if (previewMode) R.drawable.index1_1991_02_10_1stsingle
                         else context.resources.getIdentifier(
                             withOutExt,
                             "drawable",
