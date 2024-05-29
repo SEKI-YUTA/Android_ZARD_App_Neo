@@ -32,7 +32,7 @@ class ZARDAppViewModel
         private lateinit var packageName: String
         private lateinit var lightIcon: ComponentName
         private lateinit var darkIcon: ComponentName
-        val _viewState = MutableStateFlow(ZARDAppViewState.INITIAL_VALUE)
+        private val _viewState = MutableStateFlow(ZARDAppViewState.INITIAL_VALUE)
         val viewState = _viewState.asStateFlow()
 
         init {
