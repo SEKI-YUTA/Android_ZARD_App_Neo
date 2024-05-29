@@ -31,7 +31,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.yuuta.resouce.R
 
-
 val seed = Color(0xFF57C3E0)
 val ZARD_BLUE = Color(0xFF57C3E0)
 val light_ZARD_BLUE = Color(0xFF00687C)
@@ -42,55 +41,60 @@ val light_ZARD_BLUEContainer = Color(0xFFB0ECFF)
 fun DrawerContent() {
     val context = LocalContext.current
     MaterialTheme(
-        colorScheme = MaterialTheme.colorScheme.copy(
-            onSurface = if (isSystemInDarkTheme()) Color(0xFFFEFEFE) else ZARD_BLUE
-        )
+        colorScheme =
+            MaterialTheme.colorScheme.copy(
+                onSurface = if (isSystemInDarkTheme()) Color(0xFFFEFEFE) else ZARD_BLUE,
+            ),
     ) {
         Column(
-            modifier = Modifier
-                .background(MaterialTheme.colorScheme.surface)
-                .width(260.dp)
-                .fillMaxHeight(),
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier =
+                Modifier
+                    .background(MaterialTheme.colorScheme.surface)
+                    .width(260.dp)
+                    .fillMaxHeight(),
+            horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Spacer(
-                modifier = Modifier.height(16.dp)
+                modifier = Modifier.height(16.dp),
             )
             Image(
                 painter = painterResource(id = R.drawable.zard_logo),
                 contentDescription = "ZARD Logo",
                 contentScale = ContentScale.Inside,
-                modifier = Modifier
-                    .width(100.dp)
-                    .height(100.dp)
+                modifier =
+                    Modifier
+                        .width(100.dp)
+                        .height(100.dp),
             )
             Spacer(
-                modifier = Modifier.height(16.dp)
+                modifier = Modifier.height(16.dp),
             )
             Row(
-                modifier = Modifier
-                    .padding(8.dp)
-                    .fillMaxWidth()
-                    .clip(
-                        RoundedCornerShape(8.dp)
-                    )
-                    .background(MaterialTheme.colorScheme.surfaceVariant)
-                    .clickable {
-                        Intent(Intent.ACTION_VIEW)
-                            .apply {
-                                data = Uri.parse("https://wezard.net/")
-                                context.startActivity(this)
-                            }
-                    }
+                modifier =
+                    Modifier
+                        .padding(8.dp)
+                        .fillMaxWidth()
+                        .clip(
+                            RoundedCornerShape(8.dp),
+                        )
+                        .background(MaterialTheme.colorScheme.surfaceVariant)
+                        .clickable {
+                            Intent(Intent.ACTION_VIEW)
+                                .apply {
+                                    data = Uri.parse("https://wezard.net/")
+                                    context.startActivity(this)
+                                }
+                        },
             ) {
                 Text(
                     "ZARD Official Site",
                     modifier = Modifier.padding(8.dp),
-                    style = TextStyle(
-                        fontWeight = FontWeight.SemiBold,
-                        fontSize = 24.sp,
-                        color = MaterialTheme.colorScheme.onSurface
-                    )
+                    style =
+                        TextStyle(
+                            fontWeight = FontWeight.SemiBold,
+                            fontSize = 24.sp,
+                            color = MaterialTheme.colorScheme.onSurface,
+                        ),
                 )
             }
         }

@@ -3,7 +3,6 @@ package com.yuuta.tracklist
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -28,24 +27,25 @@ internal fun TrackListScreen(
                 navController = navController,
                 bottomAppBarItems = bottomAppBarData,
             )
-        }
+        },
     ) {
         val context = LocalContext.current
         if (allTrackList.isNullOrEmpty()) {
             CenterMessage(context.getString(com.yuuta.resouce.R.string.track_empty_message))
         }
         Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(it)
-                .padding(4.dp),
+            modifier =
+                Modifier
+                    .fillMaxSize()
+                    .padding(it)
+                    .padding(4.dp),
         ) {
             TrackList(
                 trackList = allTrackList,
                 haveHeadingNumber = false,
                 itemTapAction = { track ->
                     // ここで曲をタップされた時のアクションを書く
-                }
+                },
             )
         }
     }

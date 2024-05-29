@@ -35,7 +35,7 @@ fun ZARDAppScaffold(
     containerColor: Color = MaterialTheme.colorScheme.background,
     contentColor: Color = contentColorFor(containerColor),
     contentWindowInsets: WindowInsets = ScaffoldDefaults.contentWindowInsets,
-    content: @Composable (PaddingValues) -> Unit
+    content: @Composable (PaddingValues) -> Unit,
 ) {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val coroutineScope = rememberCoroutineScope()
@@ -43,10 +43,10 @@ fun ZARDAppScaffold(
     ModalNavigationDrawer(
         drawerState = drawerState,
         drawerContent = {
-          DrawerContent()
-        }
+            DrawerContent()
+        },
     ) {
-        Scaffold (
+        Scaffold(
             modifier = modifier,
             topBar = {
                 Surface(shadowElevation = 4.dp) {
@@ -60,7 +60,7 @@ fun ZARDAppScaffold(
                             }) {
                                 Icon(
                                     Icons.Default.Menu,
-                                    contentDescription = "Menu"
+                                    contentDescription = "Menu",
                                 )
                             }
                         },
@@ -75,7 +75,7 @@ fun ZARDAppScaffold(
             contentColor = contentColor,
             contentWindowInsets = contentWindowInsets,
         ) {
-           content(it)
+            content(it)
         }
     }
 }

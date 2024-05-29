@@ -5,7 +5,8 @@ plugins {
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt.android)
     alias(libs.plugins.kotlinx.serialization)
-    alias(libs.plugins.ktlint)
+//    alias(libs.plugins.ktlint)
+    id("com.yuuta.zardapp.buildlogic.ktlintSetupPlugin")
     id("androidx.navigation.safeargs.kotlin")
 }
 
@@ -73,16 +74,16 @@ kapt {
     correctErrorTypes = true
 }
 
-configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
-//    version.set("0.22.0")
-    debug.set(true)
-    verbose.set(true)
-    android.set(false)
-    outputToConsole.set(true)
-    outputColorName.set("RED")
-    ignoreFailures.set(true)
-    enableExperimentalRules.set(true)
-}
+// configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+// //    version.set("0.22.0")
+//    debug.set(true)
+//    verbose.set(true)
+//    android.set(false)
+//    outputToConsole.set(true)
+//    outputColorName.set("RED")
+//    ignoreFailures.set(true)
+//    enableExperimentalRules.set(true)
+// }
 
 dependencies {
     implementation(libs.androidx.core.ktx)

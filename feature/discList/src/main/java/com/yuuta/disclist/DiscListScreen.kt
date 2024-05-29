@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -36,15 +35,15 @@ internal fun DiscListScreen(
         bottomBar = {
             BottomNavigationBar(
                 navController = navController,
-                bottomAppBarItems = bottomAppBarData
+                bottomAppBarItems = bottomAppBarData,
             )
-        }
+        },
     ) {
         if (discList == null) return@ZARDAppScaffold
         LazyColumn(
             modifier = Modifier.padding(it),
             state = lazyListState,
-            verticalArrangement = Arrangement.Top
+            verticalArrangement = Arrangement.Top,
         ) {
             items(discList, key = { it.id }) { disc ->
                 DiscCard(

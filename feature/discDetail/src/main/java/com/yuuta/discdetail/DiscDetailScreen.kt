@@ -51,17 +51,22 @@ internal fun DiscDetailScreen(
             return@Scaffold
         }
         val withOutExt = disc.imageName.split(".")[0]
-        val imageId = if (isPreviewMode) R.drawable.index1_1991_02_10_1stsingle
-        else context.resources.getIdentifier(
-            withOutExt,
-            "drawable",
-            context.packageName
-        )
+        val imageId =
+            if (isPreviewMode) {
+                R.drawable.index1_1991_02_10_1stsingle
+            } else {
+                context.resources.getIdentifier(
+                    withOutExt,
+                    "drawable",
+                    context.packageName,
+                )
+            }
         Column(
-            modifier = Modifier
-                .padding(it)
-                .fillMaxSize()
-                .padding(16.dp)
+            modifier =
+                Modifier
+                    .padding(it)
+                    .fillMaxSize()
+                    .padding(16.dp),
         ) {
             DiscHeader(
                 discId = disc.id,
@@ -74,7 +79,7 @@ internal fun DiscDetailScreen(
             )
             DiscContent(
                 disc = disc,
-                showBottomSheet = {}
+                showBottomSheet = {},
             )
         }
     }
@@ -83,22 +88,24 @@ internal fun DiscDetailScreen(
 @Composable
 fun DiscContent(
     disc: Disc,
-    showBottomSheet: (Track) -> Unit = {}
+    showBottomSheet: (Track) -> Unit = {},
 ) {
     Column {
         TrackList(
-            trackList = disc.trackList, haveHeadingNumber = true,
+            trackList = disc.trackList,
+            haveHeadingNumber = true,
             headItem =
-            {
-                Text(
-                    text = stringResource(id = R.string.recorded_track),
-                    modifier = Modifier.padding(8.dp),
-                    fontSize = 24.sp
-                )
-            },
+                {
+                    Text(
+                        text = stringResource(id = R.string.recorded_track),
+                        modifier = Modifier.padding(8.dp),
+                        fontSize = 24.sp,
+                    )
+                },
             itemTapAction = { track ->
                 showBottomSheet(track)
-            })
+            },
+        )
     }
 }
 
@@ -116,45 +123,47 @@ fun DiscHeader(
     val context = LocalContext.current
     with(sharedTransitionScope) {
         Row(
-            modifier = Modifier
-                .padding(4.dp)
-                .padding(vertical = 16.dp)
-                .fillMaxWidth(),
+            modifier =
+                Modifier
+                    .padding(4.dp)
+                    .padding(vertical = 16.dp)
+                    .fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Image(
                 painter = painterResource(id = imageId),
                 contentDescription = "",
-                modifier = Modifier
-                    .sharedElement(
-                        state = rememberSharedContentState(key = "disc_image/$imageId"),
-                        animatedVisibilityScope = animatedVisibilityScope,
-                    )
-                    .width(140.dp)
-                    .height(140.dp),
+                modifier =
+                    Modifier
+                        .sharedElement(
+                            state = rememberSharedContentState(key = "disc_image/$imageId"),
+                            animatedVisibilityScope = animatedVisibilityScope,
+                        )
+                        .width(140.dp)
+                        .height(140.dp),
             )
             Column(
                 verticalArrangement = Arrangement.Center,
-                modifier = Modifier.padding(8.dp)
+                modifier = Modifier.padding(8.dp),
             ) {
                 PlainTooltipBox(
                     tooltip = {
                         Text(name)
-                    }
+                    },
                 ) {
                     Text(
-                        modifier = Modifier
-                            .tooltipAnchor()
-                            .sharedElement(
-                                state = rememberSharedContentState(key = "disc_name/$discId"),
-                                animatedVisibilityScope = animatedVisibilityScope,
-
+                        modifier =
+                            Modifier
+                                .tooltipAnchor()
+                                .sharedElement(
+                                    state = rememberSharedContentState(key = "disc_name/$discId"),
+                                    animatedVisibilityScope = animatedVisibilityScope,
                                 ),
                         text = name,
                         fontSize = 30.sp,
                         maxLines = 2,
                         lineHeight = 36.sp,
-                        overflow = TextOverflow.Ellipsis
+                        overflow = TextOverflow.Ellipsis,
                     )
                 }
                 Text("${releaseYear}${stringResource(id = R.string.year_unit)}")
