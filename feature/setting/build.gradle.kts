@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.yuuta.zardapp.buildlogic.ktlintSetupPlugin")
 }
 
 android {
