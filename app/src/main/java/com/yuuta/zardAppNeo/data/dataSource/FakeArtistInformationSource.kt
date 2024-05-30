@@ -5,12 +5,12 @@ import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
 import javax.inject.Inject
 
 class FakeArtistInformationSource
-@Inject
-constructor() :
+    @Inject
+    constructor() :
     ArtistInformationSourceContract {
-    override fun getArtistInformation(): Lce<String> {
-        return Lce.Content(
-            """
+        override fun getArtistInformation(): Lce<String> {
+            return Lce.Content(
+                """
               {
                     "releasedDiscs": [
                         {
@@ -133,6 +133,6 @@ constructor() :
                 }
  
             """,
-        )
+            )
+        }
     }
-}
