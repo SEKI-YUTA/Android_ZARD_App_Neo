@@ -2,6 +2,7 @@ package com.yuuta.discdetail
 
 import android.content.Intent
 import android.net.Uri
+import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -93,20 +94,23 @@ internal fun DiscDetailScreen(
                 showBottomSheet = {},
             )
             Row(
+                modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.End,
-                modifier =
-                    Modifier
-                        .fillMaxWidth()
-                        .padding(8.dp)
-                        .clickable {
-                            Intent(Intent.ACTION_VIEW).apply {
-                                data = Uri.parse(disc.officialPageURL)
-                                context.startActivity(this)
-                            }
-                        },
             ) {
                 Text(
+                    modifier = Modifier
+                        .clickable {
+                            Intent(Intent.ACTION_VIEW).let {
+                                it.data = Uri.parse(disc.officialPageURL)
+                                if(it.resolveActivity(context.packageManager) != null) {
+                                    context.startActivity(it)
+                                } else {
+                                    Toast.makeText(context, "ブラウザが見つかりませんでした。", Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                        }
+                        .padding(8.dp),
                     text = "WEZARDで見る",
                     fontSize = 16.sp,
                     style =
