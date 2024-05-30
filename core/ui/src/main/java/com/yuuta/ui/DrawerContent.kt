@@ -79,11 +79,12 @@ fun DrawerContent() {
                         )
                         .background(MaterialTheme.colorScheme.surfaceVariant)
                         .clickable {
-                            Intent(Intent.ACTION_VIEW)
-                                .apply {
-                                    data = Uri.parse("https://wezard.net/")
-                                    context.startActivity(this)
+                            Intent(Intent.ACTION_VIEW).let {
+                                it.data = Uri.parse("https://wezard.net/")
+                                if (it.resolveActivity(context.packageManager) != null) {
+                                    context.startActivity(it)
                                 }
+                            }
                         },
             ) {
                 Text(
