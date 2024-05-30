@@ -1,9 +1,12 @@
 package com.yuuta.discdetail
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -19,9 +22,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -63,10 +68,10 @@ internal fun DiscDetailScreen(
             }
         Column(
             modifier =
-                Modifier
-                    .padding(it)
-                    .fillMaxSize()
-                    .padding(16.dp),
+            Modifier
+                .padding(it)
+                .fillMaxSize()
+                .padding(16.dp),
         ) {
             DiscHeader(
                 discId = disc.id,
@@ -78,30 +83,48 @@ internal fun DiscDetailScreen(
                 sharedTransitionScope = sharedTransitionScope,
             )
             DiscContent(
+                modifier = Modifier.weight(1f),
                 disc = disc,
                 showBottomSheet = {},
             )
+            Row(horizontalArrangement = Arrangement.End, modifier = Modifier.fillMaxWidth()) {
+                Text(
+                    text = "WEZARDで見る",
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clickable {
+                            Intent(Intent.ACTION_VIEW).apply {
+                                data = Uri.parse(disc.officialPageURL)
+                                context.startActivity(this)
+                            }
+                        },
+                    fontSize = 16.sp,
+                    style = TextStyle(color = Color.Blue.copy(alpha = 0.6f)),
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
         }
     }
 }
 
 @Composable
 fun DiscContent(
+    modifier: Modifier = Modifier,
     disc: Disc,
     showBottomSheet: (Track) -> Unit = {},
 ) {
-    Column {
+    Column(modifier = modifier) {
         TrackList(
             trackList = disc.trackList,
             haveHeadingNumber = true,
             headItem =
-                {
-                    Text(
-                        text = stringResource(id = R.string.recorded_track),
-                        modifier = Modifier.padding(8.dp),
-                        fontSize = 24.sp,
-                    )
-                },
+            {
+                Text(
+                    text = stringResource(id = R.string.recorded_track),
+                    modifier = Modifier.padding(8.dp),
+                    fontSize = 24.sp,
+                )
+            },
             itemTapAction = { track ->
                 showBottomSheet(track)
             },
@@ -124,23 +147,23 @@ fun DiscHeader(
     with(sharedTransitionScope) {
         Row(
             modifier =
-                Modifier
-                    .padding(4.dp)
-                    .padding(vertical = 16.dp)
-                    .fillMaxWidth(),
+            Modifier
+                .padding(4.dp)
+                .padding(vertical = 16.dp)
+                .fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Image(
                 painter = painterResource(id = imageId),
                 contentDescription = "",
                 modifier =
-                    Modifier
-                        .sharedElement(
-                            state = rememberSharedContentState(key = "disc_image/$imageId"),
-                            animatedVisibilityScope = animatedVisibilityScope,
-                        )
-                        .width(140.dp)
-                        .height(140.dp),
+                Modifier
+                    .sharedElement(
+                        state = rememberSharedContentState(key = "disc_image/$imageId"),
+                        animatedVisibilityScope = animatedVisibilityScope,
+                    )
+                    .width(140.dp)
+                    .height(140.dp),
             )
             Column(
                 verticalArrangement = Arrangement.Center,
@@ -153,12 +176,12 @@ fun DiscHeader(
                 ) {
                     Text(
                         modifier =
-                            Modifier
-                                .tooltipAnchor()
-                                .sharedElement(
-                                    state = rememberSharedContentState(key = "disc_name/$discId"),
-                                    animatedVisibilityScope = animatedVisibilityScope,
-                                ),
+                        Modifier
+                            .tooltipAnchor()
+                            .sharedElement(
+                                state = rememberSharedContentState(key = "disc_name/$discId"),
+                                animatedVisibilityScope = animatedVisibilityScope,
+                            ),
                         text = name,
                         fontSize = 30.sp,
                         maxLines = 2,
