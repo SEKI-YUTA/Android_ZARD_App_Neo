@@ -99,18 +99,19 @@ internal fun DiscDetailScreen(
                 horizontalArrangement = Arrangement.End,
             ) {
                 Text(
-                    modifier = Modifier
-                        .clickable {
-                            Intent(Intent.ACTION_VIEW).let {
-                                it.data = Uri.parse(disc.officialPageURL)
-                                if(it.resolveActivity(context.packageManager) != null) {
-                                    context.startActivity(it)
-                                } else {
-                                    Toast.makeText(context, "ブラウザが見つかりませんでした。", Toast.LENGTH_SHORT).show()
+                    modifier =
+                        Modifier
+                            .clickable {
+                                Intent(Intent.ACTION_VIEW).let {
+                                    it.data = Uri.parse(disc.officialPageURL)
+                                    if (it.resolveActivity(context.packageManager) != null) {
+                                        context.startActivity(it)
+                                    } else {
+                                        Toast.makeText(context, "ブラウザが見つかりませんでした。", Toast.LENGTH_SHORT).show()
+                                    }
                                 }
                             }
-                        }
-                        .padding(8.dp),
+                            .padding(8.dp),
                     text = "WEZARDで見る",
                     fontSize = 16.sp,
                     style =
