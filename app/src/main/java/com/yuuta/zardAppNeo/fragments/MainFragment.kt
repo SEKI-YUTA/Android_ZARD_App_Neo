@@ -14,7 +14,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.fragment.NavHostFragment
 import com.yuuta.zardAppNeo.R
 import com.yuuta.zardAppNeo.ui.MainNavHost
-import com.yuuta.zardAppNeo.ui.theme.ZARDAppNeoTheme
+import com.yuuta.zardAppNeo.ui.theme.ZARD_AppNeoTheme
 import com.yuuta.zardAppNeo.ui.viewmodel.ZARDAppViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,7 +37,7 @@ class MainFragment : Fragment() {
 
         composeView.setContent {
             val zardAppViewModel: ZARDAppViewModel = viewModel()
-            ZARDAppNeoTheme {
+            ZARD_AppNeoTheme{
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
