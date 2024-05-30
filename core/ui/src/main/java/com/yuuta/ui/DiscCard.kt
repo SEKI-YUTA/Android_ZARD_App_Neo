@@ -147,6 +147,7 @@ fun DiscCardPreview() {
             releaseMonth = "2",
             releaseDate = "10",
             is8cm = true,
+            officialPageURL = "",
         )
 // animateedVisibitlityScopeの渡し方がわからないので一旦コメントアウト
 //    DiscCard(

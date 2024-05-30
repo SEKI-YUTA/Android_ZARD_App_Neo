@@ -1,9 +1,13 @@
 package com.yuuta.discdetail
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -12,16 +16,22 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.ArrowForward
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.PlainTooltipBox
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -78,19 +88,55 @@ internal fun DiscDetailScreen(
                 sharedTransitionScope = sharedTransitionScope,
             )
             DiscContent(
+                modifier = Modifier.weight(1f),
                 disc = disc,
                 showBottomSheet = {},
             )
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.End,
+                modifier =
+                    Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp)
+                        .clickable {
+                            Intent(Intent.ACTION_VIEW).apply {
+                                data = Uri.parse(disc.officialPageURL)
+                                context.startActivity(this)
+                            }
+                        },
+            ) {
+                Text(
+                    text = "WEZARDで見る",
+                    fontSize = 16.sp,
+                    style =
+                        TextStyle(
+                            color =
+                                if (isSystemInDarkTheme()) {
+                                    Color.White
+                                } else {
+                                    Color.Blue.copy(alpha = 0.6f)
+                                },
+                            textDecoration = TextDecoration.Underline,
+                        ),
+                    overflow = TextOverflow.Ellipsis,
+                )
+                Icon(
+                    Icons.Rounded.ArrowForward,
+                    contentDescription = "",
+                )
+            }
         }
     }
 }
 
 @Composable
 fun DiscContent(
+    modifier: Modifier = Modifier,
     disc: Disc,
     showBottomSheet: (Track) -> Unit = {},
 ) {
-    Column {
+    Column(modifier = modifier) {
         TrackList(
             trackList = disc.trackList,
             haveHeadingNumber = true,

@@ -16,4 +16,5 @@ data class Disc(
     @SerialName("image")
     val imageName: String,
     val trackList: List<Track>,
+    val officialPageURL: String,
 )
