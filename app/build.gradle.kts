@@ -112,6 +112,7 @@ dependencies {
     implementation(project(":core:ui"))
     implementation(project(":common"))
     implementation(project(":navigation"))
+    implementation(project(":resource"))
     kapt(libs.hilt.compiler)
     testImplementation(libs.junit)
     testImplementation(libs.robolectric)

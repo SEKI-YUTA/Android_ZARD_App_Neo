@@ -1,4 +1,4 @@
-package com.yuuta.zardAppNeo.ui.theme
+package com.yuuta.resource.theme
 
 import androidx.compose.ui.graphics.Color
 

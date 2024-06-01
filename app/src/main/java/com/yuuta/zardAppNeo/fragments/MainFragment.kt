@@ -12,9 +12,9 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.fragment.NavHostFragment
+import com.yuuta.resource.theme.ZARD_AppNeoTheme
 import com.yuuta.zardAppNeo.R
 import com.yuuta.zardAppNeo.ui.MainNavHost
-import com.yuuta.zardAppNeo.ui.theme.ZARD_AppNeoTheme
 import com.yuuta.zardAppNeo.ui.viewmodel.ZARDAppViewModel
 import dagger.hilt.android.AndroidEntryPoint
 

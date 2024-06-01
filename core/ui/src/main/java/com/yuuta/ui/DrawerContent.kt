@@ -30,12 +30,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.yuuta.resouce.R
-
-val seed = Color(0xFF57C3E0)
-val ZARD_BLUE = Color(0xFF57C3E0)
-val light_ZARD_BLUE = Color(0xFF00687C)
-val light_onZARD_BLUE = Color(0xFFFFFFFF)
-val light_ZARD_BLUEContainer = Color(0xFFB0ECFF)
+import com.yuuta.resource.theme.ZARD_BLUE
 
 @Composable
 fun DrawerContent() {
