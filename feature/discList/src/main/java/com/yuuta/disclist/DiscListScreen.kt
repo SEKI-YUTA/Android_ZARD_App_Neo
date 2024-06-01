@@ -20,6 +20,7 @@ import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.DiscCard
 import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
@@ -168,14 +169,14 @@ fun DiscListScreenPreview() {
                 officialPageURL = "",
             ),
         )
-//    PreviewItemWrapper {
-    DiscListScreen(
-        navController = rememberNavController(),
-        isPreviewMode = true,
-        navigateToDetail = {},
-        discList = discList,
-        animatedVisibilityScope = null,
-        sharedTransitionScope = null,
-    )
-//    }
+    PreviewItemWrapper {
+        DiscListScreen(
+            navController = rememberNavController(),
+            isPreviewMode = true,
+            navigateToDetail = {},
+            discList = discList,
+            animatedVisibilityScope = null,
+            sharedTransitionScope = null,
+        )
+    }
 }
