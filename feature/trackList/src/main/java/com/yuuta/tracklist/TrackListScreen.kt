@@ -57,18 +57,19 @@ internal fun TrackListScreen(
 @ZARDAppNeoPreviewAnnotation
 @Composable
 fun TrackListScreenPreview() {
-    val trackList = listOf(
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-    )
+    val trackList =
+        listOf(
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+        )
     PreviewItemWrapper {
         TrackListScreen(
             navController = rememberNavController(),
-            allTrackList = trackList
+            allTrackList = trackList,
         )
     }
 }

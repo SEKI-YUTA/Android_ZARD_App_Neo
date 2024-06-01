@@ -23,13 +23,13 @@ fun DiscContent(
             trackList = disc.trackList,
             haveHeadingNumber = true,
             headItem =
-            {
-                Text(
-                    text = stringResource(id = R.string.recorded_track),
-                    modifier = Modifier.padding(8.dp),
-                    fontSize = 24.sp,
-                )
-            },
+                {
+                    Text(
+                        text = stringResource(id = R.string.recorded_track),
+                        modifier = Modifier.padding(8.dp),
+                        fontSize = 24.sp,
+                    )
+                },
             itemTapAction = { track ->
                 showBottomSheet(track)
             },

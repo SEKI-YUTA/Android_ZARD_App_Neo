@@ -20,7 +20,6 @@ import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.DiscCard
 import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
-import com.yuuta.ui.preview.PreviewItemWrapper
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
@@ -33,7 +32,7 @@ internal fun DiscListScreen(
     animatedVisibilityScope: AnimatedVisibilityScope?,
     sharedTransitionScope: SharedTransitionScope?,
 ) {
-    if(isPreviewMode) {
+    if (isPreviewMode) {
         DiscListScreen(
             modifier = modifier,
             navController = navController,
@@ -51,7 +50,6 @@ internal fun DiscListScreen(
         )
     }
 }
-
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
@@ -138,45 +136,46 @@ internal fun DiscListScreen(
 @ZARDAppNeoPreviewAnnotation
 @Composable
 fun DiscListScreenPreview() {
-    val discList = listOf(
-        Disc(
-            id = 1,
-            name = "Goodby My Loneliness",
-            releaseYear = "1991",
-            releaseMonth = "02",
-            releaseDate = "10",
-            indexStr = "1st Single",
-            is8cm = true,
-            imageName = "index1_1991_02_10_1stsingle",
-            discType = "Single",
-            trackList = listOf(
-                Track(
-                   trackName = "Goodbye My Loneliness",
-                    lyrics = "坂井泉水",
-                    composition = "織田哲郎",
-                    arrangement = "葉山たけし",
-                    year = "1991",
-                ),
-                Track(
-                    trackName = "Goodbye My Loneliness",
-                    lyrics = "坂井泉水",
-                    composition = "織田哲郎",
-                    arrangement = "葉山たけし",
-                    year = "1991",
-                ),
+    val discList =
+        listOf(
+            Disc(
+                id = 1,
+                name = "Goodby My Loneliness",
+                releaseYear = "1991",
+                releaseMonth = "02",
+                releaseDate = "10",
+                indexStr = "1st Single",
+                is8cm = true,
+                imageName = "index1_1991_02_10_1stsingle",
+                discType = "Single",
+                trackList =
+                    listOf(
+                        Track(
+                            trackName = "Goodbye My Loneliness",
+                            lyrics = "坂井泉水",
+                            composition = "織田哲郎",
+                            arrangement = "葉山たけし",
+                            year = "1991",
+                        ),
+                        Track(
+                            trackName = "Goodbye My Loneliness",
+                            lyrics = "坂井泉水",
+                            composition = "織田哲郎",
+                            arrangement = "葉山たけし",
+                            year = "1991",
+                        ),
+                    ),
+                officialPageURL = "",
             ),
-            officialPageURL = ""
         )
-    )
 //    PreviewItemWrapper {
-        DiscListScreen(
-            navController = rememberNavController(),
-            isPreviewMode = true,
-            navigateToDetail = {},
-            discList = discList,
-            animatedVisibilityScope = null,
-            sharedTransitionScope = null,
-        )
+    DiscListScreen(
+        navController = rememberNavController(),
+        isPreviewMode = true,
+        navigateToDetail = {},
+        discList = discList,
+        animatedVisibilityScope = null,
+        sharedTransitionScope = null,
+    )
 //    }
 }
-

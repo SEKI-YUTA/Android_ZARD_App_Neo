@@ -51,7 +51,6 @@ internal fun SettingScreen(
     }
 }
 
-
 @ZARDAppNeoPreviewAnnotation
 @Composable
 fun SettingScreenPreview() {

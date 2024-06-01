@@ -93,10 +93,10 @@ internal fun DiscDetailScreen(
             )
         Column(
             modifier =
-            Modifier
-                .padding(it)
-                .fillMaxSize()
-                .padding(16.dp),
+                Modifier
+                    .padding(it)
+                    .fillMaxSize()
+                    .padding(16.dp),
         ) {
             DiscHeader(
                 discId = disc.id,
@@ -119,36 +119,36 @@ internal fun DiscDetailScreen(
             ) {
                 Text(
                     modifier =
-                    Modifier
-                        .clickable {
-                            Intent(Intent.ACTION_VIEW).let {
-                                it.data = Uri.parse(disc.officialPageURL)
-                                if (it.resolveActivity(context.packageManager) != null) {
-                                    context.startActivity(it)
-                                } else {
-                                    Toast
-                                        .makeText(
-                                            context,
-                                            "ブラウザが見つかりませんでした。",
-                                            Toast.LENGTH_SHORT
-                                        )
-                                        .show()
+                        Modifier
+                            .clickable {
+                                Intent(Intent.ACTION_VIEW).let {
+                                    it.data = Uri.parse(disc.officialPageURL)
+                                    if (it.resolveActivity(context.packageManager) != null) {
+                                        context.startActivity(it)
+                                    } else {
+                                        Toast
+                                            .makeText(
+                                                context,
+                                                "ブラウザが見つかりませんでした。",
+                                                Toast.LENGTH_SHORT,
+                                            )
+                                            .show()
+                                    }
                                 }
                             }
-                        }
-                        .padding(8.dp),
+                            .padding(8.dp),
                     text = "WEZARDで見る",
                     fontSize = 16.sp,
                     style =
-                    TextStyle(
-                        color =
-                        if (isSystemInDarkTheme()) {
-                            Color.White
-                        } else {
-                            Color.Blue.copy(alpha = 0.6f)
-                        },
-                        textDecoration = TextDecoration.Underline,
-                    ),
+                        TextStyle(
+                            color =
+                                if (isSystemInDarkTheme()) {
+                                    Color.White
+                                } else {
+                                    Color.Blue.copy(alpha = 0.6f)
+                                },
+                            textDecoration = TextDecoration.Underline,
+                        ),
                     overflow = TextOverflow.Ellipsis,
                 )
                 Icon(
@@ -159,7 +159,6 @@ internal fun DiscDetailScreen(
         }
     }
 }
-
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
@@ -181,10 +180,10 @@ internal fun DiscDetailScreen(
 
         Column(
             modifier =
-            Modifier
-                .padding(it)
-                .fillMaxSize()
-                .padding(16.dp),
+                Modifier
+                    .padding(it)
+                    .fillMaxSize()
+                    .padding(16.dp),
         ) {
             DiscHeader(
                 discId = disc.id,
@@ -205,36 +204,36 @@ internal fun DiscDetailScreen(
             ) {
                 Text(
                     modifier =
-                    Modifier
-                        .clickable {
-                            Intent(Intent.ACTION_VIEW).let {
-                                it.data = Uri.parse(disc.officialPageURL)
-                                if (it.resolveActivity(context.packageManager) != null) {
-                                    context.startActivity(it)
-                                } else {
-                                    Toast
-                                        .makeText(
-                                            context,
-                                            "ブラウザが見つかりませんでした。",
-                                            Toast.LENGTH_SHORT
-                                        )
-                                        .show()
+                        Modifier
+                            .clickable {
+                                Intent(Intent.ACTION_VIEW).let {
+                                    it.data = Uri.parse(disc.officialPageURL)
+                                    if (it.resolveActivity(context.packageManager) != null) {
+                                        context.startActivity(it)
+                                    } else {
+                                        Toast
+                                            .makeText(
+                                                context,
+                                                "ブラウザが見つかりませんでした。",
+                                                Toast.LENGTH_SHORT,
+                                            )
+                                            .show()
+                                    }
                                 }
                             }
-                        }
-                        .padding(8.dp),
+                            .padding(8.dp),
                     text = "WEZARDで見る",
                     fontSize = 16.sp,
                     style =
-                    TextStyle(
-                        color =
-                        if (isSystemInDarkTheme()) {
-                            Color.White
-                        } else {
-                            Color.Blue.copy(alpha = 0.6f)
-                        },
-                        textDecoration = TextDecoration.Underline,
-                    ),
+                        TextStyle(
+                            color =
+                                if (isSystemInDarkTheme()) {
+                                    Color.White
+                                } else {
+                                    Color.Blue.copy(alpha = 0.6f)
+                                },
+                            textDecoration = TextDecoration.Underline,
+                        ),
                     overflow = TextOverflow.Ellipsis,
                 )
                 Icon(
@@ -246,30 +245,31 @@ internal fun DiscDetailScreen(
     }
 }
 
-
 @ZARDAppNeoPreviewAnnotation
 @Composable
 fun DiscDetailScreenPreview() {
     // ここででもデータを用意する
-    val disc = Disc(
-        id = 1,
-        name = "Good-bye My Loneliness",
-        releaseYear = "1993",
-        imageName = "index1_1991_02_10_1stsingle.jpg",
-        officialPageURL = "https://www.wezard.net/",
-        discType = "シングル",
-        indexStr = "1st Single",
-        releaseMonth = "2",
-        releaseDate = "10",
-        is8cm = true,
-        trackList = listOf(
-            Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-            Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-            Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-            Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-            Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-        ),
-    )
+    val disc =
+        Disc(
+            id = 1,
+            name = "Good-bye My Loneliness",
+            releaseYear = "1993",
+            imageName = "index1_1991_02_10_1stsingle.jpg",
+            officialPageURL = "https://www.wezard.net/",
+            discType = "シングル",
+            indexStr = "1st Single",
+            releaseMonth = "2",
+            releaseDate = "10",
+            is8cm = true,
+            trackList =
+                listOf(
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                ),
+        )
     PreviewItemWrapper {
         DiscDetailScreen(
             navController = rememberNavController(),
