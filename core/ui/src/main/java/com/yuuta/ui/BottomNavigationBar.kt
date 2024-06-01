@@ -3,11 +3,14 @@ package com.yuuta.ui
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
+import androidx.navigation.compose.rememberNavController
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.BottomAppBarItem
 import com.yuuta.navigation.DISC_LIST_ROUTE
 import com.yuuta.navigation.SETTING_ROUTE
@@ -15,6 +18,8 @@ import com.yuuta.navigation.TRACK_LIST_ROUTE
 import com.yuuta.navigation.navigateToDiscList
 import com.yuuta.navigation.navigateToSetting
 import com.yuuta.navigation.navigateToTrackList
+import com.yuuta.resource.theme.ZARD_AppNeoTheme
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
 fun BottomNavigationBar(
@@ -42,5 +47,13 @@ fun BottomNavigationBar(
                 },
             )
         }
+    }
+}
+
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun BottomNavigationBarPreview() {
+    PreviewItemWrapper {
+        BottomNavigationBar(navController = rememberNavController(), bottomAppBarItems = bottomAppBarData)
     }
 }
