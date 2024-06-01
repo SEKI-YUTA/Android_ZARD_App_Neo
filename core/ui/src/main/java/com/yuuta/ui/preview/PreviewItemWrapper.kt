@@ -5,9 +5,7 @@ import androidx.compose.runtime.Composable
 import com.yuuta.resource.theme.ZARD_AppNeoTheme
 
 @Composable
-fun PreviewItemWrapper(
-    previewContent: @Composable () -> Unit,
-) {
+fun PreviewItemWrapper(previewContent: @Composable () -> Unit) {
     ZARD_AppNeoTheme {
         Surface {
             previewContent()

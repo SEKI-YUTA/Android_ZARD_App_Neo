@@ -3,7 +3,6 @@ package com.yuuta.ui
 import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBarItem
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -18,7 +17,6 @@ import com.yuuta.navigation.TRACK_LIST_ROUTE
 import com.yuuta.navigation.navigateToDiscList
 import com.yuuta.navigation.navigateToSetting
 import com.yuuta.navigation.navigateToTrackList
-import com.yuuta.resource.theme.ZARD_AppNeoTheme
 import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable

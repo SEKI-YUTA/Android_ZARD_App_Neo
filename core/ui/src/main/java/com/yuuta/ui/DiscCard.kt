@@ -58,7 +58,6 @@ fun DiscCard(
     }
 }
 
-
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalSharedTransitionApi::class)
 @Composable
 internal fun DiscCard(
@@ -76,9 +75,9 @@ internal fun DiscCard(
                     Text(disc.name)
                     Text(
                         text =
-                        disc.trackList.subList(0, if (trackCount > 3) 3 else trackCount)
-                            .mapIndexed { idx, track -> "${idx + 1} ${track.trackName}" }
-                            .joinToString("\n"),
+                            disc.trackList.subList(0, if (trackCount > 3) 3 else trackCount)
+                                .mapIndexed { idx, track -> "${idx + 1} ${track.trackName}" }
+                                .joinToString("\n"),
                     )
                     if (trackCount > 3) Text("...")
                 }
@@ -86,11 +85,11 @@ internal fun DiscCard(
         ) {
             Card(
                 modifier =
-                Modifier
-                    .fillMaxWidth()
-                    .height(140.dp)
-                    .padding(8.dp)
-                    .tooltipAnchor(),
+                    Modifier
+                        .fillMaxWidth()
+                        .height(140.dp)
+                        .padding(8.dp)
+                        .tooltipAnchor(),
                 content = {
                     val withOutExt = disc.imageName.split(".")[0]
                     val imageId =
@@ -102,20 +101,20 @@ internal fun DiscCard(
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier =
-                        Modifier
-                            .fillMaxHeight()
-                            .padding(8.dp),
+                            Modifier
+                                .fillMaxHeight()
+                                .padding(8.dp),
                     ) {
                         Image(
                             modifier =
-                            Modifier
-                                .sharedElement(
-                                    state = rememberSharedContentState(key = "disc_image/$imageId"),
-                                    animatedVisibilityScope = animatedVisibilityScope,
-                                )
-                                .padding(8.dp)
-                                .width(100.dp)
-                                .height(100.dp),
+                                Modifier
+                                    .sharedElement(
+                                        state = rememberSharedContentState(key = "disc_image/$imageId"),
+                                        animatedVisibilityScope = animatedVisibilityScope,
+                                    )
+                                    .padding(8.dp)
+                                    .width(100.dp)
+                                    .height(100.dp),
                             painter = painterResource(id = imageId),
                             contentDescription = "",
                         )
@@ -128,12 +127,12 @@ internal fun DiscCard(
                             ) {
                                 Text(
                                     modifier =
-                                    Modifier
-                                        .sharedElement(
-                                            state = rememberSharedContentState(key = "disc_name/${disc.id}"),
-                                            animatedVisibilityScope = animatedVisibilityScope,
-                                        )
-                                        .weight(1f),
+                                        Modifier
+                                            .sharedElement(
+                                                state = rememberSharedContentState(key = "disc_name/${disc.id}"),
+                                                animatedVisibilityScope = animatedVisibilityScope,
+                                            )
+                                            .weight(1f),
                                     text = disc.name,
                                     fontSize = 24.sp,
                                     overflow = TextOverflow.Ellipsis,
@@ -170,9 +169,9 @@ internal fun DiscCard(
                 Text(disc.name)
                 Text(
                     text =
-                    disc.trackList.subList(0, if (trackCount > 3) 3 else trackCount)
-                        .mapIndexed { idx, track -> "${idx + 1} ${track.trackName}" }
-                        .joinToString("\n"),
+                        disc.trackList.subList(0, if (trackCount > 3) 3 else trackCount)
+                            .mapIndexed { idx, track -> "${idx + 1} ${track.trackName}" }
+                            .joinToString("\n"),
                 )
                 if (trackCount > 3) Text("...")
             }
@@ -180,11 +179,11 @@ internal fun DiscCard(
     ) {
         Card(
             modifier =
-            Modifier
-                .fillMaxWidth()
-                .height(140.dp)
-                .padding(8.dp)
-                .tooltipAnchor(),
+                Modifier
+                    .fillMaxWidth()
+                    .height(140.dp)
+                    .padding(8.dp)
+                    .tooltipAnchor(),
             content = {
                 val withOutExt = disc.imageName.split(".")[0]
                 val imageId =
@@ -192,16 +191,16 @@ internal fun DiscCard(
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier =
-                    Modifier
-                        .fillMaxHeight()
-                        .padding(8.dp),
+                        Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
                 ) {
                     Image(
                         modifier =
-                        Modifier
-                            .padding(8.dp)
-                            .width(100.dp)
-                            .height(100.dp),
+                            Modifier
+                                .padding(8.dp)
+                                .width(100.dp)
+                                .height(100.dp),
                         painter = painterResource(id = imageId),
                         contentDescription = "",
                     )
@@ -214,8 +213,8 @@ internal fun DiscCard(
                         ) {
                             Text(
                                 modifier =
-                                Modifier
-                                    .weight(1f),
+                                    Modifier
+                                        .weight(1f),
                                 text = disc.name,
                                 fontSize = 24.sp,
                                 overflow = TextOverflow.Ellipsis,
