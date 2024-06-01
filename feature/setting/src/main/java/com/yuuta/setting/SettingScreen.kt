@@ -9,11 +9,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.AppSetting
 import com.yuuta.ui.AppIconSetting
 import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
 internal fun SettingScreen(
@@ -45,5 +48,14 @@ internal fun SettingScreen(
                 }
             }
         }
+    }
+}
+
+
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun SettingScreenPreview() {
+    PreviewItemWrapper {
+        SettingScreen(navController = rememberNavController(), appSetting = null) { _, _ -> }
     }
 }
