@@ -37,7 +37,7 @@ class MainFragment : Fragment() {
 
         composeView.setContent {
             val zardAppViewModel: ZARDAppViewModel = viewModel()
-            ZARD_AppNeoTheme{
+            ZARD_AppNeoTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
