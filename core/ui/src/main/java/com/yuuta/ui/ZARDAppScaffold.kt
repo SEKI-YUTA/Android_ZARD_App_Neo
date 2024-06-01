@@ -22,6 +22,8 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
+import com.yuuta.ui.preview.PreviewItemWrapper
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -76,6 +78,15 @@ fun ZARDAppScaffold(
             contentWindowInsets = contentWindowInsets,
         ) {
             content(it)
+        }
+    }
+}
+
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun ZARDAppScaffoldPreview() {
+    PreviewItemWrapper {
+        ZARDAppScaffold {
         }
     }
 }

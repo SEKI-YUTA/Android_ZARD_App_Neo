@@ -29,8 +29,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.resouce.R
 import com.yuuta.resource.theme.ZARD_BLUE
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
 fun DrawerContent() {
@@ -94,5 +96,13 @@ fun DrawerContent() {
                 )
             }
         }
+    }
+}
+
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun DrawerContentPreview() {
+    PreviewItemWrapper {
+        DrawerContent()
     }
 }

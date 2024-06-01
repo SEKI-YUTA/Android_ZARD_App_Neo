@@ -6,6 +6,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
 fun CenterMessage(message: String) {
@@ -14,5 +16,13 @@ fun CenterMessage(message: String) {
         contentAlignment = Alignment.Center,
     ) {
         Text(message)
+    }
+}
+
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun CenterMessagePreview() {
+    PreviewItemWrapper {
+        CenterMessage("Hello, World!")
     }
 }

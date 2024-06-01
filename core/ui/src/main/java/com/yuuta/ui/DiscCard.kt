@@ -24,18 +24,45 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.Disc
 import com.yuuta.resouce.R
+import com.yuuta.ui.preview.PreviewItemWrapper
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalSharedTransitionApi::class)
+@OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 fun DiscCard(
     context: Context = LocalContext.current,
     disc: Disc,
-    previewMode: Boolean = false,
+    isPreviewMode: Boolean = false,
+    animatedVisibilityScope: AnimatedVisibilityScope?,
+    sharedTransitionScope: SharedTransitionScope?,
+    onCardTappedAction: () -> Unit,
+) {
+    if (isPreviewMode) {
+        DiscCard(
+            context = context,
+            disc = disc,
+            onCardTappedAction = onCardTappedAction,
+        )
+    } else {
+        DiscCard(
+            context = context,
+            disc = disc,
+            animatedVisibilityScope = animatedVisibilityScope!!,
+            sharedTransitionScope = sharedTransitionScope!!,
+            onCardTappedAction = onCardTappedAction,
+        )
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalSharedTransitionApi::class)
+@Composable
+internal fun DiscCard(
+    context: Context = LocalContext.current,
+    disc: Disc,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
     onCardTappedAction: () -> Unit,
@@ -66,15 +93,11 @@ fun DiscCard(
                 content = {
                     val withOutExt = disc.imageName.split(".")[0]
                     val imageId =
-                        if (previewMode) {
-                            R.drawable.index1_1991_02_10_1stsingle
-                        } else {
-                            context.resources.getIdentifier(
-                                withOutExt,
-                                "drawable",
-                                context.packageName,
-                            )
-                        }
+                        context.resources.getIdentifier(
+                            withOutExt,
+                            "drawable",
+                            context.packageName,
+                        )
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier =
@@ -132,7 +155,89 @@ fun DiscCard(
     }
 }
 
-@Preview
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+internal fun DiscCard(
+    context: Context = LocalContext.current,
+    disc: Disc,
+    onCardTappedAction: () -> Unit,
+) {
+    val trackCount = disc.trackList.size
+    RichTooltipBox(
+        text = {
+            Column {
+                Text(disc.name)
+                Text(
+                    text =
+                        disc.trackList.subList(0, if (trackCount > 3) 3 else trackCount)
+                            .mapIndexed { idx, track -> "${idx + 1} ${track.trackName}" }
+                            .joinToString("\n"),
+                )
+                if (trackCount > 3) Text("...")
+            }
+        },
+    ) {
+        Card(
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .height(140.dp)
+                    .padding(8.dp)
+                    .tooltipAnchor(),
+            content = {
+                val withOutExt = disc.imageName.split(".")[0]
+                val imageId =
+                    R.drawable.index1_1991_02_10_1stsingle
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier =
+                        Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
+                ) {
+                    Image(
+                        modifier =
+                            Modifier
+                                .padding(8.dp)
+                                .width(100.dp)
+                                .height(100.dp),
+                        painter = painterResource(id = imageId),
+                        contentDescription = "",
+                    )
+                    Column {
+                        Text(disc.indexStr, modifier = Modifier.fillMaxWidth())
+                        Row(
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Text(
+                                modifier =
+                                    Modifier
+                                        .weight(1f),
+                                text = disc.name,
+                                fontSize = 24.sp,
+                                overflow = TextOverflow.Ellipsis,
+                                maxLines = 1,
+                            )
+                            Text(
+                                "${disc.trackList.size}${stringResource(id = R.string.track_unit)}",
+                                modifier = Modifier.width(40.dp),
+                            )
+                        }
+                        Text("${disc.releaseYear}${stringResource(id = R.string.year_unit)}")
+                    }
+                }
+            },
+            onClick = {
+                onCardTappedAction()
+            },
+        )
+    }
+}
+
+@OptIn(ExperimentalSharedTransitionApi::class)
+@ZARDAppNeoPreviewAnnotation
 @Composable
 fun DiscCardPreview() {
     val disc =
@@ -142,17 +247,19 @@ fun DiscCardPreview() {
             releaseYear = "1991",
             imageName = "_1991_02_10_1stsingle.jpg",
             discType = "オリジナルアルバム",
-            indexStr = "1st",
+            indexStr = "1st Single",
             trackList = listOf(),
             releaseMonth = "2",
             releaseDate = "10",
             is8cm = true,
             officialPageURL = "",
         )
-// animateedVisibitlityScopeの渡し方がわからないので一旦コメントアウト
-//    DiscCard(
-//        disc = disc,
-//        previewMode = true,
-//        onCardTappedAction = {},
-//    )
+    PreviewItemWrapper {
+        DiscCard(
+            disc = disc,
+            isPreviewMode = true,
+            animatedVisibilityScope = null,
+            sharedTransitionScope = null,
+        ) {}
+    }
 }
