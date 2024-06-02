@@ -8,12 +8,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.Track
 import com.yuuta.ui.BottomNavigationBar
 import com.yuuta.ui.CenterMessage
 import com.yuuta.ui.TrackList
 import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
 internal fun TrackListScreen(
@@ -48,5 +51,25 @@ internal fun TrackListScreen(
                 },
             )
         }
+    }
+}
+
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun TrackListScreenPreview() {
+    val trackList =
+        listOf(
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+            Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+        )
+    PreviewItemWrapper {
+        TrackListScreen(
+            navController = rememberNavController(),
+            allTrackList = trackList,
+        )
     }
 }

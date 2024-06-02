@@ -3,15 +3,9 @@ package com.yuuta.ui
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.rounded.Close
-import androidx.compose.material.icons.rounded.Menu
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FabPosition
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.Scaffold
@@ -23,10 +17,10 @@ import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
-import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
+import com.yuuta.ui.preview.PreviewItemWrapper
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -48,7 +42,6 @@ fun ZARDAppScaffold(
         label = "menuButtonRotateValue"
     )
     ModalNavigationDrawer(
-
         drawerState = drawerState,
         drawerContent = {
             DrawerContent()
@@ -83,4 +76,11 @@ fun ZARDAppScaffold(
     }
 }
 
-
+@ZARDAppNeoPreviewAnnotation
+@Composable
+fun ZARDAppScaffoldPreview() {
+    PreviewItemWrapper {
+        ZARDAppScaffold {
+        }
+    }
+}

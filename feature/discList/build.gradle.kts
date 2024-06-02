@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.compose.animation)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(project(":resource"))
     implementation(project(":common"))
     implementation(project(":core:ui"))
     implementation(project(":navigation"))

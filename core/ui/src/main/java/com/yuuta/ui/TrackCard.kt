@@ -11,9 +11,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.Track
+import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
 fun TrackCard(
@@ -54,16 +55,20 @@ fun TrackCard(
     }
 }
 
-@Preview(showBackground = true, name = "トラック番号なし")
+@ZARDAppNeoPreviewAnnotation
 @Composable
 fun TrackCardPreview() {
     val track = Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993")
-    TrackCard(trackNumber = null, track = track, tapCallback = {})
+    PreviewItemWrapper {
+        TrackCard(trackNumber = null, track = track, tapCallback = {})
+    }
 }
 
-@Preview(showBackground = true, name = "トラック番号あり")
+@ZARDAppNeoPreviewAnnotation
 @Composable
 fun TrackCardPreview2() {
     val track = Track("負けないで", "坂井泉水", "織田哲郎", "葉山たけし", "1993")
-    TrackCard(trackNumber = 1, track = track, tapCallback = {})
+    PreviewItemWrapper {
+        TrackCard(trackNumber = 1, track = track, tapCallback = {})
+    }
 }
