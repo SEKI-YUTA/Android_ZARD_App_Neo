@@ -11,7 +11,10 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.rotate
 
 @Composable
-fun ScaffoldMenuButton(animationValue: Float, onClick: () -> Unit) {
+fun ScaffoldMenuButton(
+    animationValue: Float,
+    onClick: () -> Unit,
+) {
     IconButton(
         modifier = Modifier.rotate((animationValue * 1.8).toFloat()),
         onClick = onClick,
@@ -24,7 +27,7 @@ fun ScaffoldMenuButton(animationValue: Float, onClick: () -> Unit) {
         Icon(
             modifier = Modifier.alpha(animationValue / 100f),
             imageVector = Icons.Rounded.Close,
-            contentDescription = "Close"
+            contentDescription = "Close",
         )
     }
 }

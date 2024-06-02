@@ -38,9 +38,11 @@ fun ZARDAppScaffold(
 ) {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val coroutineScope = rememberCoroutineScope()
-    val menuButtonAnimationValue = animateFloatAsState(if (drawerState.targetValue.ordinal == 1) 100f else 0f,
-        label = "menuButtonRotateValue"
-    )
+    val menuButtonAnimationValue =
+        animateFloatAsState(
+            if (drawerState.targetValue.ordinal == 1) 100f else 0f,
+            label = "menuButtonRotateValue",
+        )
     ModalNavigationDrawer(
         drawerState = drawerState,
         drawerContent = {
