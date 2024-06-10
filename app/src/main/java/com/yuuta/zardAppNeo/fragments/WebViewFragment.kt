@@ -52,10 +52,11 @@ class WebViewFragment : Fragment() {
             parentFragmentManager.popBackStack()
         }
         shareButton.setOnClickListener {
-            val shareIntent = Intent(Intent.ACTION_SEND).apply {
-                type = "text/plain"
-                putExtra(Intent.EXTRA_TEXT, args.webUrl)
-            }
+            val shareIntent =
+                Intent(Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(Intent.EXTRA_TEXT, args.webUrl)
+                }
             val chooserIntent = Intent.createChooser(shareIntent, "Share via")
             startActivity(chooserIntent)
         }
