@@ -5,9 +5,52 @@
     android:layout_height="match_parent"
     tools:context=".fragments.MainFragment">
 
-    <WebView
-        android:id="@+id/webView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/url_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="https://hogehoge.comxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp" />
+                <ImageButton
+                    android:id="@+id/share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_24"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="8dp"
+                    android:padding="8dp" />
+                <ImageButton
+                    android:id="@+id/close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_24"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="8dp"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+        </Toolbar>
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 </FrameLayout>
