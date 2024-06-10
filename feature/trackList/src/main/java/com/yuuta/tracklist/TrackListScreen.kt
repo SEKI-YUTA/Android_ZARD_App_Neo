@@ -23,8 +23,10 @@ internal fun TrackListScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     allTrackList: List<Track>?,
+    openWebUrl: (String) -> Unit,
 ) {
     ZARDAppScaffold(
+        openWebUrl = openWebUrl,
         bottomBar = {
             BottomNavigationBar(
                 navController = navController,
@@ -70,6 +72,7 @@ fun TrackListScreenPreview() {
         TrackListScreen(
             navController = rememberNavController(),
             allTrackList = trackList,
+            openWebUrl = {}
         )
     }
 }

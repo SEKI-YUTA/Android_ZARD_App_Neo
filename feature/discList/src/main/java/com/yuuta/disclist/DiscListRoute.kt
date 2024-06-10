@@ -13,6 +13,7 @@ fun NavGraphBuilder.discListScreen(
     navController: NavController,
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
+    openWebUrl: (String) -> Unit,
     sharedTransitionScope: SharedTransitionScope,
 ) {
     return composable(DISC_LIST_ROUTE) {
@@ -20,6 +21,7 @@ fun NavGraphBuilder.discListScreen(
             navController = navController,
             navigateToDetail = navigateToDetail,
             discList = discList,
+            openWebUrl = openWebUrl,
             animatedVisibilityScope = this,
             sharedTransitionScope = sharedTransitionScope,
         )

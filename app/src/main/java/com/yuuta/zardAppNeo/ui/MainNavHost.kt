@@ -35,6 +35,7 @@ fun MainNavHost(
                 navController = navController,
                 navigateToDetail = navController::navigateToDiscDetail,
                 discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
+                openWebUrl = openWebUrl,
                 sharedTransitionScope = this@SharedTransitionLayout,
             )
             discDetailScreen(
@@ -48,11 +49,13 @@ fun MainNavHost(
                 allTrackList =
                     viewState.artistInformation.getIfContent()?.releasedDiscs
                         ?.map { it.trackList }?.flatten()?.toSet()?.toList(),
+                openWebUrl = openWebUrl,
             )
             settingRoute(
                 navController = navController,
                 appSetting = viewState.appSetting.getIfContent(),
                 updateAppSetting = zardAppViewModel::updateAppSetting,
+                openWebUrl = openWebUrl,
             )
         }
     }

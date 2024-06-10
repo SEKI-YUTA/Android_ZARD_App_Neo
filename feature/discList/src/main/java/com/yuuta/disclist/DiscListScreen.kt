@@ -30,6 +30,7 @@ internal fun DiscListScreen(
     navController: NavController,
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
+    openWebUrl: (String) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope?,
     sharedTransitionScope: SharedTransitionScope?,
 ) {
@@ -46,6 +47,7 @@ internal fun DiscListScreen(
             navController = navController,
             navigateToDetail = navigateToDetail,
             discList = discList,
+            openWebUrl = openWebUrl,
             animatedVisibilityScope = animatedVisibilityScope!!,
             sharedTransitionScope = sharedTransitionScope!!,
         )
@@ -59,12 +61,14 @@ internal fun DiscListScreen(
     navController: NavController,
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
+    openWebUrl: (String) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
 ) {
     val context = LocalContext.current
     val lazyListState = rememberLazyListState()
     ZARDAppScaffold(
+        openWebUrl = openWebUrl,
         modifier = modifier,
         bottomBar = {
             BottomNavigationBar(
@@ -105,6 +109,7 @@ internal fun DiscListScreen(
     val lazyListState = rememberLazyListState()
     ZARDAppScaffold(
         modifier = modifier,
+        openWebUrl = {},
         bottomBar = {
             BottomNavigationBar(
                 navController = navController,
@@ -175,6 +180,7 @@ fun DiscListScreenPreview() {
             isPreviewMode = true,
             navigateToDetail = {},
             discList = discList,
+            openWebUrl = {},
             animatedVisibilityScope = null,
             sharedTransitionScope = null,
         )

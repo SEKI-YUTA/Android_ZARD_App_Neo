@@ -9,11 +9,13 @@ import com.yuuta.navigation.TRACK_LIST_ROUTE
 fun NavGraphBuilder.trackListRoute(
     navController: NavController,
     allTrackList: List<Track>?,
+    openWebUrl: (String) -> Unit,
 ) {
     composable(TRACK_LIST_ROUTE) {
         TrackListScreen(
             navController = navController,
             allTrackList = allTrackList,
+            openWebUrl = openWebUrl,
         )
     }
 }

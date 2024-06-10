@@ -11,12 +11,14 @@ fun NavGraphBuilder.settingRoute(
     navController: NavController,
     appSetting: AppSetting?,
     updateAppSetting: (context: Context, appSetting: AppSetting) -> Unit,
+    openWebUrl: (String) -> Unit,
 ) {
     composable(SETTING_ROUTE) {
         SettingScreen(
             navController = navController,
             appSetting = appSetting,
             updateAppSetting = updateAppSetting,
+            openWebUrl = openWebUrl,
         )
     }
 }

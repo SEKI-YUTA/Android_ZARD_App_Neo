@@ -1,7 +1,5 @@
 package com.yuuta.ui
 
-import android.content.Intent
-import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -35,7 +33,10 @@ import com.yuuta.resource.theme.ZARD_BLUE
 import com.yuuta.ui.preview.PreviewItemWrapper
 
 @Composable
-fun DrawerContent() {
+fun DrawerContent(
+    modifier: Modifier = Modifier,
+    openWebUrl: (String) -> Unit,
+) {
     val context = LocalContext.current
     MaterialTheme(
         colorScheme =
@@ -76,12 +77,7 @@ fun DrawerContent() {
                         )
                         .background(MaterialTheme.colorScheme.surfaceVariant)
                         .clickable {
-                            Intent(Intent.ACTION_VIEW).let {
-                                it.data = Uri.parse("https://wezard.net/")
-                                if (it.resolveActivity(context.packageManager) != null) {
-                                    context.startActivity(it)
-                                }
-                            }
+                            openWebUrl("https://wezard.net/")
                         },
             ) {
                 Text(
@@ -103,6 +99,6 @@ fun DrawerContent() {
 @Composable
 fun DrawerContentPreview() {
     PreviewItemWrapper {
-        DrawerContent()
+        DrawerContent(openWebUrl = {})
     }
 }
