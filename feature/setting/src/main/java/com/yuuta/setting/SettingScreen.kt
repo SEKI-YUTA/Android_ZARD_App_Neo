@@ -60,7 +60,7 @@ fun SettingScreenPreview() {
         SettingScreen(
             navController = rememberNavController(),
             appSetting = null,
-            openWebUrl = {}
+            openWebUrl = {},
         ) { _, _ -> }
     }
 }

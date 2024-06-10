@@ -72,7 +72,7 @@ fun TrackListScreenPreview() {
         TrackListScreen(
             navController = rememberNavController(),
             allTrackList = trackList,
-            openWebUrl = {}
+            openWebUrl = {},
         )
     }
 }

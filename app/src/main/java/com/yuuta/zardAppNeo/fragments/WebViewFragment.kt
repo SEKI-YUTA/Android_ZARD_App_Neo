@@ -14,6 +14,7 @@ import com.yuuta.zardAppNeo.R
 class WebViewFragment : Fragment() {
     private val args: WebViewFragmentArgs by navArgs()
     private lateinit var webView: WebView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
