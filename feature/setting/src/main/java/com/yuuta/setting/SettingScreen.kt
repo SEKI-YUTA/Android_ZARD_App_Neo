@@ -23,10 +23,12 @@ internal fun SettingScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     appSetting: AppSetting?,
+    openWebUrl: (String) -> Unit,
     updateAppSetting: (context: Context, appSetting: AppSetting) -> Unit,
 ) {
     val context = LocalContext.current
     ZARDAppScaffold(
+        openWebUrl = openWebUrl,
         bottomBar = {
             BottomNavigationBar(
                 navController = navController,
@@ -55,6 +57,10 @@ internal fun SettingScreen(
 @Composable
 fun SettingScreenPreview() {
     PreviewItemWrapper {
-        SettingScreen(navController = rememberNavController(), appSetting = null) { _, _ -> }
+        SettingScreen(
+            navController = rememberNavController(),
+            appSetting = null,
+            openWebUrl = {},
+        ) { _, _ -> }
     }
 }

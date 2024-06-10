@@ -34,6 +34,7 @@ fun ZARDAppScaffold(
     containerColor: Color = MaterialTheme.colorScheme.background,
     contentColor: Color = contentColorFor(containerColor),
     contentWindowInsets: WindowInsets = ScaffoldDefaults.contentWindowInsets,
+    openWebUrl: (String) -> Unit,
     content: @Composable (PaddingValues) -> Unit,
 ) {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
@@ -46,7 +47,7 @@ fun ZARDAppScaffold(
     ModalNavigationDrawer(
         drawerState = drawerState,
         drawerContent = {
-            DrawerContent()
+            DrawerContent(openWebUrl = openWebUrl)
         },
     ) {
         Scaffold(
@@ -82,7 +83,7 @@ fun ZARDAppScaffold(
 @Composable
 fun ZARDAppScaffoldPreview() {
     PreviewItemWrapper {
-        ZARDAppScaffold {
+        ZARDAppScaffold(openWebUrl = {}) {
         }
     }
 }

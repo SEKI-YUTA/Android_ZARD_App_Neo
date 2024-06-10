@@ -21,6 +21,7 @@ fun MainNavHost(
     modifier: Modifier = Modifier,
     startDestination: String = DISC_LIST_ROUTE,
     zardAppViewModel: ZARDAppViewModel,
+    openWebUrl: (String) -> Unit,
 ) {
     val viewState = zardAppViewModel.viewState.collectAsState().value
     val navController = rememberNavController()
@@ -34,11 +35,13 @@ fun MainNavHost(
                 navController = navController,
                 navigateToDetail = navController::navigateToDiscDetail,
                 discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
+                openWebUrl = openWebUrl,
                 sharedTransitionScope = this@SharedTransitionLayout,
             )
             discDetailScreen(
                 navController = navController,
                 discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
+                openWebUrl = openWebUrl,
                 sharedTransitionScope = this@SharedTransitionLayout,
             )
             trackListRoute(
@@ -46,11 +49,13 @@ fun MainNavHost(
                 allTrackList =
                     viewState.artistInformation.getIfContent()?.releasedDiscs
                         ?.map { it.trackList }?.flatten()?.toSet()?.toList(),
+                openWebUrl = openWebUrl,
             )
             settingRoute(
                 navController = navController,
                 appSetting = viewState.appSetting.getIfContent(),
                 updateAppSetting = zardAppViewModel::updateAppSetting,
+                openWebUrl = openWebUrl,
             )
         }
     }

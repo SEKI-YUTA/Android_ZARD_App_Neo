@@ -14,6 +14,7 @@ import com.yuuta.navigation.DISC_DETAIL_ROUTE
 fun NavGraphBuilder.discDetailScreen(
     navController: NavController,
     discList: List<Disc>?,
+    openWebUrl: (String) -> Unit,
     sharedTransitionScope: SharedTransitionScope,
 ) {
     composable(
@@ -31,6 +32,7 @@ fun NavGraphBuilder.discDetailScreen(
             navController = navController,
             animatedVisibilityScope = this,
             disc = targetDisc,
+            openWebUrl = openWebUrl,
             sharedTransitionScope = sharedTransitionScope,
         )
     }

@@ -47,6 +47,7 @@ internal fun DiscDetailScreen(
     isPreviewMode: Boolean = false,
     navController: NavController,
     disc: Disc?,
+    openWebUrl: (String) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope?,
     sharedTransitionScope: SharedTransitionScope?,
 ) {
@@ -61,6 +62,7 @@ internal fun DiscDetailScreen(
             modifier = modifier,
             navController = navController,
             disc = disc,
+            openWebUrl = openWebUrl,
             animatedVisibilityScope = animatedVisibilityScope!!,
             sharedTransitionScope = sharedTransitionScope!!,
         )
@@ -73,6 +75,7 @@ internal fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
+    openWebUrl: (String) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
 ) {
@@ -121,20 +124,7 @@ internal fun DiscDetailScreen(
                     modifier =
                         Modifier
                             .clickable {
-                                Intent(Intent.ACTION_VIEW).let {
-                                    it.data = Uri.parse(disc.officialPageURL)
-                                    if (it.resolveActivity(context.packageManager) != null) {
-                                        context.startActivity(it)
-                                    } else {
-                                        Toast
-                                            .makeText(
-                                                context,
-                                                "ブラウザが見つかりませんでした。",
-                                                Toast.LENGTH_SHORT,
-                                            )
-                                            .show()
-                                    }
-                                }
+                                openWebUrl(disc.officialPageURL)
                             }
                             .padding(8.dp),
                     text = "WEZARDで見る",
