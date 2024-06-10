@@ -43,7 +43,10 @@ class MainFragment : Fragment() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    MainNavHost(zardAppViewModel = zardAppViewModel)
+                    MainNavHost(zardAppViewModel = zardAppViewModel) {
+                        val direction = MainFragmentDirections.actionMainFragmentToWebviewFragment(it)
+                        navController.navigate(direction)
+                    }
                 }
             }
         }
