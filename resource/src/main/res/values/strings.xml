@@ -6,4 +6,6 @@
     <string name="error_message">問題が発生しました。</string>
     <string name="track_empty_message">トラックが見つかりませんでした。</string>
     <string name="setting_app_icon">アプリのアイコン</string>
+    <string name="webView_shareButton">shareButton</string>
+    <string name="webView_closeButton">closeButton</string>
 </resources>
