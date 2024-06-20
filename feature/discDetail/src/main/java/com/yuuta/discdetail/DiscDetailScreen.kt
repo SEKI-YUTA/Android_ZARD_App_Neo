@@ -90,10 +90,10 @@ internal fun DiscDetailScreen(
             )
         Column(
             modifier =
-            Modifier
-                .padding(it)
-                .fillMaxSize()
-                .padding(16.dp),
+                Modifier
+                    .padding(it)
+                    .fillMaxSize()
+                    .padding(16.dp),
         ) {
             DiscHeader(
                 discId = disc.id,
@@ -161,10 +161,10 @@ internal fun DiscDetailScreen(
 
         Column(
             modifier =
-            Modifier
-                .padding(it)
-                .fillMaxSize()
-                .padding(16.dp),
+                Modifier
+                    .padding(it)
+                    .fillMaxSize()
+                    .padding(16.dp),
         ) {
             DiscHeader(
                 discId = disc.id,
@@ -227,13 +227,13 @@ fun DiscDetailScreenPreview() {
             releaseDate = "10",
             is8cm = true,
             trackList =
-            listOf(
-                Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-            ),
+                listOf(
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
+                ),
         )
     PreviewItemWrapper {
         DiscDetailScreen(
