@@ -65,7 +65,7 @@ internal fun DiscDetailScreen(
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-internal fun DiscDetailScreen(
+private fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
@@ -115,20 +115,7 @@ internal fun DiscDetailScreen(
                 horizontalArrangement = Arrangement.End,
             ) {
                 ElevatedButton(onClick = {
-                    Intent(Intent.ACTION_VIEW).let {
-                        it.data = Uri.parse(disc.officialPageURL)
-                        if (it.resolveActivity(context.packageManager) != null) {
-                            context.startActivity(it)
-                        } else {
-                            Toast
-                                .makeText(
-                                    context,
-                                    "ブラウザが見つかりませんでした。",
-                                    Toast.LENGTH_SHORT,
-                                )
-                                .show()
-                        }
-                    }
+                    openWebUrl(disc.officialPageURL)
                 }) {
                     Text("WEZARDで見る")
                     Icon(

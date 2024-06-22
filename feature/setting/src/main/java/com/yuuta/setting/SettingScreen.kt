@@ -36,7 +36,7 @@ internal fun SettingScreen(
             )
         },
     ) {
-        Column(modifier = Modifier.padding(it)) {
+        Column(modifier = modifier.padding(it)) {
             LazyColumn(modifier = Modifier.padding(16.dp)) {
                 item {
                     appSetting?.let {

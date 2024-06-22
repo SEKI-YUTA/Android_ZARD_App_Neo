@@ -56,7 +56,7 @@ internal fun DiscListScreen(
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-internal fun DiscListScreen(
+private fun DiscListScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     navigateToDetail: (String) -> Unit,
@@ -99,7 +99,7 @@ internal fun DiscListScreen(
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-internal fun DiscListScreen(
+private fun DiscListScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     navigateToDetail: (String) -> Unit,
