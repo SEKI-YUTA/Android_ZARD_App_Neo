@@ -40,7 +40,7 @@ internal fun TrackListScreen(
         }
         Box(
             modifier =
-               modifier
+                modifier
                     .fillMaxSize()
                     .padding(it)
                     .padding(4.dp),
