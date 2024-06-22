@@ -19,12 +19,12 @@ import org.robolectric.annotation.GraphicsMode
 
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 @RunWith(RobolectricTestRunner::class)
-class RoborazziTest {
+class CaptureZARDAppUITest {
     @get:Rule
     val composeRule = createComposeRule()
 
     @Test
-    fun captureTest() {
+    fun captureDiscListScreen() {
         composeRule
             .setContent {
                 Box(
