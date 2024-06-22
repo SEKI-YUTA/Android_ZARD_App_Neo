@@ -6,8 +6,6 @@ import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -15,20 +13,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.ArrowForward
+import androidx.compose.material.icons.rounded.KeyboardArrowRight
+import androidx.compose.material3.ElevatedButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.style.TextDecoration
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
@@ -71,7 +65,7 @@ internal fun DiscDetailScreen(
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-internal fun DiscDetailScreen(
+private fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
@@ -120,31 +114,15 @@ internal fun DiscDetailScreen(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.End,
             ) {
-                Text(
-                    modifier =
-                        Modifier
-                            .clickable {
-                                openWebUrl(disc.officialPageURL)
-                            }
-                            .padding(8.dp),
-                    text = "WEZARDで見る",
-                    fontSize = 16.sp,
-                    style =
-                        TextStyle(
-                            color =
-                                if (isSystemInDarkTheme()) {
-                                    Color.White
-                                } else {
-                                    Color.Blue.copy(alpha = 0.6f)
-                                },
-                            textDecoration = TextDecoration.Underline,
-                        ),
-                    overflow = TextOverflow.Ellipsis,
-                )
-                Icon(
-                    Icons.Rounded.ArrowForward,
-                    contentDescription = "",
-                )
+                ElevatedButton(onClick = {
+                    openWebUrl(disc.officialPageURL)
+                }) {
+                    Text("WEZARDで見る")
+                    Icon(
+                        Icons.Rounded.KeyboardArrowRight,
+                        contentDescription = "",
+                    )
+                }
             }
         }
     }
@@ -152,7 +130,7 @@ internal fun DiscDetailScreen(
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-internal fun DiscDetailScreen(
+private fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
@@ -165,7 +143,6 @@ internal fun DiscDetailScreen(
             CenterMessage(context.getString(R.string.error_message))
             return@Scaffold
         }
-        val withOutExt = disc.imageName.split(".")[0]
         val imageId = R.drawable.index1_1991_02_10_1stsingle
 
         Column(
@@ -192,44 +169,28 @@ internal fun DiscDetailScreen(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.End,
             ) {
-                Text(
-                    modifier =
-                        Modifier
-                            .clickable {
-                                Intent(Intent.ACTION_VIEW).let {
-                                    it.data = Uri.parse(disc.officialPageURL)
-                                    if (it.resolveActivity(context.packageManager) != null) {
-                                        context.startActivity(it)
-                                    } else {
-                                        Toast
-                                            .makeText(
-                                                context,
-                                                "ブラウザが見つかりませんでした。",
-                                                Toast.LENGTH_SHORT,
-                                            )
-                                            .show()
-                                    }
-                                }
-                            }
-                            .padding(8.dp),
-                    text = "WEZARDで見る",
-                    fontSize = 16.sp,
-                    style =
-                        TextStyle(
-                            color =
-                                if (isSystemInDarkTheme()) {
-                                    Color.White
-                                } else {
-                                    Color.Blue.copy(alpha = 0.6f)
-                                },
-                            textDecoration = TextDecoration.Underline,
-                        ),
-                    overflow = TextOverflow.Ellipsis,
-                )
-                Icon(
-                    Icons.Rounded.ArrowForward,
-                    contentDescription = "",
-                )
+                ElevatedButton(onClick = {
+                    Intent(Intent.ACTION_VIEW).let {
+                        it.data = Uri.parse(disc.officialPageURL)
+                        if (it.resolveActivity(context.packageManager) != null) {
+                            context.startActivity(it)
+                        } else {
+                            Toast
+                                .makeText(
+                                    context,
+                                    "ブラウザが見つかりませんでした。",
+                                    Toast.LENGTH_SHORT,
+                                )
+                                .show()
+                        }
+                    }
+                }) {
+                    Text("WEZARDで見る")
+                    Icon(
+                        Icons.Rounded.KeyboardArrowRight,
+                        contentDescription = "",
+                    )
+                }
             }
         }
     }
