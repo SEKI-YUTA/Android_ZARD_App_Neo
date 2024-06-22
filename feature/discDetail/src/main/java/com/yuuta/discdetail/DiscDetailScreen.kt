@@ -128,7 +128,6 @@ private fun DiscDetailScreen(
     }
 }
 
-@OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 internal fun DiscDetailScreen(
     modifier: Modifier = Modifier,
