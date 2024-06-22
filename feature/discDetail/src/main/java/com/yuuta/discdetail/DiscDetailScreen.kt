@@ -130,7 +130,7 @@ private fun DiscDetailScreen(
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-private fun DiscDetailScreen(
+internal fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
@@ -143,6 +143,7 @@ private fun DiscDetailScreen(
             CenterMessage(context.getString(R.string.error_message))
             return@Scaffold
         }
+        val withOutExt = disc.imageName.split(".")[0]
         val imageId = R.drawable.index1_1991_02_10_1stsingle
 
         Column(
