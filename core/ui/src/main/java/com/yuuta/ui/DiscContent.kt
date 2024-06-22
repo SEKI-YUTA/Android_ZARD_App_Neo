@@ -27,7 +27,7 @@ fun DiscContent(
                     Text(
                         text = stringResource(id = R.string.recorded_track),
                         modifier = Modifier.padding(8.dp),
-                        fontSize = 24.sp,
+                        fontSize = 18.sp,
                     )
                 },
             itemTapAction = { track ->
