@@ -23,3 +23,7 @@ jobs:
             ```
             ZARDApp-${{github.event.issue.number}}
             ```
+            To checkout this branch, run the following command:
+            ```
+            git checkout -b ZARDApp-${{github.event.issue.number}}
+            ```
