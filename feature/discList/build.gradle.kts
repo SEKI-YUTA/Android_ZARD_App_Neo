@@ -57,6 +57,7 @@ dependencies {
     implementation(project(":common"))
     implementation(project(":core:ui"))
     implementation(project(":navigation"))
+    implementation(project(":app-constant"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
