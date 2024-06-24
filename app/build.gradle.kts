@@ -105,6 +105,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.datastore.preference)
+    implementation(project(":app-constant"))
     implementation(project(":feature:discList"))
     implementation(project(":feature:trackList"))
     implementation(project(":feature:discDetail"))
