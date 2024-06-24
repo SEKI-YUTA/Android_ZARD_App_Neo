@@ -1,5 +1,6 @@
 package com.yuuta.tracklist
 
+import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -19,8 +20,9 @@ import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
 import com.yuuta.ui.preview.PreviewItemWrapper
 
+@VisibleForTesting
 @Composable
-internal fun TrackListScreen(
+fun TrackListScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     allTrackList: List<Track>?,

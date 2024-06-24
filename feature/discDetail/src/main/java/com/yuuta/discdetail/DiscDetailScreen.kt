@@ -3,6 +3,7 @@ package com.yuuta.discdetail
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
+import androidx.annotation.VisibleForTesting
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -128,8 +129,9 @@ private fun DiscDetailScreen(
     }
 }
 
+@VisibleForTesting
 @Composable
-internal fun DiscDetailScreen(
+fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,

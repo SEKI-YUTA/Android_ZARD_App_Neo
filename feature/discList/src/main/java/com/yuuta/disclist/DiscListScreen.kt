@@ -1,5 +1,6 @@
 package com.yuuta.disclist
 
+import androidx.annotation.VisibleForTesting
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -97,9 +98,10 @@ private fun DiscListScreen(
     }
 }
 
+@VisibleForTesting
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
-private fun DiscListScreen(
+fun DiscListScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     navigateToDetail: (String) -> Unit,
