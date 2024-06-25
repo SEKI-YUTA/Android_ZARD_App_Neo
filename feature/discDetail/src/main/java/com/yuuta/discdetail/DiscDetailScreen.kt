@@ -3,6 +3,7 @@ package com.yuuta.discdetail
 import android.content.Intent
 import android.net.Uri
 import android.widget.Toast
+import androidx.annotation.VisibleForTesting
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -25,9 +26,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.yuuta.app_constant.discList
 import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.Disc
-import com.yuuta.common.model.Track
 import com.yuuta.resouce.R
 import com.yuuta.ui.CenterMessage
 import com.yuuta.ui.DiscContent
@@ -128,9 +129,9 @@ private fun DiscDetailScreen(
     }
 }
 
-@OptIn(ExperimentalSharedTransitionApi::class)
+@VisibleForTesting
 @Composable
-internal fun DiscDetailScreen(
+fun DiscDetailScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     disc: Disc?,
@@ -200,32 +201,10 @@ internal fun DiscDetailScreen(
 @ZARDAppNeoPreviewAnnotation
 @Composable
 fun DiscDetailScreenPreview() {
-    // ここででもデータを用意する
-    val disc =
-        Disc(
-            id = 1,
-            name = "Good-bye My Loneliness",
-            releaseYear = "1993",
-            imageName = "index1_1991_02_10_1stsingle.jpg",
-            officialPageURL = "https://www.wezard.net/",
-            discType = "シングル",
-            indexStr = "1st Single",
-            releaseMonth = "2",
-            releaseDate = "10",
-            is8cm = true,
-            trackList =
-                listOf(
-                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                    Track("Good-bye My Loneliness", "坂井泉水", "織田哲郎", "葉山たけし", "1993"),
-                ),
-        )
     PreviewItemWrapper {
         DiscDetailScreen(
             navController = rememberNavController(),
-            disc = disc,
+            disc = discList.first(),
         )
     }
 }

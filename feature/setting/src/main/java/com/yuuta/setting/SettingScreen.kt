@@ -1,6 +1,7 @@
 package com.yuuta.setting
 
 import android.content.Context
+import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -18,8 +19,9 @@ import com.yuuta.ui.ZARDAppScaffold
 import com.yuuta.ui.bottomAppBarData
 import com.yuuta.ui.preview.PreviewItemWrapper
 
+@VisibleForTesting
 @Composable
-internal fun SettingScreen(
+fun SettingScreen(
     modifier: Modifier = Modifier,
     navController: NavController,
     appSetting: AppSetting?,
