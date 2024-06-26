@@ -63,6 +63,11 @@ jobs:
         run: git checkout -b ${GITHUB_HEAD_REF#refs/heads/}
       - name: run reg-suit
         run: |
-          npx reg-suit run
+          npx reg-suit run | tee reg-suit-result.txt
+
+      - name: PR comment with file
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          filePath: reg-suit-result.txt
 
 
