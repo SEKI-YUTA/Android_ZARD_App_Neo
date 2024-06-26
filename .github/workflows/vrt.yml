@@ -68,10 +68,12 @@ jobs:
         run: git checkout -b ${GITHUB_HEAD_REF#refs/heads/}
       - name: run reg-suit
         run: |
-          npx reg-suit run | tee reg-suit-result.txt
+          npx reg-suit run | grep -P '\[reg-suit\] info Report URL:' >> reg-suit-result.txt
+      - name: show reg-suit-result.txt
+        run: cat reg-suit-result.txt
       - name: PR comment with file
         uses: thollander/actions-comment-pull-request@v2
         with:
-          message: |
-            ${grep '\[reg-suit\] info Report URL:' reg-suit-result.txt}
+          filePath: ./reg-suit-result.txt
+
 
