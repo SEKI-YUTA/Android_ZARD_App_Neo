@@ -24,6 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: dev
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
       - name: Validate Gradle Wrapper
         uses: gradle/wrapper-validation-action@v2
       - name: Setup JDK 18
@@ -45,6 +46,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           clean: false
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
       - name: Capture with Roborazzi in this branch
         run: ./gradlew recordRoborazziDebug
       - name: Copy actual image to directory_contains_actual_images directory
