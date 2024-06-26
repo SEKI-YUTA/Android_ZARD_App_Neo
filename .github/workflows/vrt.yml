@@ -73,5 +73,5 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            ${{grep '\[reg-suit\] info Report URL:' reg-suit-result.txt}}
+            ${grep '\[reg-suit\] info Report URL:' reg-suit-result.txt}
 
