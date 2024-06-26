@@ -11,6 +11,9 @@ concurrency:
   group: vrt-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  pull-requests: write
+
 jobs:
   vrt:
     if: ${{ github.event.label.name == 'VRT' }}
