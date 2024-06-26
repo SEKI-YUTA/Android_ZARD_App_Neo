@@ -72,10 +72,10 @@ jobs:
       - name: step1
         run: cat reg-suit-result.txt
       - name: step2
-        run: cat reg-suit-result.txt | grep '\[reg-suit\] info Report URL:'
+        run: cat reg-suit-result.txt | sed -n '/\[reg-suit\] info Report URL:/p'
       - name: create converted content
         run: |
-          cat ./reg-suit-result.txt | grep '\[reg-suit\] info Report URL:' > ./filtered.txt
+          cat ./reg-suit-result.txt | sed -n '/\[reg-suit\] info Report URL:/p' > ./filtered.txt
       - name: PR comment with file
         uses: thollander/actions-comment-pull-request@v2
         with:
