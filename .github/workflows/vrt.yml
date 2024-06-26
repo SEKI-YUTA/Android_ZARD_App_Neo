@@ -64,10 +64,11 @@ jobs:
       - name: run reg-suit
         run: |
           npx reg-suit run | tee reg-suit-result.txt
-
+      - name: run ls
+        run: ls
       - name: PR comment with file
         uses: thollander/actions-comment-pull-request@v2
         with:
-          filePath: reg-suit-result.txt
+          filePath: /reg-suit-result.txt
 
 
