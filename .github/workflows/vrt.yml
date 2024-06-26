@@ -74,6 +74,6 @@ jobs:
       - name: PR comment with file
         uses: thollander/actions-comment-pull-request@v2
         with:
-          filePath: /reg-suit-result.txt
+          filePath: ./reg-suit-result.txt
 
 
