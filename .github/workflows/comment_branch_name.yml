@@ -4,6 +4,9 @@ on:
   issues:
     types: [opened]
 
+env:
+  APP_NAME: ZARDApp
+
 permissions:
   issues: write
 
@@ -18,12 +21,12 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: |
-            This issue's work branch is "ZARDApp-${{github.event.issue.number}}".
+            This issue's work branch is "${{env.APP_NAME}}-${{github.event.issue.number}}".
             branch name:
             ```
-            ZARDApp-${{github.event.issue.number}}
+            ${{env.APP_NAME}}-${{github.event.issue.number}}
             ```
             To checkout this branch, run the following command:
             ```
-            git checkout -b ZARDApp-${{github.event.issue.number}}
+            git checkout -b ${{env.APP_NAME}}-${{github.event.issue.number}}
             ```
