@@ -8,4 +8,5 @@
     <string name="setting_app_icon">アプリのアイコン</string>
     <string name="webView_shareButton">shareButton</string>
     <string name="webView_closeButton">closeButton</string>
+    <string name="webView_siteFaviconContentDescription">site favicon</string>
 </resources>
