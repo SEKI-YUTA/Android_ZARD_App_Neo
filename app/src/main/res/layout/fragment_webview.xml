@@ -24,7 +24,8 @@
                     android:id="@+id/img_favicon"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
-                    android:layout_marginRight="8dp"/>
+                    android:contentDescription="@string/webView_siteFaviconContentDescription"
+                    android:layout_marginEnd="8dp"/>
 
                 <TextView
                     android:id="@+id/url_text"
