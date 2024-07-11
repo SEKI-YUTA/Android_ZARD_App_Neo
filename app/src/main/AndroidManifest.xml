@@ -23,6 +23,13 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ZARDAppNeo">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="zard-app" />
+                <data android:host="top-page" />
+            </intent-filter>
         </activity>
 
         <activity-alias
