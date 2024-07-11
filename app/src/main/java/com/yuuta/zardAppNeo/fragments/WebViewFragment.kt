@@ -52,18 +52,26 @@ class WebViewFragment : Fragment() {
             domStorageEnabled = true
             cacheMode = WebSettings.LOAD_CACHE_ELSE_NETWORK
         }
-        val webChromeClient = object : WebChromeClient() {
-            override fun onProgressChanged(view: WebView?, newProgress: Int) {
-                super.onProgressChanged(view, newProgress)
-                loadingProgress.setProgress(newProgress, false)
-            }
-            override fun onReceivedIcon(view: WebView?, icon: Bitmap?) {
-                super.onReceivedIcon(view, icon)
-                if(icon != null) {
-                    imgFavicon.setImageBitmap(icon)
+        val webChromeClient =
+            object : WebChromeClient() {
+                override fun onProgressChanged(
+                    view: WebView?,
+                    newProgress: Int,
+                ) {
+                    super.onProgressChanged(view, newProgress)
+                    loadingProgress.setProgress(newProgress, false)
+                }
+
+                override fun onReceivedIcon(
+                    view: WebView?,
+                    icon: Bitmap?,
+                ) {
+                    super.onReceivedIcon(view, icon)
+                    if (icon != null) {
+                        imgFavicon.setImageBitmap(icon)
+                    }
                 }
             }
-        }
         webView.webChromeClient = webChromeClient
         webView.loadUrl(args.webUrl)
         return view
