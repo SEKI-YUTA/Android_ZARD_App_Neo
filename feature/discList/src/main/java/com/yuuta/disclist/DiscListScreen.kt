@@ -82,7 +82,7 @@ private fun DiscListScreen(
         LazyColumn(
             state = lazyListState,
             verticalArrangement = Arrangement.Top,
-            contentPadding = it
+            contentPadding = it,
         ) {
             items(discList, key = { it.id }) { disc ->
                 DiscCard(

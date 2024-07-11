@@ -34,11 +34,11 @@ class MainFragment : Fragment() {
         val view =
             requireActivity().layoutInflater.inflate(R.layout.fragment_main, container, false)
 
-
         ViewCompat.setOnApplyWindowInsetsListener(view) { v, windowInsets ->
-            val insets = windowInsets.getInsets(
-                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
-            )
+            val insets =
+                windowInsets.getInsets(
+                    WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout(),
+                )
             v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 leftMargin = insets.left
                 bottomMargin = insets.bottom
@@ -47,7 +47,6 @@ class MainFragment : Fragment() {
             }
             WindowInsetsCompat.CONSUMED
         }
-
 
         val navHostFragment =
             requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
