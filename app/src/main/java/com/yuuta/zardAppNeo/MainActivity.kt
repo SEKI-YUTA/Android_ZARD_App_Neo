@@ -3,14 +3,14 @@ package com.yuuta.zardAppNeo
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationRepositoryContract
-import com.yuuta.zardAppNeo.di.annotation.FakeArtistInformationRepositoryAnnotation
+import com.yuuta.zardAppNeo.di.annotation.ArtistInformationRepositoryAnnotation
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     @Inject
-    @FakeArtistInformationRepositoryAnnotation
+    @ArtistInformationRepositoryAnnotation
     lateinit var repository: ArtistInformationRepositoryContract
 
     override fun onCreate(savedInstanceState: Bundle?) {
