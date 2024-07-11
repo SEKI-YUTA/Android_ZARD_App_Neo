@@ -80,9 +80,9 @@ private fun DiscListScreen(
     ) {
         if (discList == null) return@ZARDAppScaffold
         LazyColumn(
-            modifier = Modifier.padding(it),
             state = lazyListState,
             verticalArrangement = Arrangement.Top,
+            contentPadding = it
         ) {
             items(discList, key = { it.id }) { disc ->
                 DiscCard(
