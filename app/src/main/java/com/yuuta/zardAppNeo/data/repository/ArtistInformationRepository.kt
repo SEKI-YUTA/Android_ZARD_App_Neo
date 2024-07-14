@@ -5,13 +5,11 @@ import com.yuuta.common.model.Lce
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationRepositoryContract
 import com.yuuta.zardAppNeo.data.contract.ArtistInformationSourceContract
 import com.yuuta.zardAppNeo.data.json.ZARDJson
-import com.yuuta.zardAppNeo.di.annotation.ArtistInformationSourceAnnotation
 import javax.inject.Inject
 
 open class ArtistInformationRepository
     @Inject
     constructor(
-        @ArtistInformationSourceAnnotation
         private val dataSource: ArtistInformationSourceContract,
     ) : ArtistInformationRepositoryContract {
         override fun getArtistInformation(): Lce<ArtistInformation> {
