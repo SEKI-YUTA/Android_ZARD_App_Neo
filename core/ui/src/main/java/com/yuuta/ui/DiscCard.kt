@@ -104,36 +104,37 @@ internal fun DiscCard(
         ) {
             Card(
                 modifier =
-                Modifier
-                    .fillMaxWidth()
-                    .height(140.dp)
-                    .padding(8.dp)
-                    .tooltipAnchor(),
+                    Modifier
+                        .fillMaxWidth()
+                        .height(140.dp)
+                        .padding(8.dp)
+                        .tooltipAnchor(),
                 content = {
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier =
-                        Modifier
-                            .fillMaxHeight()
-                            .padding(8.dp),
+                            Modifier
+                                .fillMaxHeight()
+                                .padding(8.dp),
                     ) {
-                        if(discJacket != null) {
+                        if (discJacket != null) {
                             Image(
                                 modifier =
-                                Modifier
-                                    .padding(8.dp)
-                                    .width(100.dp)
-                                    .height(100.dp),
+                                    Modifier
+                                        .padding(8.dp)
+                                        .width(100.dp)
+                                        .height(100.dp),
                                 bitmap = discJacket!!.asImageBitmap(),
                                 contentDescription = "",
                             )
                         } else {
                             Box(
-                                modifier = Modifier
-                                    .padding(8.dp)
-                                    .size(100.dp)
-                                    .shimmer()
-                                    .background(Color.Gray)
+                                modifier =
+                                    Modifier
+                                        .padding(8.dp)
+                                        .size(100.dp)
+                                        .shimmer()
+                                        .background(Color.Gray),
                             )
                         }
                         Column {
@@ -145,12 +146,12 @@ internal fun DiscCard(
                             ) {
                                 Text(
                                     modifier =
-                                    Modifier
-                                        .sharedElement(
-                                            state = rememberSharedContentState(key = "disc_name/${disc.id}"),
-                                            animatedVisibilityScope = animatedVisibilityScope,
-                                        )
-                                        .weight(1f),
+                                        Modifier
+                                            .sharedElement(
+                                                state = rememberSharedContentState(key = "disc_name/${disc.id}"),
+                                                animatedVisibilityScope = animatedVisibilityScope,
+                                            )
+                                            .weight(1f),
                                     text = disc.name,
                                     fontSize = 24.sp,
                                     overflow = TextOverflow.Ellipsis,
@@ -197,11 +198,11 @@ internal fun DiscCard(
     ) {
         Card(
             modifier =
-            Modifier
-                .fillMaxWidth()
-                .height(140.dp)
-                .padding(8.dp)
-                .tooltipAnchor(),
+                Modifier
+                    .fillMaxWidth()
+                    .height(140.dp)
+                    .padding(8.dp)
+                    .tooltipAnchor(),
             content = {
                 val withOutExt = disc.imageName.split(".")[0]
                 val imageId =
@@ -209,16 +210,16 @@ internal fun DiscCard(
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier =
-                    Modifier
-                        .fillMaxHeight()
-                        .padding(8.dp),
+                        Modifier
+                            .fillMaxHeight()
+                            .padding(8.dp),
                 ) {
                     Image(
                         modifier =
-                        Modifier
-                            .padding(8.dp)
-                            .width(100.dp)
-                            .height(100.dp),
+                            Modifier
+                                .padding(8.dp)
+                                .width(100.dp)
+                                .height(100.dp),
                         painter = painterResource(id = imageId),
                         contentDescription = "",
                     )
@@ -261,49 +262,53 @@ internal fun DiscCard(
 fun ShimmerDiscCard() {
     Card(
         modifier =
-        Modifier
-            .fillMaxWidth()
-            .height(140.dp)
-            .padding(8.dp),
+            Modifier
+                .fillMaxWidth()
+                .height(140.dp)
+                .padding(8.dp),
         content = {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier =
-                Modifier
-                    .fillMaxHeight()
-                    .padding(8.dp),
+                    Modifier
+                        .fillMaxHeight()
+                        .padding(8.dp),
             ) {
                 Box(
-                    modifier = Modifier
-                        .padding(8.dp)
-                        .size(100.dp)
-                        .shimmer()
-                        .background(Color.Gray)
+                    modifier =
+                        Modifier
+                            .padding(8.dp)
+                            .size(100.dp)
+                            .shimmer()
+                            .background(Color.Gray),
                 )
                 Column {
                     Box(
-                        modifier = Modifier
-                            .padding(bottom = 8.dp)
-                            .width(100.dp)
-                            .height(20.dp)
-                            .shimmer()
-                            .background(Color.Gray)
+                        modifier =
+                            Modifier
+                                .padding(bottom = 8.dp)
+                                .width(100.dp)
+                                .height(20.dp)
+                                .shimmer()
+                                .background(Color.Gray),
                     )
                     Box(
-                        modifier = Modifier
-                            .padding(bottom = 8.dp)
-                            .width(200.dp)
-                            .height(30.dp)
-                            .shimmer()
-                            .background(Color.Gray)
+                        modifier =
+                            Modifier
+                                .padding(bottom = 8.dp)
+                                .width(200.dp)
+                                .height(30.dp)
+                                .shimmer()
+                                .background(Color.Gray),
                     )
                     Box(
-                        modifier = Modifier
-                            .padding(bottom = 8.dp)
-                            .width(100.dp)
-                            .height(20.dp)
-                            .shimmer()
-                            .background(Color.Gray)
+                        modifier =
+                            Modifier
+                                .padding(bottom = 8.dp)
+                                .width(100.dp)
+                                .height(20.dp)
+                                .shimmer()
+                                .background(Color.Gray),
                     )
                 }
             }
