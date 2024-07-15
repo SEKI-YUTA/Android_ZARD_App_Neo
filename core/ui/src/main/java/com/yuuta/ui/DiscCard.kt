@@ -254,6 +254,9 @@ internal fun DiscCard(
     }
 }
 
+// 本来このコンポーザブルはディスクの画像読み込み中に表示させるつもりだったが、画像以外は表示できるはずなので使わなかった。
+// 現状ディスク一覧データを読み込んでいる際の読み込み中のアニメーションなどは未実装
+// もし実装する場合はShimmerDiscCardを利用して実装する。
 @Composable
 fun ShimmerDiscCard() {
     Card(
