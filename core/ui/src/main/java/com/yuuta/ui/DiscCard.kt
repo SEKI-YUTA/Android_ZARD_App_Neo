@@ -1,6 +1,8 @@
 package com.yuuta.ui
 
 import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -21,9 +23,15 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.RichTooltipBox
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -73,6 +81,12 @@ internal fun DiscCard(
     onCardTappedAction: () -> Unit,
 ) {
     val trackCount = disc.trackList.size
+    var discJacket: Bitmap? by remember {
+        mutableStateOf(null)
+    }
+    LaunchedEffect(key1 = true) {
+        discJacket = BitmapFactory.decodeStream(context.assets.open(disc.imageName))
+    }
     with(sharedTransitionScope) {
         RichTooltipBox(
             text = {
@@ -96,13 +110,6 @@ internal fun DiscCard(
                     .padding(8.dp)
                     .tooltipAnchor(),
                 content = {
-                    val withOutExt = disc.imageName.split(".")[0]
-                    val imageId =
-                        context.resources.getIdentifier(
-                            withOutExt,
-                            "drawable",
-                            context.packageName,
-                        )
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier =
@@ -110,19 +117,25 @@ internal fun DiscCard(
                             .fillMaxHeight()
                             .padding(8.dp),
                     ) {
-                        Image(
-                            modifier =
-                            Modifier
-                                .sharedElement(
-                                    state = rememberSharedContentState(key = "disc_image/$imageId"),
-                                    animatedVisibilityScope = animatedVisibilityScope,
-                                )
-                                .padding(8.dp)
-                                .width(100.dp)
-                                .height(100.dp),
-                            painter = painterResource(id = imageId),
-                            contentDescription = "",
-                        )
+                        if(discJacket != null) {
+                            Image(
+                                modifier =
+                                Modifier
+                                    .padding(8.dp)
+                                    .width(100.dp)
+                                    .height(100.dp),
+                                bitmap = discJacket!!.asImageBitmap(),
+                                contentDescription = "",
+                            )
+                        } else {
+                            Box(
+                                modifier = Modifier
+                                    .padding(8.dp)
+                                    .size(100.dp)
+                                    .shimmer()
+                                    .background(Color.Gray)
+                            )
+                        }
                         Column {
                             Text(disc.indexStr, modifier = Modifier.fillMaxWidth())
                             Row(
@@ -132,12 +145,12 @@ internal fun DiscCard(
                             ) {
                                 Text(
                                     modifier =
-                                        Modifier
-                                            .sharedElement(
-                                                state = rememberSharedContentState(key = "disc_name/${disc.id}"),
-                                                animatedVisibilityScope = animatedVisibilityScope,
-                                            )
-                                            .weight(1f),
+                                    Modifier
+                                        .sharedElement(
+                                            state = rememberSharedContentState(key = "disc_name/${disc.id}"),
+                                            animatedVisibilityScope = animatedVisibilityScope,
+                                        )
+                                        .weight(1f),
                                     text = disc.name,
                                     fontSize = 24.sp,
                                     overflow = TextOverflow.Ellipsis,
@@ -184,11 +197,11 @@ internal fun DiscCard(
     ) {
         Card(
             modifier =
-                Modifier
-                    .fillMaxWidth()
-                    .height(140.dp)
-                    .padding(8.dp)
-                    .tooltipAnchor(),
+            Modifier
+                .fillMaxWidth()
+                .height(140.dp)
+                .padding(8.dp)
+                .tooltipAnchor(),
             content = {
                 val withOutExt = disc.imageName.split(".")[0]
                 val imageId =
@@ -196,16 +209,16 @@ internal fun DiscCard(
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier =
-                        Modifier
-                            .fillMaxHeight()
-                            .padding(8.dp),
+                    Modifier
+                        .fillMaxHeight()
+                        .padding(8.dp),
                 ) {
                     Image(
                         modifier =
-                            Modifier
-                                .padding(8.dp)
-                                .width(100.dp)
-                                .height(100.dp),
+                        Modifier
+                            .padding(8.dp)
+                            .width(100.dp)
+                            .height(100.dp),
                         painter = painterResource(id = imageId),
                         contentDescription = "",
                     )
