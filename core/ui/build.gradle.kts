@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.material.icon.extended)
     implementation(libs.compose.animation)
+    implementation(libs.compose.shimmer)
     implementation(platform(libs.androidx.compose.bom))
     implementation(project(":resource"))
     implementation(project(":common"))
