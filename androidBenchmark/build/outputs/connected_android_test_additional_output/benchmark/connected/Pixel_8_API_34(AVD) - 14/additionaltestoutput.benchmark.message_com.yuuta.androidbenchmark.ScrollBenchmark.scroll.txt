@@ -1,0 +1,6 @@
+ScrollBenchmark_scroll
+Total run time Ns: 73604632035.
+Baseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)
+
+To copy the profile use:
+adb -e pull "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt" .

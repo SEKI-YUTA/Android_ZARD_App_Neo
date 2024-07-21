@@ -1,0 +1,166 @@
+# 2024-07-17T03:04:03.492838Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ScrollBenchmark"
+    test_package: "com.yuuta.androidbenchmark"
+    test_method: "scroll"
+    start_time {
+      seconds: 1721185369
+      nanos: 306000000
+    }
+    end_time {
+      seconds: 1721185443
+      nanos: 30000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.message"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/connected_android_test_additional_output/benchmark/connected/Pixel_8_API_34(AVD) - 14/additionaltestoutput.benchmark.message_com.yuuta.androidbenchmark.ScrollBenchmark.scroll.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/connected_android_test_additional_output/benchmark/connected/Pixel_8_API_34(AVD) - 14/ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/androidTest-results/connected/benchmark/Pixel_8_API_34(AVD) - 14/logcat-com.yuuta.androidbenchmark.ScrollBenchmark-scroll.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/androidTest-results/connected/benchmark/Pixel_8_API_34(AVD) - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/androidTest-results/connected/benchmark/Pixel_8_API_34(AVD) - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/androidTest-results/connected/benchmark/Pixel_8_API_34(AVD) - 14/cpuinfo"
+    }
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile-ts"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile-ts"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile-ts"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt"
+  }
+  details {
+    key: "additionalTestOutputFile_baseline-profile-ts"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "ScrollBenchmark_scroll\nTotal run time Ns: 73604632035.\nBaseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)\n\nTo copy the profile use:\nadb -e pull \"/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt\" .\n"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output"
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/sekiyuuta/Desktop/apps/android/jetpack/Android_ZARD_App_Neo/androidBenchmark/build/outputs/androidTest-results/connected/benchmark/Pixel_8_API_34(AVD) - 14/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

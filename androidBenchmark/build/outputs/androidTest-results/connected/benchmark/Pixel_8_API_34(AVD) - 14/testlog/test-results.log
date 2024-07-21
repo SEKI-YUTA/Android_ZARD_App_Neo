@@ -1,0 +1,44 @@
+INSTRUMENTATION_STATUS: class=com.yuuta.androidbenchmark.ScrollBenchmark
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.yuuta.androidbenchmark.ScrollBenchmark:
+INSTRUMENTATION_STATUS: test=scroll
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: additionalTestOutputFile_baseline-profile=/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_baseline-profile-ts=/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: android.studio.display.benchmark=ScrollBenchmark_scroll
+Total run time Ns: 73604632035.
+Baseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)
+
+To copy the profile use:
+adb -e pull "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt" .
+
+INSTRUMENTATION_STATUS: android.studio.v2display.benchmark=ScrollBenchmark_scroll
+Total run time Ns: 73604632035.
+Baseline profile [results](file://ScrollBenchmark_scroll-baseline-prof-2024-07-17-03-04-02.txt)
+
+To copy the profile use:
+adb -e pull "/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output/ScrollBenchmark_scroll-baseline-prof.txt" .
+
+INSTRUMENTATION_STATUS: android.studio.v2display.benchmark.outputDirPath=/sdcard/Android/media/com.yuuta.androidbenchmark/additional_test_output
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: class=com.yuuta.androidbenchmark.ScrollBenchmark
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=scroll
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 73.73
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+
