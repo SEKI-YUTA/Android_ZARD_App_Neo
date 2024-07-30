@@ -3,6 +3,7 @@ package com.yuuta.zardAppNeo.ui.viewmodel
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.yuuta.common.model.AppIconMode
@@ -32,6 +33,7 @@ class ZARDAppViewModel
         private lateinit var packageName: String
         private lateinit var lightIcon: ComponentName
         private lateinit var darkIcon: ComponentName
+        private var tappedDiscJacket: Bitmap? = null
         private val _viewState = MutableStateFlow(ZARDAppViewState.INITIAL_VALUE)
         val viewState = _viewState.asStateFlow()
 
@@ -93,6 +95,17 @@ class ZARDAppViewModel
                     PackageManager.DONT_KILL_APP,
                 )
             }
+        }
+
+        fun setTappedDiscJacket(bitmap: Bitmap) {
+            tappedDiscJacket = bitmap
+        }
+
+        fun getTappedDiscJacket(): Bitmap {
+            /* このメソッドを呼ばれてる時点でtappedDiscJacketはnullではないはずなので!!を使っている
+            こうすることでセットするのを忘れていた場合はアプリが落ちるのでわかりやすい
+             */
+            return tappedDiscJacket!!
         }
 
         data class ZARDAppViewState(

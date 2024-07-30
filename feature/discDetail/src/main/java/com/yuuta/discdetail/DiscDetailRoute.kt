@@ -1,5 +1,6 @@
 package com.yuuta.discdetail
 
+import android.graphics.Bitmap
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
 import androidx.navigation.NavController
@@ -15,6 +16,7 @@ fun NavGraphBuilder.discDetailScreen(
     navController: NavController,
     discList: List<Disc>?,
     openWebUrl: (String) -> Unit,
+    getTappedDiscJacket: () -> Bitmap,
     sharedTransitionScope: SharedTransitionScope,
 ) {
     composable(
@@ -33,6 +35,7 @@ fun NavGraphBuilder.discDetailScreen(
             animatedVisibilityScope = this,
             disc = targetDisc,
             openWebUrl = openWebUrl,
+            getTappedDiscJacket = getTappedDiscJacket,
             sharedTransitionScope = sharedTransitionScope,
         )
     }

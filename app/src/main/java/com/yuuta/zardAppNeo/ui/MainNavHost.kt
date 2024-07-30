@@ -36,12 +36,14 @@ fun MainNavHost(
                 navigateToDetail = navController::navigateToDiscDetail,
                 discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
                 openWebUrl = openWebUrl,
+                setTappedDiscJacket = zardAppViewModel::setTappedDiscJacket,
                 sharedTransitionScope = this@SharedTransitionLayout,
             )
             discDetailScreen(
                 navController = navController,
                 discList = viewState.artistInformation.getIfContent()?.releasedDiscs,
                 openWebUrl = openWebUrl,
+                getTappedDiscJacket = zardAppViewModel::getTappedDiscJacket,
                 sharedTransitionScope = this@SharedTransitionLayout,
             )
             trackListRoute(
