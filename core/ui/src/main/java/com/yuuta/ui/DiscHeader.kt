@@ -40,23 +40,23 @@ fun DiscHeader(
     with(sharedTransitionScope) {
         Row(
             modifier =
-            Modifier
-                .padding(4.dp)
-                .padding(vertical = 16.dp)
-                .fillMaxWidth(),
+                Modifier
+                    .padding(4.dp)
+                    .padding(vertical = 16.dp)
+                    .fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Image(
                 bitmap = getTappedDiscJacket().asImageBitmap(),
                 contentDescription = "",
                 modifier =
-                Modifier
-                    .sharedElement(
-                        state = rememberSharedContentState(key = "disc_image/$discId"),
-                        animatedVisibilityScope = animatedVisibilityScope,
-                    )
-                    .width(140.dp)
-                    .height(140.dp),
+                    Modifier
+                        .sharedElement(
+                            state = rememberSharedContentState(key = "disc_image/$discId"),
+                            animatedVisibilityScope = animatedVisibilityScope,
+                        )
+                        .width(140.dp)
+                        .height(140.dp),
             )
             Column(
                 verticalArrangement = Arrangement.Center,
@@ -69,12 +69,12 @@ fun DiscHeader(
                 ) {
                     Text(
                         modifier =
-                        Modifier
-                            .tooltipAnchor()
-                            .sharedElement(
-                                state = rememberSharedContentState(key = "disc_name/$discId"),
-                                animatedVisibilityScope = animatedVisibilityScope,
-                            ),
+                            Modifier
+                                .tooltipAnchor()
+                                .sharedElement(
+                                    state = rememberSharedContentState(key = "disc_name/$discId"),
+                                    animatedVisibilityScope = animatedVisibilityScope,
+                                ),
                         text = discName,
                         fontSize = 30.sp,
                         maxLines = 2,
@@ -100,19 +100,19 @@ fun DiscHeader(
 ) {
     Row(
         modifier =
-        Modifier
-            .padding(4.dp)
-            .padding(vertical = 16.dp)
-            .fillMaxWidth(),
+            Modifier
+                .padding(4.dp)
+                .padding(vertical = 16.dp)
+                .fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Image(
             painter = painterResource(id = imageId),
             contentDescription = "",
             modifier =
-            Modifier
-                .width(140.dp)
-                .height(140.dp),
+                Modifier
+                    .width(140.dp)
+                    .height(140.dp),
         )
         Column(
             verticalArrangement = Arrangement.Center,
@@ -125,8 +125,8 @@ fun DiscHeader(
             ) {
                 Text(
                     modifier =
-                    Modifier
-                        .tooltipAnchor(),
+                        Modifier
+                            .tooltipAnchor(),
                     text = name,
                     fontSize = 30.sp,
                     maxLines = 2,
