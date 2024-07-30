@@ -50,9 +50,10 @@ fun DiscCard(
     context: Context = LocalContext.current,
     disc: Disc,
     isPreviewMode: Boolean = false,
+    setTappedDiscJacket: (Bitmap) -> Unit,
+    onCardTappedAction: () -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope?,
     sharedTransitionScope: SharedTransitionScope?,
-    onCardTappedAction: () -> Unit,
 ) {
     if (isPreviewMode) {
         DiscCard(
@@ -64,9 +65,10 @@ fun DiscCard(
         DiscCard(
             context = context,
             disc = disc,
+            setTappedDiscJacket = setTappedDiscJacket,
+            onCardTappedAction = onCardTappedAction,
             animatedVisibilityScope = animatedVisibilityScope!!,
             sharedTransitionScope = sharedTransitionScope!!,
-            onCardTappedAction = onCardTappedAction,
         )
     }
 }
@@ -76,9 +78,10 @@ fun DiscCard(
 internal fun DiscCard(
     context: Context = LocalContext.current,
     disc: Disc,
+    onCardTappedAction: () -> Unit,
+    setTappedDiscJacket: (Bitmap) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
-    onCardTappedAction: () -> Unit,
 ) {
     val trackCount = disc.trackList.size
     var discJacket: Bitmap? by remember {
@@ -121,6 +124,10 @@ internal fun DiscCard(
                             Image(
                                 modifier =
                                     Modifier
+                                        .sharedElement(
+                                            state = rememberSharedContentState(key = "disc_image/${disc.id}"),
+                                            animatedVisibilityScope = animatedVisibilityScope,
+                                        )
                                         .padding(8.dp)
                                         .width(100.dp)
                                         .height(100.dp),
@@ -167,6 +174,7 @@ internal fun DiscCard(
                     }
                 },
                 onClick = {
+                    setTappedDiscJacket(discJacket!!)
                     onCardTappedAction()
                 },
             )
@@ -346,8 +354,10 @@ fun DiscCardPreview() {
         DiscCard(
             disc = disc,
             isPreviewMode = true,
+            setTappedDiscJacket = {},
+            onCardTappedAction = {},
             animatedVisibilityScope = null,
             sharedTransitionScope = null,
-        ) {}
+        )
     }
 }

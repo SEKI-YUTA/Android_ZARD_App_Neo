@@ -1,5 +1,6 @@
 package com.yuuta.ui
 
+import android.graphics.Bitmap
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
@@ -17,6 +18,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
@@ -28,33 +30,33 @@ import com.yuuta.resouce.R
 @Composable
 fun DiscHeader(
     discId: Int,
-    imageId: Int,
-    name: String,
+    discName: String,
     releaseYear: String,
     trackCount: Int,
+    getTappedDiscJacket: () -> Bitmap,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
 ) {
     with(sharedTransitionScope) {
         Row(
             modifier =
-                Modifier
-                    .padding(4.dp)
-                    .padding(vertical = 16.dp)
-                    .fillMaxWidth(),
+            Modifier
+                .padding(4.dp)
+                .padding(vertical = 16.dp)
+                .fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Image(
-                painter = painterResource(id = imageId),
+                bitmap = getTappedDiscJacket().asImageBitmap(),
                 contentDescription = "",
                 modifier =
-                    Modifier
-                        .sharedElement(
-                            state = rememberSharedContentState(key = "disc_image/$imageId"),
-                            animatedVisibilityScope = animatedVisibilityScope,
-                        )
-                        .width(140.dp)
-                        .height(140.dp),
+                Modifier
+                    .sharedElement(
+                        state = rememberSharedContentState(key = "disc_image/$discId"),
+                        animatedVisibilityScope = animatedVisibilityScope,
+                    )
+                    .width(140.dp)
+                    .height(140.dp),
             )
             Column(
                 verticalArrangement = Arrangement.Center,
@@ -62,18 +64,18 @@ fun DiscHeader(
             ) {
                 PlainTooltipBox(
                     tooltip = {
-                        Text(name)
+                        Text(discName)
                     },
                 ) {
                     Text(
                         modifier =
-                            Modifier
-                                .tooltipAnchor()
-                                .sharedElement(
-                                    state = rememberSharedContentState(key = "disc_name/$discId"),
-                                    animatedVisibilityScope = animatedVisibilityScope,
-                                ),
-                        text = name,
+                        Modifier
+                            .tooltipAnchor()
+                            .sharedElement(
+                                state = rememberSharedContentState(key = "disc_name/$discId"),
+                                animatedVisibilityScope = animatedVisibilityScope,
+                            ),
+                        text = discName,
                         fontSize = 30.sp,
                         maxLines = 2,
                         lineHeight = 36.sp,
@@ -98,19 +100,19 @@ fun DiscHeader(
 ) {
     Row(
         modifier =
-            Modifier
-                .padding(4.dp)
-                .padding(vertical = 16.dp)
-                .fillMaxWidth(),
+        Modifier
+            .padding(4.dp)
+            .padding(vertical = 16.dp)
+            .fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Image(
             painter = painterResource(id = imageId),
             contentDescription = "",
             modifier =
-                Modifier
-                    .width(140.dp)
-                    .height(140.dp),
+            Modifier
+                .width(140.dp)
+                .height(140.dp),
         )
         Column(
             verticalArrangement = Arrangement.Center,
@@ -123,8 +125,8 @@ fun DiscHeader(
             ) {
                 Text(
                     modifier =
-                        Modifier
-                            .tooltipAnchor(),
+                    Modifier
+                        .tooltipAnchor(),
                     text = name,
                     fontSize = 30.sp,
                     maxLines = 2,

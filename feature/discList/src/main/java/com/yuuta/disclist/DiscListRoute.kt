@@ -1,5 +1,6 @@
 package com.yuuta.disclist
 
+import android.graphics.Bitmap
 import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
 import androidx.navigation.NavController
@@ -14,6 +15,7 @@ fun NavGraphBuilder.discListScreen(
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
     openWebUrl: (String) -> Unit,
+    setTappedDiscJacket: (Bitmap) -> Unit,
     sharedTransitionScope: SharedTransitionScope,
 ) {
     return composable(DISC_LIST_ROUTE) {
@@ -21,6 +23,7 @@ fun NavGraphBuilder.discListScreen(
             navController = navController,
             navigateToDetail = navigateToDetail,
             discList = discList,
+            setTappedDiscJacket = setTappedDiscJacket,
             openWebUrl = openWebUrl,
             animatedVisibilityScope = this,
             sharedTransitionScope = sharedTransitionScope,

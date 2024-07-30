@@ -1,5 +1,6 @@
 package com.yuuta.disclist
 
+import android.graphics.Bitmap
 import androidx.annotation.VisibleForTesting
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
@@ -32,6 +33,7 @@ internal fun DiscListScreen(
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
     openWebUrl: (String) -> Unit,
+    setTappedDiscJacket: (Bitmap) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope?,
     sharedTransitionScope: SharedTransitionScope?,
 ) {
@@ -49,6 +51,7 @@ internal fun DiscListScreen(
             navigateToDetail = navigateToDetail,
             discList = discList,
             openWebUrl = openWebUrl,
+            setTappedDiscJacket = setTappedDiscJacket,
             animatedVisibilityScope = animatedVisibilityScope!!,
             sharedTransitionScope = sharedTransitionScope!!,
         )
@@ -63,6 +66,7 @@ private fun DiscListScreen(
     navigateToDetail: (String) -> Unit,
     discList: List<Disc>?,
     openWebUrl: (String) -> Unit,
+    setTappedDiscJacket: (Bitmap) -> Unit,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
 ) {
@@ -88,11 +92,13 @@ private fun DiscListScreen(
                 DiscCard(
                     context = context,
                     disc = disc,
+                    setTappedDiscJacket = setTappedDiscJacket,
+                    onCardTappedAction = {
+                        navigateToDetail(disc.id.toString())
+                    },
                     animatedVisibilityScope = animatedVisibilityScope,
                     sharedTransitionScope = sharedTransitionScope,
-                ) {
-                    navigateToDetail(disc.id.toString())
-                }
+                )
             }
         }
     }
@@ -130,11 +136,11 @@ fun DiscListScreen(
                     context = context,
                     isPreviewMode = true,
                     disc = disc,
+                    onCardTappedAction = {},
+                    setTappedDiscJacket = {},
                     animatedVisibilityScope = null,
                     sharedTransitionScope = null,
-                ) {
-                    navigateToDetail(disc.id.toString())
-                }
+                )
             }
         }
     }
@@ -151,6 +157,7 @@ fun DiscListScreenPreview() {
             navigateToDetail = {},
             discList = discList,
             openWebUrl = {},
+            setTappedDiscJacket = {},
             animatedVisibilityScope = null,
             sharedTransitionScope = null,
         )

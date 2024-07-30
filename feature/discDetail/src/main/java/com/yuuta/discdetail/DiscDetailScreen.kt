@@ -1,6 +1,7 @@
 package com.yuuta.discdetail
 
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
 import android.widget.Toast
 import androidx.annotation.VisibleForTesting
@@ -43,6 +44,7 @@ internal fun DiscDetailScreen(
     navController: NavController,
     disc: Disc?,
     openWebUrl: (String) -> Unit,
+    getTappedDiscJacket: () -> Bitmap,
     animatedVisibilityScope: AnimatedVisibilityScope?,
     sharedTransitionScope: SharedTransitionScope?,
 ) {
@@ -57,6 +59,7 @@ internal fun DiscDetailScreen(
             modifier = modifier,
             navController = navController,
             disc = disc,
+            getTappedDiscJacket = getTappedDiscJacket,
             openWebUrl = openWebUrl,
             animatedVisibilityScope = animatedVisibilityScope!!,
             sharedTransitionScope = sharedTransitionScope!!,
@@ -71,6 +74,7 @@ private fun DiscDetailScreen(
     navController: NavController,
     disc: Disc?,
     openWebUrl: (String) -> Unit,
+    getTappedDiscJacket: () -> Bitmap,
     animatedVisibilityScope: AnimatedVisibilityScope,
     sharedTransitionScope: SharedTransitionScope,
 ) {
@@ -82,13 +86,6 @@ private fun DiscDetailScreen(
             CenterMessage(context.getString(R.string.error_message))
             return@Scaffold
         }
-        val withOutExt = disc.imageName.split(".")[0]
-        val imageId =
-            context.resources.getIdentifier(
-                withOutExt,
-                "drawable",
-                context.packageName,
-            )
         Column(
             modifier =
                 Modifier
@@ -98,10 +95,10 @@ private fun DiscDetailScreen(
         ) {
             DiscHeader(
                 discId = disc.id,
-                imageId = imageId,
-                name = disc.name,
+                discName = disc.name,
                 releaseYear = disc.releaseYear,
                 trackCount = disc.trackList.size,
+                getTappedDiscJacket = getTappedDiscJacket,
                 animatedVisibilityScope = animatedVisibilityScope,
                 sharedTransitionScope = sharedTransitionScope,
             )
