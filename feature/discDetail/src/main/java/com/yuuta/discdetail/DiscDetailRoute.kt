@@ -5,11 +5,10 @@ import androidx.compose.animation.ExperimentalSharedTransitionApi
 import androidx.compose.animation.SharedTransitionScope
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
-import androidx.navigation.NavType
 import androidx.navigation.compose.composable
-import androidx.navigation.navArgument
+import androidx.navigation.toRoute
 import com.yuuta.common.model.Disc
-import com.yuuta.navigation.DISC_DETAIL_ROUTE
+import com.yuuta.common.model.NavigationDestination
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 fun NavGraphBuilder.discDetailScreen(
@@ -19,17 +18,9 @@ fun NavGraphBuilder.discDetailScreen(
     getTappedDiscJacket: () -> Bitmap,
     sharedTransitionScope: SharedTransitionScope,
 ) {
-    composable(
-        "$DISC_DETAIL_ROUTE/{discId}",
-        arguments =
-            listOf(
-                navArgument("discId") {
-                    type = NavType.StringType
-                },
-            ),
-    ) {
-        val discId = it.arguments?.getString("discId")
-        val targetDisc = discList?.find { it.id.toString() == discId }
+    composable<NavigationDestination.DiscDetail> {
+        val discDetailArgs: NavigationDestination.DiscDetail = it.toRoute()
+        val targetDisc = discList?.find { it.id.toString() == discDetailArgs.discId }
         DiscDetailScreen(
             navController = navController,
             animatedVisibilityScope = this,

@@ -7,7 +7,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.yuuta.common.model.Disc
-import com.yuuta.navigation.DISC_LIST_ROUTE
+import com.yuuta.common.model.NavigationDestination
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 fun NavGraphBuilder.discListScreen(
@@ -18,7 +18,7 @@ fun NavGraphBuilder.discListScreen(
     setTappedDiscJacket: (Bitmap) -> Unit,
     sharedTransitionScope: SharedTransitionScope,
 ) {
-    return composable(DISC_LIST_ROUTE) {
+    return composable<NavigationDestination.DiscList> {
         DiscListScreen(
             navController = navController,
             navigateToDetail = navigateToDetail,

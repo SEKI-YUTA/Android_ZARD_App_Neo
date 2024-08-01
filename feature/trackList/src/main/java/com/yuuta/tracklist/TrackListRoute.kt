@@ -3,15 +3,15 @@ package com.yuuta.tracklist
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
+import com.yuuta.common.model.NavigationDestination
 import com.yuuta.common.model.Track
-import com.yuuta.navigation.TRACK_LIST_ROUTE
 
 fun NavGraphBuilder.trackListRoute(
     navController: NavController,
     allTrackList: List<Track>?,
     openWebUrl: (String) -> Unit,
 ) {
-    composable(TRACK_LIST_ROUTE) {
+    composable<NavigationDestination.TrackList> {
         TrackListScreen(
             navController = navController,
             allTrackList = allTrackList,
