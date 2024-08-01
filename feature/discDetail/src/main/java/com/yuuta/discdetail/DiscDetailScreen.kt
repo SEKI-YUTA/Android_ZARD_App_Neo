@@ -205,3 +205,10 @@ fun DiscDetailScreenPreview() {
         )
     }
 }
+
+class Hoge : AutoCloseable{
+    override fun close() {
+        TODO("Not yet implemented")
+    }
+
+}

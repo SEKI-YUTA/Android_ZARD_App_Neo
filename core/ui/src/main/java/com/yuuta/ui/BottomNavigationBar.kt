@@ -11,9 +11,7 @@ import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.rememberNavController
 import com.yuuta.common.annotation.ZARDAppNeoPreviewAnnotation
 import com.yuuta.common.model.BottomAppBarItem
-import com.yuuta.navigation.DISC_LIST_ROUTE
-import com.yuuta.navigation.SETTING_ROUTE
-import com.yuuta.navigation.TRACK_LIST_ROUTE
+import com.yuuta.common.model.NavigationDestination
 import com.yuuta.navigation.navigateToDiscList
 import com.yuuta.navigation.navigateToSetting
 import com.yuuta.navigation.navigateToTrackList
@@ -29,12 +27,15 @@ fun BottomNavigationBar(
     BottomAppBar {
         bottomAppBarItems.forEach { item ->
             NavigationBarItem(
-                selected = item.route == selectedRoute,
+                selected = item.route::class.qualifiedName == selectedRoute,
                 onClick = {
                     when (item.route) {
-                        DISC_LIST_ROUTE -> navController.navigateToDiscList()
-                        TRACK_LIST_ROUTE -> navController.navigateToTrackList()
-                        SETTING_ROUTE -> navController.navigateToSetting()
+                        NavigationDestination.DiscList -> navController.navigateToDiscList()
+                        NavigationDestination.TrackList -> navController.navigateToTrackList()
+                        NavigationDestination.Setting -> navController.navigateToSetting()
+                        else -> {
+                            // NavigationDestinationにはDiscDetailがあるがボトムナビゲーションから遷移されないのでelseで握りつぶす
+                        }
                     }
                 },
                 icon = {

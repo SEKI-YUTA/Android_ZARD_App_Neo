@@ -5,7 +5,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.yuuta.common.model.AppSetting
-import com.yuuta.navigation.SETTING_ROUTE
+import com.yuuta.common.model.NavigationDestination
 
 fun NavGraphBuilder.settingRoute(
     navController: NavController,
@@ -13,7 +13,7 @@ fun NavGraphBuilder.settingRoute(
     updateAppSetting: (context: Context, appSetting: AppSetting) -> Unit,
     openWebUrl: (String) -> Unit,
 ) {
-    composable(SETTING_ROUTE) {
+    composable<NavigationDestination.Setting> {
         SettingScreen(
             navController = navController,
             appSetting = appSetting,
