@@ -13,6 +13,8 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.yuuta.app_constant.discList
@@ -84,6 +86,9 @@ private fun DiscListScreen(
     ) {
         if (discList == null) return@ZARDAppScaffold
         LazyColumn(
+            modifier = Modifier.semantics {
+                contentDescription = "discList"
+            },
             state = lazyListState,
             verticalArrangement = Arrangement.Top,
             contentPadding = it,
